@@ -1,0 +1,49 @@
+<header
+  class="flex w-full fixed justify-between items-center laptop:hidden px-4 h-12 mb-4 bg-white shadow-md">
+  <h1>PORTFOLIO</h1>
+  <button
+    (click)="onHamburgerMenuButtonClicked($event)"
+    data-collapse-toggle="navbar-default"
+    type="button"
+    class="inline-flex items-center p-2 w-8 h-8 justify-center text-sm text-gray-500 rounded-lg hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+    aria-controls="navbar-default"
+    aria-expanded="false">
+    <span class="sr-only">Open main menu</span>
+    <svg
+      class="w-5 h-4"
+      aria-hidden="true"
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 17 14">
+      <path
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M1 1h15M1 7h15M1 13h15" />
+    </svg>
+  </button>
+</header>
+
+<aside
+  id="default-sidebar"
+  #sidenav
+  [ngClass]="menuOpen ? 'translate-x-0' : '-translate-x-full'"
+  class="top-0 left-0 fixed laptop:sticky z-40 w-64 h-screen transition-transform laptop:translate-x-0"
+  aria-label="Sidebar">
+  <div class="h-full px-4 overflow-y-auto bg-gray-50 dark:bg-gray-800 pt-8">
+    <h3 class="hidden laptop:flex mb-2 ml-2">PORTFOLIO</h3>
+    <nav>
+      <ul class="space-y-2">
+        <li *ngFor="let navItem of navItems">
+          <a
+            class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group font-medium text-lg hover:text-primary-color-blue-700"
+            routerLink=""
+            fragment="{{ navItem.toLowerCase() }}"
+            >{{ navItem }}</a
+          >
+        </li>
+      </ul>
+    </nav>
+  </div>
+</aside>

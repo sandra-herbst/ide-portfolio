@@ -1,0 +1,31 @@
+name: Portfolio Build CI
+on:
+  push:
+jobs:
+  build:
+    name: 'build 📦'
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./portfolio
+    steps:
+      - uses: actions/checkout@v3
+      - name: cache
+        uses: actions/cache@v3
+        with:
+          path: |
+            **/public
+            **/.cache
+          key: cache
+      - name: use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+          cache: 'npm'
+          cache-dependency-path: portfolio/package-lock.json
+      - run: npm pkg delete scripts.prepare npm ci 
+      - run: npm install -g @angular/cli && npm install
+      - run: npm run lint
+      - run: npm run build --if-present
+      # add this run command if needed
+      # - run: npm run test

@@ -1,0 +1,25 @@
+<div
+  [ngClass]="[backgroundColorClass, widthClass, heightClass]"
+  class="rounded-xl shadow-xl p-5 font-inter text-xs laptop:text-sm desktop:text-base">
+  <h1>
+    {{ title }}
+  </h1>
+  <h2 *ngIf="subtitle">
+    {{ subtitle }}
+  </h2>
+  <ng-container *ngIf="!!this; else emptyValueTemplate">
+    <div>
+      {{ description }}
+    </div>
+  </ng-container>
+  <ng-container *ngIf="tags.length > 0">
+    <div class="flex flex-wrap grow">
+      <div *ngFor="let tag of tags">
+        <pw-tag [backgroundColorClass]="tagBackgroundColorClass">{{
+          tag.name
+        }}</pw-tag>
+      </div>
+    </div>
+  </ng-container>
+  <ng-template #emptyValueTemplate> </ng-template>
+</div>

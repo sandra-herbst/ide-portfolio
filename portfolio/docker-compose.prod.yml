@@ -1,0 +1,15 @@
+#prod values
+version: '3.8' #we use version 3.8 syntax
+services: #here we define our service(s)
+  angular-frontend-service: #the name of the service
+    container_name: portfolio-prod  #container name
+    build:
+      context: .
+      dockerfile: .docker/prod.Dockerfile #location of our dev.Dockerfile
+    volumes: #volume binding
+      - './:/app'
+      - '/app/node_modules'
+    ports:
+      - '4200:4200' #port mapping
+    environment:
+      - NODE_ENV=prod
