@@ -1,31 +1,40 @@
-import { Project } from "../model/project.model";
-import projectObjects from "../../../assets/data/projects.json";
 import { Injectable } from "@angular/core";
 import { LogService } from "./log.service";
+import { Portfolio } from "../model/portfolio.model";
+import { HttpClient } from "@angular/common/http";
+import { map, Observable } from "rxjs";
+import { About } from "../model/about.model";
+import { Experience } from "../model/experience.model";
+import { Project } from "../model/project.model";
 
 @Injectable()
 export class PortfolioService {
-  private projects: Project[] = [];
+  private dataUrl: string = "assets/data/portfolio.json";
 
-  constructor(private logger: LogService) {}
+  constructor(
+    private logger: LogService,
+    private http: HttpClient
+  ) {}
 
-  getProjects(): Project[] {
-    this.logger.log(
-      `Fetched ${projectObjects.length} projects.`,
-      PortfolioService.name
-    );
+  private getData(callback: (data: Portfolio) => void): Observable<any> {
+    return this.http
+      .get<Portfolio>(this.dataUrl)
+      .pipe(map(data => callback(data)));
+  }
 
-    // check if duplicates exist, if it's not a duplicate, add that project to the projects array
-    for (const project of projectObjects) {
-      if (
-        !this.projects.some(
-          existingProject => existingProject.id === project.id
-        )
-      ) {
-        this.projects.push(project);
-      }
-    }
+  getPortfolioData(): Observable<Portfolio> {
+    return this.http.get<Portfolio>(this.dataUrl);
+  }
 
-    return this.projects;
+  getAbout(): Observable<About> {
+    return this.getData(data => data.about);
+  }
+
+  getExperiences(): Observable<Experience[]> {
+    return this.getData(data => data.experiences);
+  }
+
+  getProjects(): Observable<Project[]> {
+    return this.getData(data => data.projects);
   }
 }

@@ -1,0 +1,144 @@
+{
+  "id": "0",
+  "about": {
+    "id": "0",
+    "name": "Sandra Herbst",
+    "contactEmail": "sandraherbst2000@gmail.com",
+    "summary": "Software Engineer",
+    "description": "A long description about yourself"
+  },
+  "experiences": [
+    {
+      "id": "0",
+      "jobTitle": "Student",
+      "startDate": "2023-01-01",
+      "endDate": "2023-01-01",
+      "company": "Company",
+      "description": "Description",
+      "tags": [
+        {
+          "id": "0",
+          "name": "Full time"
+        }
+      ]
+    },
+    {
+      "id": "1",
+      "jobTitle": "Working Student",
+      "startDate": "2023-01-01",
+      "endDate": "2023-01-01",
+      "company": "Company",
+      "description": "Description",
+      "tags": [
+        {
+          "id": "0",
+          "name": "Full time"
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "0",
+      "images": [
+      ],
+      "title": "Project0",
+      "subtitle": "",
+      "description": "This is a project1.",
+      "url": "",
+      "tags": [
+        {
+          "id": "0",
+          "name": "Java"
+        }
+      ]
+    },
+    {
+      "id": "1",
+      "images": [
+      ],
+      "title": "Project1",
+      "subtitle": "Company1",
+      "description": "This is a project1.",
+      "url": "",
+      "tags": [
+        {
+          "id": "1",
+          "name": "C#"
+        },
+        {
+          "id": "2",
+          "name": "Unity"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "images": [
+      ],
+      "title": "Project0",
+      "subtitle": "",
+      "description": "This is a project1.",
+      "url": "",
+      "tags": [
+        {
+          "id": "0",
+          "name": "Java"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "images": [
+      ],
+      "title": "Project1",
+      "subtitle": "Company1",
+      "description": "This is a project1.",
+      "url": "",
+      "tags": [
+        {
+          "id": "1",
+          "name": "C#"
+        },
+        {
+          "id": "2",
+          "name": "Unity"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "images": [
+      ],
+      "title": "Project0",
+      "subtitle": "",
+      "description": "This is a project1.",
+      "url": "",
+      "tags": [
+        {
+          "id": "0",
+          "name": "Java"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "images": [
+      ],
+      "title": "Project1",
+      "subtitle": "Company1",
+      "description": "This is a project1.",
+      "url": "",
+      "tags": [
+        {
+          "id": "1",
+          "name": "C#"
+        },
+        {
+          "id": "2",
+          "name": "Unity"
+        }
+      ]
+    }
+  ]
+}

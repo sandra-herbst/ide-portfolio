@@ -1,18 +1,12 @@
-import { Component, Input, OnInit } from "@angular/core";
-import { PortfolioService } from "../../../../core/service/portfolio.service";
+import { Component, Input } from "@angular/core";
 import { Project } from "../../../../core/model/project.model";
 
 @Component({
   selector: "pw-card-list",
   templateUrl: "./project-list.component.html",
 })
-export class ProjectListComponent implements OnInit {
-  protected projects: Project[] = [];
-  constructor(private portfolioService: PortfolioService) {}
-
-  ngOnInit(): void {
-    this.projects = this.portfolioService.getProjects();
-  }
+export class ProjectListComponent {
+  @Input() projects: Project[] = [];
 
   @Input()
   gridColumnClass: string = "grid grid-cols-2 laptop:grid-cols-4";

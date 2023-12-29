@@ -1,8 +1,7 @@
 <div
   [ngClass]="[gridGapClass, paddingClass]"
-  class="grid grid-cols-2 laptop:{{ gridColumnClass }} desktop:{{
-    gridColumnClass
-  }}">
+  class="grid grid-cols-2 laptop:{{ gridColumnClass }}
+  desktop:{{ gridColumnClass }}">
   <pw-card
     *ngFor="let project of projects"
     [title]="project.title"

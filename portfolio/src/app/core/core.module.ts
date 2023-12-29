@@ -3,10 +3,11 @@ import { CommonModule } from "@angular/common";
 import { PageNotFoundComponent } from "./component/page-not-found/page-not-found.component";
 import { PortfolioService } from "./service/portfolio.service";
 import { LogService } from "./service/log.service";
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
   declarations: [PageNotFoundComponent],
-  imports: [CommonModule],
+  imports: [CommonModule, HttpClientModule],
   providers: [LogService, PortfolioService],
 })
 export class CoreModule {

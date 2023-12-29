@@ -5,6 +5,6 @@ import { Project } from "./project.model";
 export interface Portfolio {
   id: string;
   about: About;
-  experience: Experience[];
+  experiences: Experience[];
   projects: Project[];
 }
