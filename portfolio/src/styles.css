@@ -1,34 +1,31 @@
-/* You can add global styles to this file, and also import other style files */
-
 /* Import TailwindCSS */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
-
-/**
- * Style headings using base styles
- */
 @layer base {
   h1 {
-    @apply font-inter font-black text-xl laptop:text-3xl desktop:text-4xl;
+    @apply font-bold text-white text-3xl sm:text-4xl lg:text-6xl;
   }
 
   h2 {
-    @apply font-inter font-black text-lg laptop:text-2xl desktop:text-3xl;
+    @apply font-sans text-white text-lg sm:text-2xl lg:text-3xl;
   }
 
   h3 {
-    @apply font-inter font-black text-base laptop:text-xl desktop:text-2xl;
+    @apply font-sans text-white text-base sm:text-xl lg:text-2xl;
   }
 
   h4 {
-    @apply font-inter font-black text-sm laptop:text-lg desktop:text-xl;
+    @apply font-sans text-white text-sm sm:text-lg lg:text-xl;
   }
 
   h5 {
-    @apply font-inter font-black text-xs laptop:text-base desktop:text-lg;
+    @apply font-sans text-white text-base sm:text-base lg:text-lg;
+  }
+
+  p {
+    @apply font-sans text-white text-sm text-justify;
   }
 }
 

@@ -13,32 +13,30 @@ module.exports = {
       },
       // configure color palette here
       colors: {
-        "primary-color": {
+        "primary": {
           DEFAULT: '#ffffff',
           "pink": "#fda4af",
         },
-        "secondary-color": {
+        "secondary": {
           DEFAULT: '#ffffff',
           "blue": "#6999d7",
         },
-        "accent-color": {
-          DEFAULT: '#ffffff',
+        "accent": {
+          DEFAULT: '#CC7832',
         },
+        "black": "#1F1E25",
+        "gray": "#2B2C32",
+        "white": "#E1E1E1",
       },
       fontFamily: {
-        inter: ["Inter", "sans-serif"],
-      },
-      fontSize: {
-        xs: "12px",
-        sm: "14px",
-        base: "16px",
-        lg: "18px",
-        xl: "20px",
-        "2xl": "24px",
-        "3xl": "30px",
-        "4xl": "36px",
-        "5xl": "48px",
-        "6xl": "64px",
+        sans: [
+          'Inter',
+          {
+            fontFeatureSettings: '"cv11", "ss01"',
+            fontVariationSettings: '"opsz" 32'
+          },
+        ],
+        mono: ['JetBrains Mono']
       },
     }
   },
