@@ -1,7 +1,28 @@
-<div class="flex flex-col laptop:flex-row">
-  <pw-navigation></pw-navigation>
+<div
+  class="h-screen max-laptop:flex max-laptop:flex-col laptop:grid laptop:grid-rows-[38px_1fr_38px] laptop:grid-cols-[15vw_80vw] laptop:overflow-hidden">
+  <!-- top with navigation -->
+  <header class="bg-white laptop:col-span-4 laptop:row-span-1">
+    <div class="bg-white">header</div>
+  </header>
 
-  <div class="px-4 pt-16 laptop:pt-8">
-    <router-outlet></router-outlet>
-  </div>
+  <!-- navigation -->
+  <aside
+    class="hidden bg-orange-500 laptop:col-span-1 laptop:row-span-1 laptop:flex">
+    <div class="w-12">project</div>
+    <nav class="bg-purple-500 laptop:flex-grow">navigation</nav>
+  </aside>
+
+  <!-- pages that change with navigation click -->
+  <main
+    class="laptop:col-span-2 laptop:row-span-1 laptop:flex laptop:flex-col laptop:min-h-full">
+    <nav class="bg-green-500 h-8">navigation scroll</nav>
+    <div class="laptop:flex-grow px-4 pt-4 pb-8 laptop:p-8 overflow-auto">
+      <router-outlet></router-outlet>
+    </div>
+  </main>
+
+  <!-- bottom links -->
+  <footer class="bg-green-500 laptop:col-span-4">
+    <p>&copy; 2024 Sandra Herbst</p>
+  </footer>
 </div>

@@ -1,6 +1,5 @@
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
-import { HomePage } from "./component/page/home-page.component";
 import { SharedModule } from "../../shared/shared.module";
 import { RouterLink } from "@angular/router";
 import { AboutComponent } from "./component/about/about.component";
@@ -11,7 +10,6 @@ import { ProjectListComponent } from "./component/projectlist/project-list.compo
 
 @NgModule({
   declarations: [
-    HomePage,
     NavigationComponent,
     AboutComponent,
     ExperiencesComponent,
