@@ -1,5 +1,5 @@
-import {Component} from "@angular/core";
-import {LogService} from "../../service/log.service";
+import { Component } from "@angular/core";
+import { LogService } from "../../service/log.service";
 
 @Component({
   selector: "pw-header",

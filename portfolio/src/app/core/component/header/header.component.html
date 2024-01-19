@@ -1,9 +1,8 @@
 <header
-  class="h-12 bg-gray-200 flex w-full fixed justify-between items-center px-4">
+  class="h-12 bg-gray-200 flex w-full fixed z-10 justify-between items-center pl-4 pr-2">
   <div class="flex items-center gap-4">
     <img src="assets/icons/letter-s.png" alt="Logo" class="h-full w-5" />
     <h4 class="font-bold">Portfolio</h4>
-    <p class="laptop:hidden">portfolio > src > <strong>about</strong></p>
   </div>
 
   <div
@@ -20,7 +19,7 @@
     (click)="onHamburgerMenuButtonClicked($event)"
     data-collapse-toggle="navbar-default"
     type="button"
-    class="laptop:hidden inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg hover:bg-gray-100"
+    class="laptop:hidden inline-flex items-center w-10 h-10 justify-center text-sm text-white rounded-lg hover:bg-gray-100"
     aria-controls="navbar-default"
     aria-expanded="false">
     <span class="sr-only">Open main menu</span>
