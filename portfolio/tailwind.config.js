@@ -14,18 +14,21 @@ module.exports = {
       // configure color palette here
       colors: {
         "primary": {
-          DEFAULT: '#ffffff',
+          DEFAULT: "#ffffff",
           "pink": "#fda4af",
         },
         "secondary": {
-          DEFAULT: '#ffffff',
+          DEFAULT: "#ffffff",
           "blue": "#6999d7",
         },
         "accent": {
-          DEFAULT: '#CC7832',
+          DEFAULT: "#CC7832",
+        },
+        "gray": {
+          100: "#3f4046",
+          200: "#2B2C32",
         },
         "black": "#1F1E25",
-        "gray": "#2B2C32",
         "white": "#E1E1E1",
       },
       fontFamily: {
