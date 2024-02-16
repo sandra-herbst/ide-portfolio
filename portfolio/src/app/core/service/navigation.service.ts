@@ -5,6 +5,7 @@ import {
   NavigationType,
 } from "../model/local/navigation-item.interface";
 import { BehaviorSubject, filter, map } from "rxjs";
+import { FileType, NavigationFileInfo } from "../model/local/file.interface";
 
 @Injectable({
   providedIn: "root",
@@ -12,10 +13,32 @@ import { BehaviorSubject, filter, map } from "rxjs";
 export class NavigationService {
   private currentRoute: string = "";
 
+  private JAVA_ICON: NavigationFileInfo = {
+    fileType: FileType.JAVA,
+    fileName: "class_icon",
+    fileExtension: "svg",
+    altText: "Java class icon",
+  };
+
   private mainNavigationItems: NavigationItem[] = [
-    { label: "About", route: "/about", type: NavigationType.MAIN },
-    { label: "Experiences", route: "/experiences", type: NavigationType.MAIN },
-    { label: "Projects", route: "/projects", type: NavigationType.MAIN },
+    {
+      label: "About",
+      route: "/about",
+      navType: NavigationType.MAIN,
+      fileInfo: this.JAVA_ICON,
+    },
+    {
+      label: "Experiences",
+      route: "/experiences",
+      navType: NavigationType.MAIN,
+      fileInfo: this.JAVA_ICON,
+    },
+    {
+      label: "Projects",
+      route: "/projects",
+      navType: NavigationType.MAIN,
+      fileInfo: this.JAVA_ICON,
+    },
   ];
 
   private dynamicNavItems: NavigationItem[] = [];

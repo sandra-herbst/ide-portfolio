@@ -1,7 +1,10 @@
+import { NavigationFileInfo } from "./file.interface";
+
 export interface NavigationItem {
   label: string;
   route: string;
-  type: NavigationType;
+  navType: NavigationType;
+  fileInfo: NavigationFileInfo;
 }
 
 export enum NavigationType {

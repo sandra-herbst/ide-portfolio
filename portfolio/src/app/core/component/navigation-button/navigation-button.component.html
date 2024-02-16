@@ -1,14 +1,22 @@
 <div
-  class="h-full flex items-center justify-center border-b-2 space-x-4 hover:border-secondary-blue hover:bg-gray-100 hover:text-black"
+  class="pl-4 h-full flex items-center justify-center border-b-2 space-x-2 hover:border-secondary-blue hover:bg-gray-100 hover:text-black"
   [routerLinkActive]="'border-secondary-blue bg-black text-secondary-blue'">
   <a
-    class="h-full w-full flex items-center justify-center pl-4"
-    [ngClass]="{ 'pr-4': type === NavigationType.MAIN }"
-    [routerLink]="route"
-    >{{ "icon " + label + ".java" }}</a
+    class="h-full flex items-center justify-center"
+    [ngClass]="{ 'pr-4': navItem?.navType === NavigationType.MAIN }"
+    [routerLink]="navItem?.route">
+    <img
+      class="mr-2 fill-accent stroke-accent"
+      width="16"
+      height="16"
+      ngSrc="assets/icons/{{ navItem?.fileInfo?.fileName }}.{{
+        navItem?.fileInfo?.fileExtension
+      }}"
+      alt="{{ navItem?.fileInfo?.altText }}" />
+    {{ navItem?.label + "." + navItem?.fileInfo?.fileType }}</a
   >
   <button
-    *ngIf="type === NavigationType.DYNAMIC"
+    *ngIf="navItem?.navType === NavigationType.DYNAMIC"
     class="pr-4 border-b-2 border-transparent flex items-center justify-center rounded-full w-4 h-4 text-gray-50 hover:text-black hover:bg-gray-100 text-base"
     aria-label="Close window">
     x
