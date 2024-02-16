@@ -1,9 +1,4 @@
-import {
-  Component,
-  ElementRef,
-  Renderer2,
-  ViewChild,
-} from "@angular/core";
+import { Component, ElementRef, Renderer2, ViewChild } from "@angular/core";
 
 @Component({
   selector: "pw-navigation",

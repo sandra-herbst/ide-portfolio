@@ -5,6 +5,7 @@ import { AppComponent } from "./app.component";
 import { HomeModule } from "./feature/home/home.module";
 import { CoreModule } from "./core/core.module";
 import { SharedModule } from "./shared/shared.module";
+import { DynamicNavigationComponent } from "./core/component/dynamic-navigation/dynamic-navigation.component";
 
 @NgModule({
   declarations: [AppComponent],
@@ -14,6 +15,7 @@ import { SharedModule } from "./shared/shared.module";
     SharedModule,
     HomeModule,
     AppRoutingModule,
+    DynamicNavigationComponent,
   ],
   providers: [],
   bootstrap: [AppComponent],

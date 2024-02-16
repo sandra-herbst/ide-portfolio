@@ -1,0 +1,16 @@
+<div
+  class="h-full flex items-center justify-center border-b-2 space-x-4 hover:border-secondary-blue hover:bg-gray-100 hover:text-black"
+  [routerLinkActive]="'border-secondary-blue bg-black text-secondary-blue'">
+  <a
+    class="h-full w-full flex items-center justify-center pl-4"
+    [ngClass]="{ 'pr-4': type === NavigationType.MAIN }"
+    [routerLink]="route"
+    >{{ "icon " + label + ".java" }}</a
+  >
+  <button
+    *ngIf="type === NavigationType.DYNAMIC"
+    class="pr-4 border-b-2 border-transparent flex items-center justify-center rounded-full w-4 h-4 text-gray-50 hover:text-black hover:bg-gray-100 text-base"
+    aria-label="Close window">
+    x
+  </button>
+</div>
