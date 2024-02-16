@@ -1,11 +1,11 @@
 import { Injectable } from "@angular/core";
 import { LogService } from "./log.service";
-import { Portfolio } from "../model/portfolio.model";
+import { Portfolio } from "../model/remote/portfolio.model";
 import { HttpClient } from "@angular/common/http";
 import { map, Observable } from "rxjs";
-import { About } from "../model/about.model";
-import { Experience } from "../model/experience.model";
-import { Project } from "../model/project.model";
+import { About } from "../model/remote/about.model";
+import { Experience } from "../model/remote/experience.model";
+import { Project } from "../model/remote/project.model";
 
 @Injectable()
 export class PortfolioService {

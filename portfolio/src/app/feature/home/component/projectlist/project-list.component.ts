@@ -1,5 +1,5 @@
 import { Component, Input } from "@angular/core";
-import { Project } from "../../../../core/model/project.model";
+import { Project } from "../../../../core/model/remote/project.model";
 
 @Component({
   selector: "pw-card-list",
