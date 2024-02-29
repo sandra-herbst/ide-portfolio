@@ -20,6 +20,7 @@ module.exports = {
         "secondary": {
           DEFAULT: "#ffffff",
           "blue": "#3673F1",
+          "dark-blue": "#2C436E",
         },
         "accent": {
           DEFAULT: "#CC7832",
@@ -28,6 +29,7 @@ module.exports = {
           50: "#65666d",
           100: "#3f4046",
           200: "#2B2C32",
+          300: "#25252c",
         },
         "black": "#1F1E25",
         "white": "#E1E1E1",

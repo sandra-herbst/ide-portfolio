@@ -1,8 +1,10 @@
 <aside
-  class="hidden h-full bg-gray-200 laptop:col-span-1 laptop:row-span-1 laptop:flex">
+  class="hidden h-full bg-gray-200 laptop:col-span-1 laptop:row-span-1 laptop:flex border-r-4 border-black"
+  [ngClass]="{ '': sideNavOpen }">
   <div
     class="flex flex-initial w-14 flex-col border-r-4 border-black overflow-hidden">
     <button
+      (click)="onNavigationToggleClick()"
       class="flex items-center justify-center p-2 bg-secondary-blue m-2 rounded">
       <img
         class=""
@@ -12,17 +14,20 @@
         alt="Open or close side navigation" />
     </button>
   </div>
-  <div class="laptop:flex-grow laptop:flex-1 border-r-4 border-black">
-    <div class="my-2 mx-4">
-      <p class="font-semibold">Project</p>
-      <nav class="mt-4">
-        <!-- button to close navigation folder -->
-        <li class="list-none">
-          <pw-side-navigation-folder
-            label="Portfolio"
-            (isClicked)="onChildClicked($event)"></pw-side-navigation-folder>
-        </li>
-      </nav>
-    </div>
+  <div
+    class="laptop:flex-grow laptop:flex-1"
+    [ngClass]="{ visible: sideNavOpen, invisible: !sideNavOpen }">
+    <p class="px-4 py-2 font-semibold border-b-2 border-gray-300">Project</p>
+    <nav class="mt-4 mx-4 my-2">
+      <!-- button to close navigation folder -->
+      <li class="list-none">
+        <pw-side-navigation-folder
+          label="Portfolio"
+          (isClicked)="onChildClick($event)"></pw-side-navigation-folder>
+        <pw-side-navigation-item
+          *ngFor="let item of mainNavItems"
+          [navItem]="item"></pw-side-navigation-item>
+      </li>
+    </nav>
   </div>
 </aside>

@@ -18,6 +18,7 @@ export class SideNavigationFolderComponent implements SideNavItemInterface {
     new EventEmitter<SideNavItemInterface>();
 
   constructor(private logger: LogService) {}
+
   // the arrow beside the folder has been clicked
   onArrowClick(): void {
     this.logger.log("onArrowClick");
