@@ -4,16 +4,16 @@ import { NgClass, NgIf, NgOptimizedImage } from "@angular/common";
 import {
   NavigationItem,
   NavigationType,
-} from "../../model/local/navigation-item.interface";
+} from "../../model/local/navigation-item.model";
 
 @Component({
-  selector: "pw-navigation-button",
+  selector: "pw-top-navigation-item",
   standalone: true,
   imports: [RouterLink, RouterLinkActive, NgClass, NgIf, NgOptimizedImage],
-  templateUrl: "./navigation-button.component.html",
-  styleUrl: "./navigation-button.component.css",
+  templateUrl: "./top-navigation-item.component.html",
+  styleUrl: "./top-navigation-item.component.css",
 })
-export class NavigationButtonComponent {
+export class TopNavigationItemComponent {
   @Input() navItem: NavigationItem | undefined;
   protected readonly NavigationType = NavigationType;
 }

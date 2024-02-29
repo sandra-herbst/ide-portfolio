@@ -1,4 +1,4 @@
-import { NavigationFileInfo } from "./file.interface";
+import { NavigationFileInfo } from "./file.model";
 
 export interface NavigationItem {
   label: string;

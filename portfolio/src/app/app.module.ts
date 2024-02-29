@@ -5,7 +5,8 @@ import { AppComponent } from "./app.component";
 import { HomeModule } from "./feature/home/home.module";
 import { CoreModule } from "./core/core.module";
 import { SharedModule } from "./shared/shared.module";
-import { DynamicNavigationComponent } from "./core/component/dynamic-navigation/dynamic-navigation.component";
+import { TopNavigationComponent } from "./core/component/top-navigation/top-navigation.component";
+import { SideNavigationComponent } from "./core/component/side-navigation/side-navigation.component";
 
 @NgModule({
   declarations: [AppComponent],
@@ -15,7 +16,8 @@ import { DynamicNavigationComponent } from "./core/component/dynamic-navigation/
     SharedModule,
     HomeModule,
     AppRoutingModule,
-    DynamicNavigationComponent,
+    TopNavigationComponent,
+    SideNavigationComponent,
   ],
   providers: [],
   bootstrap: [AppComponent],

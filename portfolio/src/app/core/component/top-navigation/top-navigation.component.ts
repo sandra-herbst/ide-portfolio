@@ -1,19 +1,19 @@
 import { Component, OnDestroy, OnInit } from "@angular/core";
 import { NgForOf } from "@angular/common";
 import { RouterLink } from "@angular/router";
-import { NavigationButtonComponent } from "../navigation-button/navigation-button.component";
+import { TopNavigationItemComponent } from "../top-navigation-item/top-navigation-item.component";
 import { NavigationService } from "../../service/navigation.service";
-import { NavigationItem } from "../../model/local/navigation-item.interface";
+import { NavigationItem } from "../../model/local/navigation-item.model";
 import { Subscription } from "rxjs";
 
 @Component({
-  selector: "pw-dynamic-navigation",
+  selector: "pw-top-navigation",
   standalone: true,
-  imports: [NgForOf, RouterLink, NavigationButtonComponent],
-  templateUrl: "./dynamic-navigation.component.html",
-  styleUrl: "./dynamic-navigation.component.css",
+  imports: [NgForOf, RouterLink, TopNavigationItemComponent],
+  templateUrl: "./top-navigation.component.html",
+  styleUrl: "./top-navigation.component.css",
 })
-export class DynamicNavigationComponent implements OnInit, OnDestroy {
+export class TopNavigationComponent implements OnInit, OnDestroy {
   private mainNavItems: NavigationItem[] = [];
   private dynamicNavItems: NavigationItem[] = [];
   navItems: NavigationItem[] = [];

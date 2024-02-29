@@ -3,9 +3,9 @@ import { NavigationEnd, Router } from "@angular/router";
 import {
   NavigationItem,
   NavigationType,
-} from "../model/local/navigation-item.interface";
+} from "../model/local/navigation-item.model";
 import { BehaviorSubject, filter, map } from "rxjs";
-import { FileType, NavigationFileInfo } from "../model/local/file.interface";
+import { FileType, NavigationFileInfo } from "../model/local/file.model";
 
 @Injectable({
   providedIn: "root",

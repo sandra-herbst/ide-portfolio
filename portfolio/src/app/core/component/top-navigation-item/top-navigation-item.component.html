@@ -1,12 +1,12 @@
 <div
-  class="pl-4 h-full flex items-center justify-center border-b-2 space-x-2 hover:border-secondary-blue hover:bg-gray-100 hover:text-black"
+  class="h-full flex items-center justify-center border-b-2 space-x-2 hover:border-secondary-blue hover:bg-gray-100 hover:text-black"
   [routerLinkActive]="'border-secondary-blue bg-black text-secondary-blue'">
   <a
-    class="h-full flex items-center justify-center"
+    class="pl-4 h-full flex items-center justify-center"
     [ngClass]="{ 'pr-4': navItem?.navType === NavigationType.MAIN }"
     [routerLink]="navItem?.route">
     <img
-      class="mr-2 fill-accent stroke-accent"
+      class="mr-2"
       width="16"
       height="16"
       ngSrc="assets/icons/{{ navItem?.fileInfo?.fileName }}.{{
