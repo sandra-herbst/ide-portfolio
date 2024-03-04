@@ -1,35 +1,17 @@
-import {
-  Component,
-  ElementRef,
-  OnInit,
-  Renderer2,
-  ViewChild,
-} from "@angular/core";
-import { ActivatedRoute } from "@angular/router";
+import { Component, ElementRef, Renderer2, ViewChild } from "@angular/core";
 
 @Component({
   selector: "pw-navigation",
   templateUrl: "./navigation.component.html",
   styleUrls: ["./navigation.component.css"],
 })
-export class NavigationComponent implements OnInit {
+export class NavigationComponent {
   navItems: string[] = ["About", "Experiences", "Projects"];
   menuOpen: boolean = false;
   @ViewChild("sidenav") sideNav!: ElementRef;
   private outsideClickListener: (() => void) | undefined;
 
-  constructor(
-    private renderer: Renderer2,
-    private activatedRoute: ActivatedRoute
-  ) {}
-
-  ngOnInit(): void {
-    this.activatedRoute.fragment.subscribe((id: string | null): void => {
-      if (id) {
-        this.scrollToFragment(id);
-      }
-    });
-  }
+  constructor(private renderer: Renderer2) {}
 
   onHamburgerMenuButtonClicked(event: MouseEvent): void {
     event.stopPropagation();
@@ -38,10 +20,6 @@ export class NavigationComponent implements OnInit {
     this.menuOpen
       ? this.addMenuDismissListener()
       : this.removeMenuDismissListener();
-  }
-
-  private scrollToFragment(fragmentId: string): void {
-    document.getElementById(fragmentId)?.scrollIntoView({ behavior: "smooth" });
   }
 
   private onMenuDismissedClicked(event: MouseEvent): void {

@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { Project } from "../../../../core/model/project.model";
+import { Project } from "../../../../core/model/remote/project.model";
 import { PortfolioService } from "../../../../core/service/portfolio.service";
 import { LogService } from "../../../../core/service/log.service";
 

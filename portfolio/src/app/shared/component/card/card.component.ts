@@ -1,6 +1,6 @@
 import { Component, Input } from "@angular/core";
-import { Tag } from "../../../core/model/tag.model";
-import { Image } from "../../../core/model/image.model";
+import { Tag } from "../../../core/model/remote/tag.model";
+import { Image } from "../../../core/model/remote/image.model";
 
 @Component({
   selector: "pw-card",

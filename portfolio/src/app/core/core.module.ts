@@ -5,11 +5,12 @@ import { PortfolioService } from "./service/portfolio.service";
 import { LogService } from "./service/log.service";
 import { HttpClientModule } from "@angular/common/http";
 import { HeaderComponent } from "./component/header/header.component";
+import { NavigationService } from "./service/navigation.service";
 
 @NgModule({
   declarations: [PageNotFoundComponent, HeaderComponent],
   imports: [CommonModule, HttpClientModule],
-  providers: [LogService, PortfolioService],
+  providers: [LogService, PortfolioService, NavigationService],
   exports: [HeaderComponent],
 })
 export class CoreModule {

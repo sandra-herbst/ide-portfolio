@@ -3,7 +3,7 @@
 
 :root {
   --primary: #2B2C32;
-  --secondary: #4b4a56;
+  --secondary: #65666d;
 }
 
 /* Firefox */
@@ -52,6 +52,14 @@
   }
 
   p {
+    @apply font-sans text-white text-sm text-justify;
+  }
+
+  a {
+    @apply font-sans text-white text-sm text-justify;
+  }
+
+  button {
     @apply font-sans text-white text-sm text-justify;
   }
 }

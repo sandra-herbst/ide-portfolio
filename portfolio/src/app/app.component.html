@@ -1,19 +1,15 @@
 <div
-  class="h-screen gap-y-1 max-laptop:flex max-laptop:flex-col laptop:grid laptop:grid-rows-[48px_1fr_48px] laptop:grid-cols-[15vw_80vw] laptop:overflow-hidden">
+  class="h-screen gap-y-1 max-laptop:flex max-laptop:flex-col laptop:grid laptop:grid-rows-[48px_1fr_48px] laptop:grid-cols-[1fr_80vw] laptop:overflow-hidden">
   <!-- top with navigation -->
   <pw-header class="laptop:col-span-4 laptop:row-span-1"></pw-header>
 
   <!-- navigation -->
-  <aside
-    class="hidden bg-gray-200 laptop:col-span-1 laptop:row-span-1 laptop:flex">
-    <div class="border-r-4 border-black w-12">project</div>
-    <nav class="border-r-4 border-black laptop:flex-grow">navigation</nav>
-  </aside>
+  <pw-side-navigation></pw-side-navigation>
 
   <!-- pages that change with navigation click -->
   <main
     class="laptop:col-span-2 laptop:row-span-1 laptop:flex laptop:flex-col laptop:min-h-full mt-12 laptop:mt-0">
-    <nav class="bg-gray-200 h-12 laptop:flex">navigation scroll</nav>
+    <pw-top-navigation></pw-top-navigation>
     <div class="laptop:flex-grow px-4 pt-4 pb-8 laptop:p-8 overflow-y-auto">
       <router-outlet></router-outlet>
     </div>
