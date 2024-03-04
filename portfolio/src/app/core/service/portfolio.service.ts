@@ -6,15 +6,25 @@ import { map, Observable } from "rxjs";
 import { About } from "../model/remote/about.model";
 import { Experience } from "../model/remote/experience.model";
 import { Project } from "../model/remote/project.model";
+import {
+  NavigationItem,
+  NavigationType,
+} from "../model/local/navigation-item.model";
+import { FileType } from "../model/local/file.model";
 
 @Injectable()
 export class PortfolioService {
   private dataUrl: string = "assets/data/portfolio.json";
+  private portfolioData: Portfolio | undefined;
 
   constructor(
     private logger: LogService,
     private http: HttpClient
-  ) {}
+  ) {
+    this.http.get<Portfolio>(this.dataUrl).subscribe(data => {
+      this.portfolioData = data;
+    });
+  }
 
   private getData(callback: (data: Portfolio) => void): Observable<any> {
     return this.http
@@ -36,5 +46,27 @@ export class PortfolioService {
 
   getProjects(): Observable<Project[]> {
     return this.getData(data => data.projects);
+  }
+
+  getProjectById(id: string): Observable<Project> {
+    return this.getData(data =>
+      data.projects.find(project => {
+        return project.id == id;
+      })
+    );
+  }
+
+  getNavigationItemFromProject(project: Project): NavigationItem {
+    return {
+      label: project.title,
+      route: `/projects/${project.id}`,
+      navType: NavigationType.DYNAMIC,
+      fileInfo: {
+        fileType: FileType.JSON,
+        fileName: "json_icon",
+        fileExtension: "svg",
+        altText: "Json file icon",
+      },
+    };
   }
 }

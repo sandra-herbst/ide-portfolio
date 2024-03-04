@@ -1,8 +1,9 @@
 <div
-  class="h-full flex items-center justify-center border-b-2 space-x-2 hover:border-secondary-blue hover:bg-gray-100 hover:text-black"
-  [routerLinkActive]="'border-secondary-blue bg-black text-secondary-blue'">
+  class="pl-3 pr-2 h-full flex items-center justify-center border-b-2 space-x-2 hover:border-secondary-blue hover:bg-gray-100 hover:text-black"
+  [routerLinkActive]="'border-secondary-blue bg-black text-secondary-blue'"
+  [routerLinkActiveOptions]="{ exact: true }">
   <a
-    class="pl-4 h-full flex items-center justify-center"
+    class="h-full flex items-center justify-center"
     [ngClass]="{ 'pr-4': navItem?.navType === NavigationType.MAIN }"
     [routerLink]="navItem?.route">
     <img
@@ -17,8 +18,13 @@
   >
   <button
     *ngIf="navItem?.navType === NavigationType.DYNAMIC"
-    class="pr-4 border-b-2 border-transparent flex items-center justify-center rounded-full w-4 h-4 text-gray-50 hover:text-black hover:bg-gray-100 text-base"
-    aria-label="Close window">
-    x
+    (click)="onRemoveTabClick()"
+    class="mb-0.5 flex items-center justify-center rounded-full text-gray-50 hover:text-black hover:bg-black text-base">
+    <img
+      class="m-1"
+      width="14"
+      height="14"
+      ngSrc="assets/icons/close_icon.svg"
+      alt="Close window" />
   </button>
 </div>

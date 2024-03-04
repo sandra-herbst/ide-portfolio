@@ -1,23 +1,42 @@
-<div
-  class="flex justify-start items-center rounded w-full py-0.5"
-  [ngClass]="{ 'bg-secondary-blue': active }">
-  <button class="inline-block p-2" (click)="onArrowClick()">
-    <img
-      class=""
-      width="7"
-      height="10"
-      ngSrc="assets/icons/arrow-right.svg"
-      alt="Open or close side navigation" />
-  </button>
-  <button
-    class="flex items-center space-x-2 w-full h-full"
-    (click)="onBodyClick()">
-    <img
-      class=""
-      width="20"
-      height="16"
-      ngSrc="assets/icons/folder-filled_icon.svg"
-      alt="Folder icon" />
-    <p class="font-semibold">{{ label }}</p>
-  </button>
+<div class="flex flex-col">
+  <div class="flex justify-start items-center rounded w-full py-1">
+    <button
+      class="inline-block pr-1"
+      (click)="onArrowClick()"
+      aria-label="Close or open navigation">
+      <img
+        *ngIf="isExpanded"
+        width="24"
+        height="24"
+        ngSrc="assets/icons/chevron_down.svg"
+        alt="Arrow down" />
+      <img
+        *ngIf="!isExpanded"
+        width="24"
+        height="24"
+        ngSrc="assets/icons/chevron_right.svg"
+        alt="Arrow right" />
+    </button>
+    <button
+      class="flex items-center space-x-2 w-full h-full"
+      (click)="onBodyClick()">
+      <img
+        class=""
+        width="20"
+        height="16"
+        ngSrc="assets/icons/folder-filled_icon.svg"
+        alt="Folder icon" />
+      <p>{{ label }}</p>
+    </button>
+  </div>
+  <ul
+    class="overflow-hidden transition-[height] h-full"
+    [ngClass]="{
+      'animate-fade-out-up h-0': !isExpanded,
+      'animate-fade-in-down': isExpanded
+    }">
+    <pw-side-navigation-item
+      *ngFor="let item of items"
+      [navItem]="item"></pw-side-navigation-item>
+  </ul>
 </div>

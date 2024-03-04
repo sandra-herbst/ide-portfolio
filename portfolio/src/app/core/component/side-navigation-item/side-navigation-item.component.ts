@@ -1,7 +1,12 @@
 import { Component, Input } from "@angular/core";
-import { NavigationItem } from "../../model/local/navigation-item.model";
+import {
+  NavigationItem,
+  NavigationType,
+} from "../../model/local/navigation-item.model";
 import { NgClass, NgOptimizedImage } from "@angular/common";
-import {RouterLink, RouterLinkActive} from "@angular/router";
+import { RouterLink, RouterLinkActive } from "@angular/router";
+import { NavigationService } from "../../service/navigation.service";
+import { LogService } from "../../service/log.service";
 
 @Component({
   selector: "pw-side-navigation-item",
@@ -12,4 +17,15 @@ import {RouterLink, RouterLinkActive} from "@angular/router";
 })
 export class SideNavigationItemComponent {
   @Input() navItem: NavigationItem | undefined;
+
+  constructor(
+    private navService: NavigationService,
+    private logger: LogService
+  ) {}
+
+  onLinkClick(): void {
+    if (this.navItem && this.navItem.navType == NavigationType.DYNAMIC) {
+      this.navService.addDynamicNavItem(this.navItem);
+    }
+  }
 }

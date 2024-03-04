@@ -60,7 +60,7 @@ export class NavigationService {
   }
 
   addDynamicNavItem(item: NavigationItem): void {
-    if (!this.dynamicNavItems.some(dynItem => item === dynItem)) {
+    if (!this.dynamicNavItems.some(dynItem => item.route === dynItem.route)) {
       this.dynamicNavItems.push(item);
       this.dynamicNavItems$.next([...this.dynamicNavItems]);
     }
@@ -68,9 +68,26 @@ export class NavigationService {
 
   removeDynamicNavItem(item: NavigationItem): void {
     this.dynamicNavItems = this.dynamicNavItems.filter(
-      dynItem => item === dynItem
+      dynItem => item.route !== dynItem.route
     );
     this.dynamicNavItems$.next([...this.dynamicNavItems]);
+
+    this.navigateToAvailableRoute(item);
+  }
+
+  private navigateToAvailableRoute(removedItem: NavigationItem): void {
+    // Adjust current route if tab has been closed & was open at that time
+    let route;
+    if (this.currentRoute === removedItem.route) {
+      if (this.dynamicNavItems.length > 0) {
+        let index: number = this.dynamicNavItems.length - 1;
+        route = this.dynamicNavItems[index].route;
+      } else {
+        let index: number = this.mainNavigationItems.length - 1;
+        route = this.mainNavigationItems[index].route;
+      }
+      this.router.navigate([route]).then();
+    }
   }
 
   getMainNavItems(): NavigationItem[] {

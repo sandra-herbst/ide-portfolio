@@ -2,6 +2,8 @@
   class="px-2 py-1 my-0.5 pl-7 flex justify-start items-center rounded w-full h-full"
   [routerLink]="navItem?.route"
   [routerLinkActive]="'border-secondary-dark-blue bg-secondary-dark-blue'"
+  [routerLinkActiveOptions]="{ exact: true }"
+  (click)="onLinkClick()"
   [ngClass]="{ 'bg-secondary-blue': false }">
   <img
     class="mr-2"
