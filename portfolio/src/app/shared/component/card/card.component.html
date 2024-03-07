@@ -1,25 +1,25 @@
 <div
-  [ngClass]="[backgroundColorClass, widthClass, heightClass]"
-  class="rounded-xl shadow-xl p-5 font-inter text-xs laptop:text-sm desktop:text-base">
-  <h1>
-    {{ title }}
-  </h1>
-  <h2 *ngIf="subtitle">
-    {{ subtitle }}
-  </h2>
-  <ng-container *ngIf="!!this; else emptyValueTemplate">
-    <div>
+  class="flex flex-col space-y-4 rounded-xl shadow-xl bg-gray-300 w-[11.5rem] h-80 tablet:w-60 tablet:h-96 desktop:w-72 hover:bg-secondary-active-blue laptop:hover:shadow-2xl laptop:transition laptop:hover:scale-105 laptop:ease-in-out laptop:duration-300"
+  (click)="onClick()">
+  <div class="relative w-full h-30 tablet-20">
+    <img
+      class="w-full rounded-t-xl"
+      src="{{ images[0].imageUrl }}"
+      alt="{{ images[0].altText }}" />
+  </div>
+
+  <div class="mx-4 pb-4 flex flex-col items-start justify-between h-full">
+    <h2 class="font-bold font-mono">
+      {{ title }}
+    </h2>
+    <h5 *ngIf="subtitle" class="pt-1 text-accent">
+      {{ subtitle }}
+    </h5>
+    <p class="pt-4 text-gray-50">
       {{ description }}
+    </p>
+    <div class="flex flex-wrap grow space-x-2 pt-4">
+      <pw-tag *ngFor="let tag of tags" label="{{ tag.name }}"></pw-tag>
     </div>
-  </ng-container>
-  <ng-container *ngIf="tags.length > 0">
-    <div class="flex flex-wrap grow">
-      <div *ngFor="let tag of tags">
-        <pw-tag [backgroundColorClass]="tagBackgroundColorClass">{{
-          tag.name
-        }}</pw-tag>
-      </div>
-    </div>
-  </ng-container>
-  <ng-template #emptyValueTemplate> </ng-template>
+  </div>
 </div>

@@ -6,7 +6,6 @@ import { LogService } from "../../../../core/service/log.service";
 @Component({
   selector: "pw-projects",
   templateUrl: "./projects.component.html",
-  styleUrls: ["./projects.component.css"],
 })
 export class ProjectsComponent implements OnInit {
   projectData: Project[] = [];
@@ -16,7 +15,7 @@ export class ProjectsComponent implements OnInit {
     private logger: LogService
   ) {}
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.portfolioService.getProjects().subscribe(data => {
       this.projectData = data;
     });

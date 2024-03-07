@@ -5,7 +5,7 @@
     "name": "Sandra Herbst",
     "contactEmail": "sandraherbst2000@gmail.com",
     "jobTitle": "Software Engineer",
-    "description": "I'm a passionate and intrinsically motivated software developer with a Bachelor of Science degree in Media Informatics. At 19 years old, I've dedicated myself to the craft of coding, with a focus on delivering top-notch code quality. I believe in the importance of writing clean, efficient code that not only solves problems but also sets new standards for excellence in software development."
+    "description": "I'm a passionate and intrinsically motivated software developer with a Bachelor of Science degree in Media Informatics. I believe in the importance of writing clean, efficient code that not only solves problems but also sets new standards for excellence in software development."
   },
   "experiences": [
     {
@@ -41,11 +41,15 @@
     {
       "id": "0",
       "images": [
+        {
+          "id": "0",
+          "altText": "image",
+          "imageUrl": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=600"
+        }
       ],
       "title": "Project0",
       "subtitle": "",
       "description": "This is a project1.",
-      "url": "",
       "tags": [
         {
           "id": "0",
@@ -56,11 +60,15 @@
     {
       "id": "1",
       "images": [
+        {
+          "id": "0",
+          "altText": "image",
+          "imageUrl": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=600"
+        }
       ],
       "title": "Project1",
       "subtitle": "Company1",
       "description": "This is a project1.",
-      "url": "",
       "tags": [
         {
           "id": "1",
@@ -75,11 +83,15 @@
     {
       "id": "2",
       "images": [
+        {
+          "id": "0",
+          "altText": "image",
+          "imageUrl": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=600"
+        }
       ],
       "title": "Project0",
       "subtitle": "",
       "description": "This is a project1.",
-      "url": "",
       "tags": [
         {
           "id": "0",
@@ -90,11 +102,15 @@
     {
       "id": "3",
       "images": [
+        {
+          "id": "0",
+          "altText": "image",
+          "imageUrl": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=600"
+        }
       ],
       "title": "Project1",
       "subtitle": "Company1",
       "description": "This is a project1.",
-      "url": "",
       "tags": [
         {
           "id": "1",
@@ -109,11 +125,15 @@
     {
       "id": "4",
       "images": [
+        {
+          "id": "0",
+          "altText": "image",
+          "imageUrl": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=600"
+        }
       ],
       "title": "Project0",
       "subtitle": "",
       "description": "This is a project1.",
-      "url": "",
       "tags": [
         {
           "id": "0",
@@ -124,11 +144,15 @@
     {
       "id": "5",
       "images": [
+        {
+          "id": "0",
+          "altText": "image",
+          "imageUrl": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=600"
+        }
       ],
       "title": "Project1",
       "subtitle": "Company1",
       "description": "This is a project1.",
-      "url": "",
       "tags": [
         {
           "id": "1",

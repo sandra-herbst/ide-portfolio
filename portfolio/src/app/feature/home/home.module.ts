@@ -7,6 +7,7 @@ import { ExperiencesComponent } from "./component/experiences/experiences.compon
 import { ProjectsComponent } from "./component/projects/projects.component";
 import { NavigationComponent } from "../../core/component/navigation/navigation.component";
 import { ProjectListComponent } from "./component/projectlist/project-list.component";
+import {TextButtonComponent} from "../../shared/component/text-button/text-button.component";
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { ProjectListComponent } from "./component/projectlist/project-list.compo
     ProjectsComponent,
     ProjectListComponent,
   ],
-  imports: [CommonModule, SharedModule, RouterLink, NgOptimizedImage],
+    imports: [CommonModule, SharedModule, RouterLink, NgOptimizedImage, TextButtonComponent],
   exports: [NavigationComponent],
 })
 export class HomeModule {}

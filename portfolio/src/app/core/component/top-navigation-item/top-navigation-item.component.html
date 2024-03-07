@@ -1,6 +1,8 @@
 <div
-  class="pl-3 pr-2 h-full flex items-center justify-center border-b-2 space-x-2 hover:border-secondary-blue hover:bg-gray-100 hover:text-black"
-  [routerLinkActive]="'border-secondary-blue bg-black text-secondary-blue'"
+  class="pl-3 pr-2 h-full flex items-center justify-center border-b-4 tablet:border-b-2 hover:bg-gray-100 hover:text-black"
+  [routerLinkActive]="
+    'border-b-4 tablet:border-b-2 hover:secondary-blue border-secondary-blue bg-black text-secondary-blue'
+  "
   [routerLinkActiveOptions]="{ exact: true }">
   <a
     class="h-full flex items-center justify-center"

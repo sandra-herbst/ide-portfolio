@@ -1,7 +1,4 @@
-<div
-  [ngClass]="[gridGapClass, paddingClass]"
-  class="grid grid-cols-2 laptop:{{ gridColumnClass }}
-  desktop:{{ gridColumnClass }}">
+<div class="flex flex-wrap justify-start gap-x-4 gap-y-8 laptop:gap-8 w-full">
   <pw-card
     *ngFor="let project of projects"
     [title]="project.title"
@@ -9,7 +6,5 @@
     [description]="project.description"
     [tags]="project.tags"
     [images]="project.images"
-    [url]="project.url"
-    [widthClass]="cardWidthClass"
-    [heightClass]="cardHeightClass"></pw-card>
+    [url]="'/projects/' + project.id"></pw-card>
 </div>
