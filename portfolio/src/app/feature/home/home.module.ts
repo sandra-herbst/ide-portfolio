@@ -1,5 +1,5 @@
 import { NgModule } from "@angular/core";
-import { CommonModule } from "@angular/common";
+import {CommonModule, NgOptimizedImage} from "@angular/common";
 import { SharedModule } from "../../shared/shared.module";
 import { RouterLink } from "@angular/router";
 import { AboutComponent } from "./component/about/about.component";
@@ -16,7 +16,7 @@ import { ProjectListComponent } from "./component/projectlist/project-list.compo
     ProjectsComponent,
     ProjectListComponent,
   ],
-  imports: [CommonModule, SharedModule, RouterLink],
+  imports: [CommonModule, SharedModule, RouterLink, NgOptimizedImage],
   exports: [NavigationComponent],
 })
 export class HomeModule {}

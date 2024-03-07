@@ -2,5 +2,13 @@
   <p class="mb-2 font-mono text-accent">&#64;About</p>
   <h1>{{ about?.name }}</h1>
   <h5 class="mb-4 font-mono text-accent">{{ about?.jobTitle }}</h5>
-  <p class="max-w-3xl">{{ about?.description }}</p>
+  <p class="max-w-2xl">{{ about?.description }}</p>
+  <div class="relative h-screen w-full">
+    <img
+      class="absolute w-full h-full object-cover -right-96 -top-52 filter blur rounded-full"
+      ngSrc="assets/images/code.png"
+      alt="Background"
+      height="1161"
+      width="1020" />
+  </div>
 </section>
