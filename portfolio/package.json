@@ -8,8 +8,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "lint": "ng lint --fix",
-    "prepare": "cd .. && husky install .\\portfolio\\.husky && cd ./portfolio && npx husky add .husky/pre-commit \"cd portfolio && npm run lint\""
+    "lint": "ng lint --fix"
   },
   "private": true,
   "dependencies": {
