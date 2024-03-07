@@ -1,6 +1,7 @@
 import { Component, Input } from "@angular/core";
 import { Tag } from "../../../core/model/remote/tag.model";
 import { Image } from "../../../core/model/remote/image.model";
+import { Router } from "@angular/router";
 
 @Component({
   selector: "pw-card",
@@ -25,17 +26,11 @@ export class CardComponent {
   @Input()
   url?: string;
 
-  // TODO: PL/PS-1 Change default card color
-  @Input()
-  backgroundColorClass: string = "bg-primary-color-pink";
+  constructor(private router: Router) {}
 
-  // TODO: PL/PS-1 Change default tag color
-  @Input()
-  tagBackgroundColorClass: string = "bg-blue-500";
-
-  @Input()
-  widthClass: string = "w-60";
-
-  @Input()
-  heightClass: string = "h-64";
+  onClick(): void {
+    if (this.url) {
+      this.router.navigate([this.url]).then();
+    }
+  }
 }
