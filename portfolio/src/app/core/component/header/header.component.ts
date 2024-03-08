@@ -9,7 +9,7 @@ import { LogService } from "../../service/log.service";
 export class HeaderComponent {
   constructor(private logger: LogService) {}
 
-  onHamburgerMenuButtonClicked($event: MouseEvent) {
+  onHamburgerMenuButtonClicked($event: MouseEvent): void {
     this.logger.log($event.button.toString());
   }
 }

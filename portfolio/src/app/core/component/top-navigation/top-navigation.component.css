@@ -1,8 +1,1 @@
-.scrollbar-hidden {
-    scrollbar-width: none; /* Standard */
-    -ms-overflow-style: none; /* Internet Explorer 10+ */
-}
 
-.scrollbar-hidden::-webkit-scrollbar {
-    display: none; /* Safari und Chrome */
-}
