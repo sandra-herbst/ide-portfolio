@@ -1,12 +1,15 @@
 <div
-  class="pl-3 pr-2 h-full flex items-center justify-center border-b-4 tablet:border-b-2 hover:bg-gray-100 hover:text-black"
+  class="pl-4 h-full flex items-center justify-center space-x-4 tablet:space-x-2 border-b-4 tablet:border-b-2 hover:bg-gray-100 hover:text-black"
+  [ngClass]="{
+    'pr-2': navItem?.navType === NavigationType.DYNAMIC,
+    'pr-6': navItem?.navType === NavigationType.MAIN
+  }"
   [routerLinkActive]="
-    'border-b-4 tablet:border-b-2 hover:secondary-blue border-secondary-blue bg-black text-secondary-blue'
+    'hover:secondary-blue border-secondary-blue bg-black text-secondary-blue'
   "
   [routerLinkActiveOptions]="{ exact: true }">
   <a
     class="h-full flex items-center justify-center"
-    [ngClass]="{ 'pr-4': navItem?.navType === NavigationType.MAIN }"
     [routerLink]="navItem?.route">
     <img
       class="mr-2"
@@ -18,15 +21,17 @@
       alt="{{ navItem?.fileInfo?.altText }}" />
     {{ navItem?.label + "." + navItem?.fileInfo?.fileType }}</a
   >
-  <button
+  <div
     *ngIf="navItem?.navType === NavigationType.DYNAMIC"
-    (click)="onRemoveTabClick()"
-    class="mb-0.5 flex items-center justify-center rounded-full text-gray-50 hover:text-black hover:bg-black text-base">
-    <img
-      class="m-1"
-      width="14"
-      height="14"
-      ngSrc="assets/icons/close_icon.svg"
-      alt="Close window" />
-  </button>
+    class="rounded-full hover:bg-black p-1">
+    <button
+      (click)="onRemoveTabClick()"
+      class="flex items-center justify-center h-4 w-4">
+      <img
+        width="14"
+        height="14"
+        ngSrc="assets/icons/close_icon.svg"
+        alt="Close window" />
+    </button>
+  </div>
 </div>
