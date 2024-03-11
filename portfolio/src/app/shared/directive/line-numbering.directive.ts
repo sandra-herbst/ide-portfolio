@@ -1,9 +1,4 @@
-import {
-  Directive,
-  ElementRef,
-  OnInit,
-  Renderer2,
-} from "@angular/core";
+import { Directive, ElementRef, OnInit, Renderer2 } from "@angular/core";
 import { LogService } from "../../core/service/log.service";
 import { NavigationService } from "../../core/service/navigation.service";
 
