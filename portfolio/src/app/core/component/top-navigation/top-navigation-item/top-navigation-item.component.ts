@@ -4,8 +4,8 @@ import { NgClass, NgIf, NgOptimizedImage } from "@angular/common";
 import {
   NavigationItem,
   NavigationType,
-} from "../../model/local/navigation-item.model";
-import { NavigationService } from "../../service/navigation.service";
+} from "../../../model/local/navigation-item.model";
+import { NavigationService } from "../../../service/navigation.service";
 
 @Component({
   selector: "pw-top-navigation-item",

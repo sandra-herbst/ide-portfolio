@@ -8,10 +8,16 @@
 
   <!-- pages that change with navigation click -->
   <main
-    class="laptop:col-span-1 laptop:row-span-1 laptop:flex laptop:flex-col laptop:min-h-full laptop:mt-0 w-full">
+    class="laptop:col-span-1 laptop:row-span-1 laptop:flex laptop:flex-col laptop:min-h-full w-full">
     <pw-top-navigation></pw-top-navigation>
-    <div class="px-4 pt-4 pb-8 tablet:p-8 overflow-y-auto w-full">
-      <router-outlet></router-outlet>
+    <div
+      class="tablet:grid tablet:grid-cols-[3rem_1fr] overflow-y-auto overflow-x-hidden h-full w-full">
+      <table
+        class="hidden tablet:flex tablet:flex-col tablet:flex-grow tablet:justify-start tablet:items-end border-r-2 border-gray-200 pt-8 font-mono pr-4 h-full"
+        pwLineNumberingDirective></table>
+      <div class="px-4 pb-8 pt-4 tablet:p-8 h-full">
+        <router-outlet></router-outlet>
+      </div>
     </div>
   </main>
 

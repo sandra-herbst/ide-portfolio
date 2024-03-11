@@ -8,26 +8,27 @@
         *ngIf="isExpanded"
         width="24"
         height="24"
-        ngSrc="assets/icons/chevron_down.svg"
+        ngSrc="../../../../../assets/icons/chevron_down.svg"
         alt="Arrow down" />
       <img
         *ngIf="!isExpanded"
         width="24"
         height="24"
-        ngSrc="assets/icons/chevron_right.svg"
+        ngSrc="../../../../../assets/icons/chevron_right.svg"
         alt="Arrow right" />
     </button>
-    <button
-      class="flex items-center space-x-2 w-full h-full"
-      (click)="onBodyClick()">
+    <div
+      class="flex items-center space-x-2 w-full h-full">
       <img
         class=""
         width="20"
         height="16"
-        ngSrc="assets/icons/folder-filled_icon.svg"
+        ngSrc="../../../../../assets/icons/folder-filled_icon.svg"
         alt="Folder icon" />
-      <p>{{ label }}</p>
-    </button>
+      <div class="font-sans text-white text-sm">
+        {{ label }}
+      </div>
+    </div>
   </div>
   <ul
     class="overflow-hidden transition-[height] h-full"

@@ -2,9 +2,9 @@ import { Component, OnInit } from "@angular/core";
 import { NgClass, NgForOf, NgIf, NgOptimizedImage } from "@angular/common";
 import { NavigationService } from "../../service/navigation.service";
 import { NavigationItem } from "../../model/local/navigation-item.model";
-import { SideNavigationFolderComponent } from "../side-navigation-folder/side-navigation-folder.component";
+import { SideNavigationFolderComponent } from "./side-navigation-folder/side-navigation-folder.component";
 import { LogService } from "../../service/log.service";
-import { SideNavigationItemComponent } from "../side-navigation-item/side-navigation-item.component";
+import { SideNavigationItemComponent } from "./side-navigation-item/side-navigation-item.component";
 import { PortfolioService } from "../../service/portfolio.service";
 
 @Component({

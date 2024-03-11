@@ -7,18 +7,22 @@ import { CoreModule } from "./core/core.module";
 import { SharedModule } from "./shared/shared.module";
 import { TopNavigationComponent } from "./core/component/top-navigation/top-navigation.component";
 import { SideNavigationComponent } from "./core/component/side-navigation/side-navigation.component";
+import {LineNumberingDirective} from "./shared/directive/line-numbering.directive";
+import {HeightChangeDirective} from "./shared/directive/height-change.directive";
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [
-    BrowserModule,
-    CoreModule,
-    SharedModule,
-    HomeModule,
-    AppRoutingModule,
-    TopNavigationComponent,
-    SideNavigationComponent,
-  ],
+    imports: [
+        BrowserModule,
+        CoreModule,
+        SharedModule,
+        HomeModule,
+        AppRoutingModule,
+        TopNavigationComponent,
+        SideNavigationComponent,
+        LineNumberingDirective,
+        HeightChangeDirective,
+    ],
   providers: [],
   bootstrap: [AppComponent],
 })
