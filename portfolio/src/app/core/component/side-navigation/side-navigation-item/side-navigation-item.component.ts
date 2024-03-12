@@ -2,11 +2,11 @@ import { Component, Input } from "@angular/core";
 import {
   NavigationItem,
   NavigationType,
-} from "../../model/local/navigation-item.model";
+} from "../../../model/local/navigation-item.model";
 import { NgClass, NgOptimizedImage } from "@angular/common";
 import { RouterLink, RouterLinkActive } from "@angular/router";
-import { NavigationService } from "../../service/navigation.service";
-import { LogService } from "../../service/log.service";
+import { NavigationService } from "../../../service/navigation.service";
+import { LogService } from "../../../service/log.service";
 
 @Component({
   selector: "pw-side-navigation-item",

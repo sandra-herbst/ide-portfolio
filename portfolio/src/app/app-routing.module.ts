@@ -4,7 +4,7 @@ import { PageNotFoundComponent } from "./core/component/page-not-found/page-not-
 import { AboutComponent } from "./feature/home/component/about/about.component";
 import { ExperiencesComponent } from "./feature/home/component/experiences/experiences.component";
 import { ProjectsComponent } from "./feature/home/component/projects/projects.component";
-import { ProjectDetailsComponent } from "./feature/project-details/project-details.component";
+import { ProjectDetailsComponent } from "./feature/home/component/projects/project-details/project-details.component";
 
 const routes: Routes = [
   { path: "", redirectTo: "/about", pathMatch: "full" },

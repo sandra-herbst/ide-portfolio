@@ -53,7 +53,11 @@
   }
 
   p {
-    @apply font-sans text-white text-sm;
+    @apply font-sans text-gray-0 text-sm;
+  }
+
+  td {
+    @apply text-white text-sm;
   }
 
   a {

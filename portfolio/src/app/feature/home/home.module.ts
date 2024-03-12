@@ -6,7 +6,7 @@ import { AboutComponent } from "./component/about/about.component";
 import { ExperiencesComponent } from "./component/experiences/experiences.component";
 import { ProjectsComponent } from "./component/projects/projects.component";
 import { NavigationComponent } from "../../core/component/navigation/navigation.component";
-import { ProjectListComponent } from "./component/projectlist/project-list.component";
+import { ProjectListComponent } from "./component/projects/projectlist/project-list.component";
 import { TextButtonComponent } from "../../shared/component/text-button/text-button.component";
 
 @NgModule({

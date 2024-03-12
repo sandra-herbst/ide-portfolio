@@ -11,7 +11,9 @@ import { FileType, NavigationFileInfo } from "../model/local/file.model";
   providedIn: "root",
 })
 export class NavigationService {
-  private currentRoute: string = "";
+  private currentRouteSubject: BehaviorSubject<string> =
+    new BehaviorSubject<string>("");
+  public currentRoute$ = this.currentRouteSubject.asObservable();
 
   private JAVA_ICON: NavigationFileInfo = {
     fileType: FileType.JAVA,
@@ -55,7 +57,7 @@ export class NavigationService {
         map((event: NavigationEnd) => event.url)
       )
       .subscribe(url => {
-        this.currentRoute = url;
+        this.currentRouteSubject.next(url);
       });
   }
 
@@ -78,7 +80,7 @@ export class NavigationService {
   private navigateToAvailableRoute(removedItem: NavigationItem): void {
     // Adjust current route if tab has been closed & was open at that time
     let route;
-    if (this.currentRoute === removedItem.route) {
+    if (this.currentRouteSubject.value === removedItem.route) {
       if (this.dynamicNavItems.length > 0) {
         let index: number = this.dynamicNavItems.length - 1;
         route = this.dynamicNavItems[index].route;

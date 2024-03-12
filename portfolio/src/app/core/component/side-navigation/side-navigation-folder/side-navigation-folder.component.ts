@@ -1,7 +1,7 @@
 import { Component, Input } from "@angular/core";
 import { NgClass, NgForOf, NgIf, NgOptimizedImage } from "@angular/common";
-import { LogService } from "../../service/log.service";
-import { NavigationItem } from "../../model/local/navigation-item.model";
+import { LogService } from "../../../service/log.service";
+import { NavigationItem } from "../../../model/local/navigation-item.model";
 import { SideNavigationItemComponent } from "../side-navigation-item/side-navigation-item.component";
 
 @Component({

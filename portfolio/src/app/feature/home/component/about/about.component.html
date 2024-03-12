@@ -6,11 +6,13 @@
   <div class="pt-8">
     <pw-text-button label="View Work" route="/projects"></pw-text-button>
   </div>
-  <div class="relative h-screen w-full">
-    <img
-      class="absolute w-full h-full object-cover -right-96 -top-52 filter blur rounded-full"
-      ngSrc="assets/images/code.png"
-      alt="Background"
-      fill />
+  <div class="relative -top-48 right-0">
+    <div
+      class="absolute top-0 right-0 bg-cover bg-right-top h-64 w-1/2 laptop:h-96"
+      style="
+        background-image: url(&quot;assets/images/code.png&quot;);
+        filter: blur(4px);
+        transform: scale(-1, 1);
+      "></div>
   </div>
 </section>
