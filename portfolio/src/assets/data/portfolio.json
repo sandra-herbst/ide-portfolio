@@ -4,8 +4,8 @@
     "id": "0",
     "name": "Sandra Herbst",
     "contactEmail": "sandraherbst2000@gmail.com",
-    "summary": "Software Engineer",
-    "description": "A long description about yourself"
+    "jobTitle": "Software Engineer",
+    "description": "I'm a passionate and intrinsically motivated software developer with a Bachelor of Science degree in Media Informatics. I believe in the importance of writing clean, efficient code that not only solves problems but also sets new standards for excellence in software development."
   },
   "experiences": [
     {
@@ -32,7 +32,7 @@
       "tags": [
         {
           "id": "0",
-          "name": "Full time"
+          "name": "Part time"
         }
       ]
     }
@@ -41,102 +41,265 @@
     {
       "id": "0",
       "images": [
+        {
+          "id": "0",
+          "altText": "image",
+          "imageUrl": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=600"
+        }
       ],
-      "title": "Project0",
-      "subtitle": "",
-      "description": "This is a project1.",
-      "url": "",
+      "title": "Escape Room",
+      "subtitle": "2D Pixel Point'n'Click Game",
+      "description": "A game that locks the user into a mystery that has yet to be uncovered.",
+      "startDate": "2020-10-01",
+      "endDate": "2021-02-01",
       "tags": [
         {
           "id": "0",
           "name": "Java"
+        },
+        {
+          "id": "1",
+          "name": "JavaFX"
+        },
+        {
+          "id": "2",
+          "name": "Spring Boot"
+        },
+        {
+          "id": "3",
+          "name": "PostgreSQL"
+        },
+        {
+          "id": "4",
+          "name": "Heroku"
         }
       ]
     },
     {
       "id": "1",
       "images": [
+        {
+          "id": "0",
+          "altText": "image",
+          "imageUrl": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=600"
+        }
       ],
-      "title": "Project1",
-      "subtitle": "Company1",
-      "description": "This is a project1.",
-      "url": "",
+      "title": "Ludo",
+      "subtitle": "2D Board Game",
+      "description": "A local multiplayer board game to finally settle who's the luckiest and most genius among the friendgroup.",
+      "startDate": "2020-03-01",
+      "endDate": "2020-08-01",
       "tags": [
         {
-          "id": "1",
-          "name": "C#"
+          "id": "0",
+          "name": "Java"
         },
         {
-          "id": "2",
-          "name": "Unity"
+          "id": "1",
+          "name": "JavaFX"
         }
       ]
     },
     {
       "id": "2",
       "images": [
+        {
+          "id": "0",
+          "altText": "image",
+          "imageUrl": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=600"
+        }
       ],
-      "title": "Project0",
-      "subtitle": "",
-      "description": "This is a project1.",
-      "url": "",
+      "title": "Java Learn App",
+      "subtitle": "mobile Android Application",
+      "description": "Guides the user to learn the programming language Java from scratch.",
+      "startDate": "2021-03-01",
+      "endDate": "2021-08-01",
       "tags": [
         {
           "id": "0",
           "name": "Java"
+        },
+        {
+          "id": "5",
+          "name": "Android SDK"
+        },
+        {
+          "id": "2",
+          "name": "Spring Boot"
+        },
+        {
+          "id": "4",
+          "name": "Heroku"
         }
       ]
     },
     {
       "id": "3",
       "images": [
+        {
+          "id": "0",
+          "altText": "image",
+          "imageUrl": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=600"
+        }
       ],
-      "title": "Project1",
-      "subtitle": "Company1",
-      "description": "This is a project1.",
-      "url": "",
+      "title": "Foodies",
+      "subtitle": "mobile iOS Application",
+      "description": "The app is for coming up with meals for the day. It is based on the ingredients currently stored in the fridge.",
+      "startDate": "2022-03-01",
+      "endDate": "2022-08-01",
       "tags": [
         {
-          "id": "1",
-          "name": "C#"
+          "id": "6",
+          "name": "Swift"
         },
         {
-          "id": "2",
-          "name": "Unity"
+          "id": "7",
+          "name": "iOS SDK"
         }
       ]
     },
     {
       "id": "4",
       "images": [
-      ],
-      "title": "Project0",
-      "subtitle": "",
-      "description": "This is a project1.",
-      "url": "",
-      "tags": [
         {
           "id": "0",
-          "name": "Java"
+          "altText": "image",
+          "imageUrl": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=600"
+        }
+      ],
+      "title": "Food Mood",
+      "subtitle": "mobile Web Application",
+      "description": "What should I eat today? Just choose the dish that you would rather eat in a specified number of rounds!",
+      "startDate": "2022-10-01",
+      "endDate": "2023-02-01",
+      "tags": [
+        {
+          "id": "8",
+          "name": "TypeScript"
+        },
+        {
+          "id": "9",
+          "name": "Docker"
+        },
+        {
+          "id": "10",
+          "name": "NestJS"
+        },
+        {
+          "id": "11",
+          "name": "React"
         }
       ]
     },
     {
       "id": "5",
       "images": [
+        {
+          "id": "0",
+          "altText": "image",
+          "imageUrl": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=600"
+        }
       ],
-      "title": "Project1",
-      "subtitle": "Company1",
-      "description": "This is a project1.",
-      "url": "",
+      "title": "Hitodama",
+      "subtitle": "3D Solo Adventure Game",
+      "description": "A solo player exploration adventure game on PC in which a witchy cat tries to regain their human form by aiding NPCs with their worries.",
+      "startDate": "2022-10-01",
+      "endDate": "2023-02-01",
       "tags": [
         {
-          "id": "1",
+          "id": "12",
           "name": "C#"
         },
         {
-          "id": "2",
+          "id": "13",
           "name": "Unity"
+        },
+        {
+          "id": "14",
+          "name": "Blender"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "images": [
+        {
+          "id": "0",
+          "altText": "image",
+          "imageUrl": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=600"
+        }
+      ],
+      "title": "Asthma App",
+      "subtitle": "mobile Android Application",
+      "description": "A gamified app made for asthma patients who are looking to integrate buteyko breathing exercises into their daily routine.",
+      "startDate": "2023-04-01",
+      "endDate": "2023-07-01",
+      "tags": [
+        {
+          "id": "0",
+          "name": "Java"
+        },
+        {
+          "id": "5",
+          "name": "Android SDK"
+        },
+        {
+          "id": "15",
+          "name": "Jetpack Compose"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "images": [
+        {
+          "id": "0",
+          "altText": "image",
+          "imageUrl": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=600"
+        }
+      ],
+      "title": "IDE Portfolio",
+      "subtitle": "Web Application",
+      "description": "An online portfolio inspired by an integrated development environment.",
+      "startDate": "2024-01-01",
+      "endDate": "2024-03-20",
+      "tags": [
+        {
+          "id": "8",
+          "name": "TypeScript"
+        },
+        {
+          "id": "16",
+          "name": "Angular"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "images": [
+        {
+          "id": "0",
+          "altText": "image",
+          "imageUrl": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=600"
+        }
+      ],
+      "title": "BLIF:Explorer",
+      "subtitle": "Cross-Platform mobile Application",
+      "description": "Pupils can record location-based data to track environmental changes.",
+      "startDate": "2024-01-01",
+      "endDate": "2024-03-20",
+      "tags": [
+        {
+          "id": "17",
+          "name": "Dart"
+        },
+        {
+          "id": "18",
+          "name": "Flutter"
+        },
+        {
+          "id": "19",
+          "name": "Firebase"
         }
       ]
     }

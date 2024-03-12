@@ -1,7 +1,7 @@
 import { Component, OnDestroy, OnInit } from "@angular/core";
 import { NgForOf } from "@angular/common";
 import { RouterLink } from "@angular/router";
-import { TopNavigationItemComponent } from "../top-navigation-item/top-navigation-item.component";
+import { TopNavigationItemComponent } from "./top-navigation-item/top-navigation-item.component";
 import { NavigationService } from "../../service/navigation.service";
 import { NavigationItem } from "../../model/local/navigation-item.model";
 import { Subscription } from "rxjs";

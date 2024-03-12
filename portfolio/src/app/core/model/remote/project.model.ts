@@ -8,5 +8,6 @@ export interface Project {
   description: string;
   tags: Tag[];
   images: Image[];
-  url?: string;
+  startDate: Date;
+  endDate?: Date;
 }
