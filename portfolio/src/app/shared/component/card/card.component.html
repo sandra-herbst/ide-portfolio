@@ -1,24 +1,25 @@
 <div
-  class="flex flex-col space-y-4 rounded-xl shadow-xl bg-gray-300 h-80 tablet:w-60 tablet:h-96 desktop:w-72 hover:bg-secondary-active-blue laptop:hover:shadow-2xl laptop:transition laptop:hover:scale-105 laptop:ease-in-out laptop:duration-300"
+  class="flex flex-col rounded-xl shadow-xl bg-gray-300 tablet:w-60 h-full desktop:w-64 hover:bg-secondary-active-blue laptop:hover:shadow-2xl laptop:transition laptop:hover:scale-105 laptop:ease-in-out laptop:duration-300"
   (click)="onClick()">
-  <div class="relative w-full h-30 tablet-20">
+  <div class="relative object-cover object-center">
     <img
-      class="w-full rounded-t-xl"
+      class="w-full rounded-t-xl h-24 tablet:h-32 object-cover object-center"
       src="{{ images[0].imageUrl }}"
       alt="{{ images[0].altText }}" />
   </div>
 
-  <div class="mx-4 pb-4 flex flex-col items-start justify-between h-full">
-    <h2 class="font-bold font-mono">
+  <div class="p-4 flex flex-col items-start justify-center">
+    <h3 class="font-bold font-mono">
       {{ title }}
-    </h2>
-    <h5 *ngIf="subtitle" class="pt-1 text-accent">
+    </h3>
+    <p *ngIf="subtitle" class="text-accent pt-1">
       {{ subtitle }}
-    </h5>
-    <p class="pt-4 text-gray-50">
+    </p>
+    <p class="pt-4 text-gray-50 line-clamp-3">
       {{ description }}
     </p>
-    <div class="flex flex-wrap grow space-x-2 pt-4">
+    <div
+      class="mt-auto flex flex-wrap gap-x-1 gap-y-1 pt-2 tablet:pt-4 items-start justify-start">
       <pw-tag *ngFor="let tag of tags" label="{{ tag.name }}"></pw-tag>
     </div>
   </div>
