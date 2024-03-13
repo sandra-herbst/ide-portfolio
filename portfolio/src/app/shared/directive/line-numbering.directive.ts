@@ -8,7 +8,7 @@ import { NavigationService } from "../../core/service/navigation.service";
 })
 export class LineNumberingDirective implements OnInit {
   private currentHeight: number | undefined;
-  private lineHeight: number = 20;
+  private lineHeight: number = 21;
   private offset: number = 92;
 
   constructor(
@@ -30,7 +30,7 @@ export class LineNumberingDirective implements OnInit {
     this.logger.log("onHeightChange:", height.toString());
     const newLineCount: number = Math.floor(height / this.lineHeight);
     if (this.currentHeight == null) {
-      this.increaseNumbering(newLineCount);
+      this.increaseNumbering(1, newLineCount);
       this.currentHeight = height;
       return;
     }
@@ -43,16 +43,17 @@ export class LineNumberingDirective implements OnInit {
     if (this.currentHeight > height) {
       this.reduceNumbering(lineDiff);
     } else if (this.currentHeight < height) {
-      this.increaseNumbering(lineDiff);
+      const startingIndex = oldLineCount + 1;
+      this.increaseNumbering(startingIndex, lineDiff);
     }
     this.currentHeight = height;
   }
 
-  increaseNumbering(lineCountDiff: number): void {
+  increaseNumbering(startingIndex: number, lineCountDiff: number): void {
     console.log("increaseNumbering:", lineCountDiff);
-    const lineNumbers: number[] = Array.from(
-      { length: lineCountDiff },
-      (_, i) => i + 1
+    const lineNumbers: number[] = this.generateNumberArray(
+      startingIndex,
+      lineCountDiff
     );
 
     lineNumbers.forEach(lineNumber => {
@@ -63,6 +64,15 @@ export class LineNumberingDirective implements OnInit {
       tr.appendChild(td);
       this.elRef.nativeElement.insertAdjacentElement("beforeend", tr);
     });
+  }
+
+  private generateNumberArray(start: number, increase: number): number[] {
+    const result: number[] = [];
+    const end: number = start + increase;
+    for (let i = start; i <= end; i++) {
+      result.push(i);
+    }
+    return result;
   }
 
   reduceNumbering(lineCountDiff: number): void {

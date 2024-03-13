@@ -19,8 +19,10 @@
         navItem?.fileInfo?.fileExtension
       }}"
       alt="{{ navItem?.fileInfo?.altText }}" />
-    {{ navItem?.label + "." + navItem?.fileInfo?.fileType }}</a
-  >
+    <div
+      pwUnderscoreLabel
+      [label]="navItem?.label + '.' + navItem?.fileInfo?.fileType"></div
+  ></a>
   <div
     *ngIf="navItem?.navType === NavigationType.DYNAMIC"
     class="rounded-full hover:bg-black p-1">

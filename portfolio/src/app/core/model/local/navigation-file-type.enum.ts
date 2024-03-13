@@ -1,11 +1,6 @@
-export interface NavigationFileInfo {
-  fileType: FileType;
-  fileName: string;
-  fileExtension: string;
-  altText: string;
-}
+import { NavigationFileInfo } from "./navigation-file-info.model";
 
-export enum FileType {
+export enum NavigationFileType {
   JAVA = "java",
   DB = "db",
   MD = "md",
