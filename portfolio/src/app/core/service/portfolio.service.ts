@@ -6,11 +6,9 @@ import { map, Observable } from "rxjs";
 import { About } from "../model/remote/about.model";
 import { Experience } from "../model/remote/experience.model";
 import { Project } from "../model/remote/project.model";
-import {
-  NavigationItem,
-  NavigationType,
-} from "../model/local/navigation-item.model";
-import { FileType } from "../model/local/file.model";
+import { NavigationItem } from "../model/local/navigation-item.model";
+import { NavigationType } from "../model/local/navigation-item.enum";
+import { NavigationFileType } from "../model/local/navigation-file-type.enum";
 
 @Injectable()
 export class PortfolioService {
@@ -62,7 +60,7 @@ export class PortfolioService {
       route: `/projects/${project.id}`,
       navType: NavigationType.DYNAMIC,
       fileInfo: {
-        fileType: FileType.JSON,
+        fileType: NavigationFileType.JSON,
         fileName: "json_icon",
         fileExtension: "svg",
         altText: "Json file icon",

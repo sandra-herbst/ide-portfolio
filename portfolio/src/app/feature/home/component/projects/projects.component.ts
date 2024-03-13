@@ -17,7 +17,11 @@ export class ProjectsComponent implements OnInit {
 
   ngOnInit(): void {
     this.portfolioService.getProjects().subscribe(data => {
-      this.projectData = data;
+      this.projectData = data.sort((a, b) => {
+        const dateA = new Date(a.startDate);
+        const dateB = new Date(b.startDate);
+        return dateB.getTime() - dateA.getTime();
+      });
     });
   }
 }

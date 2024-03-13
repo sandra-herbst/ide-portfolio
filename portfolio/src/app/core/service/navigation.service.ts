@@ -1,11 +1,10 @@
 import { Injectable } from "@angular/core";
 import { NavigationEnd, Router } from "@angular/router";
-import {
-  NavigationItem,
-  NavigationType,
-} from "../model/local/navigation-item.model";
+import { NavigationItem } from "../model/local/navigation-item.model";
 import { BehaviorSubject, filter, map } from "rxjs";
-import { FileType, NavigationFileInfo } from "../model/local/file.model";
+import { NavigationFileInfo } from "../model/local/navigation-file-info.model";
+import { NavigationType } from "../model/local/navigation-item.enum";
+import { NavigationFileType } from "../model/local/navigation-file-type.enum";
 
 @Injectable({
   providedIn: "root",
@@ -16,7 +15,7 @@ export class NavigationService {
   public currentRoute$ = this.currentRouteSubject.asObservable();
 
   private JAVA_ICON: NavigationFileInfo = {
-    fileType: FileType.JAVA,
+    fileType: NavigationFileType.JAVA,
     fileName: "class_icon",
     fileExtension: "svg",
     altText: "Java class icon",

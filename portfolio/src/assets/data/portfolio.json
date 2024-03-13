@@ -44,7 +44,22 @@
         {
           "id": "0",
           "altText": "image",
-          "imageUrl": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=600"
+          "imageUrl": "assets/images/escape-room/mainRoom.png"
+        },
+        {
+          "id": "1",
+          "altText": "image",
+          "imageUrl": "assets/images/escape-room/password.png"
+        },
+        {
+          "id": "2",
+          "altText": "image",
+          "imageUrl": "assets/images/escape-room/fridge.png"
+        },
+        {
+          "id": "3",
+          "altText": "image",
+          "imageUrl": "assets/images/escape-room/logic.png"
         }
       ],
       "title": "Escape Room",
@@ -81,7 +96,7 @@
         {
           "id": "0",
           "altText": "image",
-          "imageUrl": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=600"
+          "imageUrl": "assets/images/ludo/ludo.png"
         }
       ],
       "title": "Ludo",
@@ -106,7 +121,7 @@
         {
           "id": "0",
           "altText": "image",
-          "imageUrl": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=600"
+          "imageUrl": "assets/images/java-learn-app/challenge_list.png"
         }
       ],
       "title": "Java Learn App",
@@ -164,7 +179,7 @@
         {
           "id": "0",
           "altText": "image",
-          "imageUrl": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=600"
+          "imageUrl": "assets/images/food-mood/foodmood2.JPG"
         }
       ],
       "title": "Food Mood",
@@ -197,7 +212,27 @@
         {
           "id": "0",
           "altText": "image",
-          "imageUrl": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=600"
+          "imageUrl": "assets/images/hitodama/hitodama.png"
+        },
+        {
+          "id": "1",
+          "altText": "image",
+          "imageUrl": "assets/images/hitodama/hitodama_dialogue.png"
+        },
+        {
+          "id": "2",
+          "altText": "image",
+          "imageUrl": "assets/images/hitodama/hitodama_interaction.png"
+        },
+        {
+          "id": "3",
+          "altText": "image",
+          "imageUrl": "assets/images/hitodama/hitodama_inventory.png"
+        },
+        {
+          "id": "0",
+          "altText": "image",
+          "imageUrl": "assets/images/hitodama/hitodama_questjournal.png"
         }
       ],
       "title": "Hitodama",
@@ -226,7 +261,7 @@
         {
           "id": "0",
           "altText": "image",
-          "imageUrl": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=600"
+          "imageUrl": "assets/images/asthma-app/mockup.png"
         }
       ],
       "title": "Asthma App",
@@ -255,14 +290,14 @@
         {
           "id": "0",
           "altText": "image",
-          "imageUrl": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=600"
+          "imageUrl": "assets/images/portfolio.png"
         }
       ],
       "title": "IDE Portfolio",
       "subtitle": "Web Application",
       "description": "An online portfolio inspired by an integrated development environment.",
       "startDate": "2024-01-01",
-      "endDate": "2024-03-20",
+      "endDate": "2024-03-01",
       "tags": [
         {
           "id": "8",
@@ -280,14 +315,29 @@
         {
           "id": "0",
           "altText": "image",
-          "imageUrl": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=600"
+          "imageUrl": "assets/images/blif/login-screen.png"
+        },
+        {
+          "id": "1",
+          "altText": "image",
+          "imageUrl": "assets/images/blif/login-screen.png"
+        },
+        {
+          "id": "2",
+          "altText": "image",
+          "imageUrl": "assets/images/blif/preview.png"
+        },
+        {
+          "id": "3",
+          "altText": "image",
+          "imageUrl": "assets/images/blif/project-overview.png"
         }
       ],
       "title": "BLIF:Explorer",
       "subtitle": "Cross-Platform mobile Application",
       "description": "Pupils can record location-based data to track environmental changes.",
-      "startDate": "2024-01-01",
-      "endDate": "2024-03-20",
+      "startDate": "2021-09-01",
+      "endDate": "2022-08-01",
       "tags": [
         {
           "id": "17",

@@ -13,5 +13,5 @@
       navItem?.fileInfo?.fileExtension
     }}"
     alt="{{ navItem?.fileInfo?.altText }}" />
-  {{ navItem?.label }}
+  <div pwUnderscoreLabel [label]="navItem?.label"></div>
 </a>
