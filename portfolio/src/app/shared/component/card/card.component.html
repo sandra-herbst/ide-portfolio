@@ -12,14 +12,14 @@
     <h3 class="font-bold font-mono">
       {{ title }}
     </h3>
-    <p *ngIf="subtitle" class="text-accent pt-1">
+    <h6 *ngIf="subtitle" class="text-accent pt-1 text-xs tablet:text-sm">
       {{ subtitle }}
-    </p>
+    </h6>
     <p class="pt-4 text-gray-50 line-clamp-3">
       {{ description }}
     </p>
     <div
-      class="mt-auto flex flex-wrap gap-x-1 gap-y-1 pt-2 tablet:pt-4 items-start justify-start">
+      class="hidden mt-auto tablet:flex flex-wrap gap-x-1 gap-y-1 pt-2 tablet:pt-4 items-start justify-start">
       <pw-tag *ngFor="let tag of tags" label="{{ tag.name }}"></pw-tag>
     </div>
   </div>
