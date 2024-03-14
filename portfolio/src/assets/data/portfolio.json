@@ -317,7 +317,7 @@
         {
           "id": "0",
           "altText": "image",
-          "imageUrl": "assets/images/blif/login-screen.png"
+          "imageUrl": "assets/images/blif/project-overview.png"
         },
         {
           "id": "1",
@@ -327,12 +327,12 @@
         {
           "id": "2",
           "altText": "image",
-          "imageUrl": "assets/images/blif/preview.png"
+          "imageUrl": "assets/images/blif/create_entry.png"
         },
         {
           "id": "3",
           "altText": "image",
-          "imageUrl": "assets/images/blif/project-overview.png"
+          "imageUrl": "assets/images/blif/preview.png"
         }
       ],
       "title": "BLIF:Explorer",

@@ -1,15 +1,27 @@
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 import { LogService } from "../../service/log.service";
+import { NavigationService } from "../../service/navigation.service";
 
 @Component({
   selector: "pw-header",
   templateUrl: "./header.component.html",
   styleUrls: ["./header.component.css"],
 })
-export class HeaderComponent {
-  constructor(private logger: LogService) {}
+export class HeaderComponent implements OnInit {
+  isSideNavOpen: boolean | undefined;
 
-  onHamburgerMenuButtonClicked($event: MouseEvent): void {
-    this.logger.log($event.button.toString());
+  constructor(
+    private navService: NavigationService,
+    private logger: LogService
+  ) {}
+
+  ngOnInit(): void {
+    this.navService.isSideNavigationOpen$.subscribe(value => {
+      this.isSideNavOpen = value;
+    });
+  }
+
+  onHamburgerMenuButtonClicked(): void {
+    this.navService.toggleSideNavigation();
   }
 }

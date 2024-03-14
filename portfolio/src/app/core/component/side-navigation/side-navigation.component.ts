@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import {Component, HostListener, OnInit} from "@angular/core";
 import { NgClass, NgForOf, NgIf, NgOptimizedImage } from "@angular/common";
 import { NavigationService } from "../../service/navigation.service";
 import { NavigationItem } from "../../model/local/navigation-item.model";
@@ -17,7 +17,7 @@ import { PortfolioService } from "../../service/portfolio.service";
 export class SideNavigationComponent implements OnInit {
   projectNavItems: NavigationItem[] = [];
   mainNavItems: NavigationItem[] = [];
-  isOpen: boolean = true;
+  isOpen: boolean | undefined;
 
   constructor(
     private navService: NavigationService,
@@ -26,15 +26,32 @@ export class SideNavigationComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
+    this.navService.isSideNavigationOpen$.subscribe(value => {
+      this.isOpen = value;
+    });
     this.mainNavItems = this.navService.getMainNavItems();
     this.portfolioService.getProjects().subscribe(data => {
       this.projectNavItems = data.map(project => {
         return this.portfolioService.getNavigationItemFromProject(project);
       });
     });
+    this.onInitNavigation();
+  }
+
+  @HostListener("window:resize", ["$event"])
+  onResize(): void {
+    this.onInitNavigation();
+  }
+
+  onInitNavigation(): void {
+    if (window.innerWidth < 1024) {
+      this.navService.setSideNavigation(false);
+    } else if (window.innerWidth >= 1024) {
+      this.navService.setSideNavigation(true);
+    }
   }
 
   onNavigationToggleClick(): void {
-    this.isOpen = !this.isOpen;
+    this.navService.toggleSideNavigation();
   }
 }

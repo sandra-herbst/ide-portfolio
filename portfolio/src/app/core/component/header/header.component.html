@@ -13,20 +13,37 @@
 
   <!-- mobile menu button -->
   <button
-    (click)="onHamburgerMenuButtonClicked($event)"
+    (click)="onHamburgerMenuButtonClicked()"
     data-collapse-toggle="navbar-default"
     type="button"
-    class="laptop:hidden inline-flex items-center w-10 h-10 justify-center text-sm text-white rounded-lg hover:bg-secondary-blue"
+    class="laptop:hidden inline-flex items-center w-10 h-10 justify-center text-sm text-white rounded-lg"
+    [ngClass]="{ 'bg-secondary-blue': isSideNavOpen }"
     aria-controls="navbar-default"
     aria-expanded="false">
     <span class="sr-only">Open main menu</span>
-    <svg class="w-5 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+    <svg
+      *ngIf="!isSideNavOpen"
+      class="w-5 h-4"
+      aria-hidden="true"
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 17 14">
       <path
         stroke="currentColor"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="2"
         d="M1 1h15M1 7h15M1 13h15" />
+    </svg>
+    <svg
+      *ngIf="isSideNavOpen"
+      class="w-8 h-8"
+      width="800px"
+      height="800px"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg">
+      <path d="M18 6L6 18" stroke="#E1E1E1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M6 6L18 18" stroke="#E1E1E1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
     </svg>
   </button>
 </header>

@@ -1,7 +1,7 @@
 import { Injectable } from "@angular/core";
 import { NavigationEnd, Router } from "@angular/router";
 import { NavigationItem } from "../model/local/navigation-item.model";
-import { BehaviorSubject, filter, map } from "rxjs";
+import { BehaviorSubject, filter, map, Observable } from "rxjs";
 import { NavigationFileInfo } from "../model/local/navigation-file-info.model";
 import { NavigationType } from "../model/local/navigation-item.enum";
 import { NavigationFileType } from "../model/local/navigation-file-type.enum";
@@ -10,8 +10,11 @@ import { NavigationFileType } from "../model/local/navigation-file-type.enum";
   providedIn: "root",
 })
 export class NavigationService {
+  private isSideNavigationOpenSubject: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
+  public isSideNavigationOpen$: Observable<boolean> = this.isSideNavigationOpenSubject.asObservable();
+
   private currentRouteSubject: BehaviorSubject<string> = new BehaviorSubject<string>("");
-  public currentRoute$ = this.currentRouteSubject.asObservable();
+  public currentRoute$: Observable<string> = this.currentRouteSubject.asObservable();
 
   private JAVA_ICON: NavigationFileInfo = {
     fileType: NavigationFileType.JAVA,
@@ -82,6 +85,14 @@ export class NavigationService {
       }
       this.router.navigate([route]).then();
     }
+  }
+
+  toggleSideNavigation(): void {
+    this.isSideNavigationOpenSubject.next(!this.isSideNavigationOpenSubject.value);
+  }
+
+  setSideNavigation(value: boolean): void {
+    this.isSideNavigationOpenSubject.next(value);
   }
 
   getMainNavItems(): NavigationItem[] {
