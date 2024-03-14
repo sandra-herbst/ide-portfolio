@@ -7,29 +7,16 @@
       (click)="onNavigationToggleClick()"
       class="flex items-center justify-center p-2 m-2 rounded bg-gray-50"
       [ngClass]="{ 'bg-secondary-blue': isOpen }">
-      <img
-        class=""
-        width="24"
-        height="24"
-        ngSrc="assets/icons/folder_icon.svg"
-        alt="Open or close side navigation" />
+      <img class="" width="24" height="24" ngSrc="assets/icons/folder_icon.svg" alt="Open or close side navigation" />
     </button>
 
     <div class="flex flex-col items-center justify-center m-2 space-y-4 pb-2">
       <a href="https://www.linkedin.com/in/sandra-herbst" target="_blank">
-        <img
-          width="24"
-          height="24"
-          ngSrc="assets/icons/linkedin_icon.svg"
-          alt="LinkedIn" />
+        <img width="24" height="24" ngSrc="assets/icons/linkedin_icon.svg" alt="LinkedIn" />
       </a>
 
       <a href="https://github.com/sandra-herbst" target="_blank">
-        <img
-          width="24"
-          height="24"
-          ngSrc="assets/icons/github_icon.svg"
-          alt="Github" />
+        <img width="24" height="24" ngSrc="assets/icons/github_icon.svg" alt="Github" />
       </a>
     </div>
   </div>
@@ -37,12 +24,8 @@
     <p class="px-4 py-1.5 border-b-2 border-gray-300 text-white">Project</p>
     <nav class="mt-4 mx-4 my-2">
       <li class="list-none">
-        <pw-side-navigation-folder
-          label="Portfolio"
-          [items]="mainNavItems"></pw-side-navigation-folder>
-        <pw-side-navigation-folder
-          label="Assets/Data"
-          [items]="projectNavItems"></pw-side-navigation-folder>
+        <pw-side-navigation-folder label="Portfolio" [items]="mainNavItems"></pw-side-navigation-folder>
+        <pw-side-navigation-folder label="Assets/Data" [items]="projectNavItems"></pw-side-navigation-folder>
       </li>
     </nav>
   </div>

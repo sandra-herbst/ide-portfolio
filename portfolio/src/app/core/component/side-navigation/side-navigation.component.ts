@@ -10,14 +10,7 @@ import { PortfolioService } from "../../service/portfolio.service";
 @Component({
   selector: "pw-side-navigation",
   standalone: true,
-  imports: [
-    NgOptimizedImage,
-    SideNavigationFolderComponent,
-    SideNavigationItemComponent,
-    NgForOf,
-    NgClass,
-    NgIf,
-  ],
+  imports: [NgOptimizedImage, SideNavigationFolderComponent, SideNavigationItemComponent, NgForOf, NgClass, NgIf],
   templateUrl: "./side-navigation.component.html",
   styleUrl: "./side-navigation.component.css",
 })

@@ -6,12 +6,7 @@ import { TypeofPipe } from "./pipe/typeof-pipe";
 import { CardComponent } from "./component/card/card.component";
 
 @NgModule({
-  declarations: [
-    TagComponent,
-    CardComponent,
-    GenericObjectKeysPipe,
-    TypeofPipe,
-  ],
+  declarations: [TagComponent, CardComponent, GenericObjectKeysPipe, TypeofPipe],
   imports: [CommonModule, NgOptimizedImage],
   exports: [CardComponent, TagComponent],
 })

@@ -17,14 +17,13 @@ export class NavigationComponent {
     event.stopPropagation();
     this.menuOpen = !this.menuOpen;
 
-    this.menuOpen
-      ? this.addMenuDismissListener()
-      : this.removeMenuDismissListener();
+    this.menuOpen ? this.addMenuDismissListener() : this.removeMenuDismissListener();
   }
 
   private onMenuDismissedClicked(event: MouseEvent): void {
     event.stopPropagation();
-    const clickedInside = this.sideNav.nativeElement.contains(event.target);
+    const eventTarget: HTMLElement = event.target as HTMLElement;
+    const clickedInside: boolean = eventTarget && this.sideNav.nativeElement.contains(eventTarget);
     if (clickedInside) {
       return;
     }
@@ -34,13 +33,9 @@ export class NavigationComponent {
   }
 
   private addMenuDismissListener(): void {
-    this.outsideClickListener = this.renderer.listen(
-      "document",
-      "click",
-      event => {
-        this.onMenuDismissedClicked(event);
-      }
-    );
+    this.outsideClickListener = this.renderer.listen("document", "click", event => {
+      this.onMenuDismissedClicked(event);
+    });
   }
 
   private removeMenuDismissListener(): void {

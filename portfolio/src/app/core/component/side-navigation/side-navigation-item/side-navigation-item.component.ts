@@ -10,13 +10,7 @@ import { UnderscoreLabelDirective } from "../../../../shared/directive/underscor
 @Component({
   selector: "pw-side-navigation-item",
   standalone: true,
-  imports: [
-    NgOptimizedImage,
-    NgClass,
-    RouterLink,
-    RouterLinkActive,
-    UnderscoreLabelDirective,
-  ],
+  imports: [NgOptimizedImage, NgClass, RouterLink, RouterLinkActive, UnderscoreLabelDirective],
   templateUrl: "./side-navigation-item.component.html",
   styleUrl: "./side-navigation-item.component.css",
 })
