@@ -30,14 +30,11 @@ export class ProjectDetailsComponent implements OnInit {
     this.route.params.subscribe(params => {
       this.projectId = params["id"];
       if (this.projectId) {
-        this.portfolioService
-          .getProjectById(this.projectId)
-          .subscribe(project => {
-            this.project = project;
-            let navItem =
-              this.portfolioService.getNavigationItemFromProject(project);
-            this.navService.addDynamicNavItem(navItem);
-          });
+        this.portfolioService.getProjectById(this.projectId).subscribe(project => {
+          this.project = project;
+          const navItem = this.portfolioService.getNavigationItemFromProject(project);
+          this.navService.addDynamicNavItem(navItem);
+        });
       }
     });
   }

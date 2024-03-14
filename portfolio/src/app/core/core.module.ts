@@ -19,9 +19,7 @@ export class CoreModule {
    */
   constructor(@Optional() @SkipSelf() core: CoreModule) {
     if (core) {
-      throw new Error(
-        "You should only import the core module in the root module"
-      );
+      throw new Error("You should only import the core module in the root module");
     }
   }
 }

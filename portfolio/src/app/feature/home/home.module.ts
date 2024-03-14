@@ -10,20 +10,8 @@ import { ProjectListComponent } from "./component/projects/projectlist/project-l
 import { TextButtonComponent } from "../../shared/component/text-button/text-button.component";
 
 @NgModule({
-  declarations: [
-    NavigationComponent,
-    AboutComponent,
-    ExperiencesComponent,
-    ProjectsComponent,
-    ProjectListComponent,
-  ],
-  imports: [
-    CommonModule,
-    SharedModule,
-    RouterLink,
-    NgOptimizedImage,
-    TextButtonComponent,
-  ],
+  declarations: [NavigationComponent, AboutComponent, ExperiencesComponent, ProjectsComponent, ProjectListComponent],
+  imports: [CommonModule, SharedModule, RouterLink, NgOptimizedImage, TextButtonComponent],
   exports: [NavigationComponent],
 })
 export class HomeModule {}

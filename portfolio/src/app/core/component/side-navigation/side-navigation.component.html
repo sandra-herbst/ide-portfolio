@@ -1,48 +1,31 @@
 <aside
-  class="hidden h-full bg-gray-200 laptop:col-span-1 laptop:row-span-1 laptop:flex border-black"
-  [ngClass]="{ 'border-r-0': !isOpen, 'border-r-4': isOpen }">
+  class="max-laptop:drop-shadow-2xl border-r-2 transition-transform duration-300 ease-in-out laptop:translate-x-0 fixed z-40 top-0 left-0 h-full bg-gray-200 laptop:static laptop:col-span-1 laptop:row-span-1 laptop:flex border-black"
+  [ngClass]="isOpen ? 'translate-x-0 laptop:border-r-4' : '-translate-x-full laptop:border-r-0'">
   <div
     class="hidden laptop:flex justify-between flex-shrink-0 flex-grow-0 w-14 flex-col border-r-4 border-black overflow-hidden">
     <button
       (click)="onNavigationToggleClick()"
       class="flex items-center justify-center p-2 m-2 rounded bg-gray-50"
       [ngClass]="{ 'bg-secondary-blue': isOpen }">
-      <img
-        class=""
-        width="24"
-        height="24"
-        ngSrc="assets/icons/folder_icon.svg"
-        alt="Open or close side navigation" />
+      <img class="" width="24" height="24" ngSrc="assets/icons/folder_icon.svg" alt="Open or close side navigation" />
     </button>
 
     <div class="flex flex-col items-center justify-center m-2 space-y-4 pb-2">
       <a href="https://www.linkedin.com/in/sandra-herbst" target="_blank">
-        <img
-          width="24"
-          height="24"
-          ngSrc="assets/icons/linkedin_icon.svg"
-          alt="LinkedIn" />
+        <img width="24" height="24" ngSrc="assets/icons/linkedin_icon.svg" alt="LinkedIn" />
       </a>
 
       <a href="https://github.com/sandra-herbst" target="_blank">
-        <img
-          width="24"
-          height="24"
-          ngSrc="assets/icons/github_icon.svg"
-          alt="Github" />
+        <img width="24" height="24" ngSrc="assets/icons/github_icon.svg" alt="Github" />
       </a>
     </div>
   </div>
-  <div *ngIf="isOpen" class="overflow-hidden w-60">
-    <p class="px-4 py-1.5 border-b-2 border-gray-300 text-white">Project</p>
+  <div *ngIf="isOpen" class="overflow-y-auto laptop:overflow-hidden w-60">
+    <p class="py-3 px-4 laptop:py-1.5 border-b-2 border-gray-300 text-white">Project</p>
     <nav class="mt-4 mx-4 my-2">
       <li class="list-none">
-        <pw-side-navigation-folder
-          label="Portfolio"
-          [items]="mainNavItems"></pw-side-navigation-folder>
-        <pw-side-navigation-folder
-          label="Assets/Data"
-          [items]="projectNavItems"></pw-side-navigation-folder>
+        <pw-side-navigation-folder label="Portfolio" [items]="mainNavItems"></pw-side-navigation-folder>
+        <pw-side-navigation-folder label="Assets/Data" [items]="projectNavItems"></pw-side-navigation-folder>
       </li>
     </nav>
   </div>

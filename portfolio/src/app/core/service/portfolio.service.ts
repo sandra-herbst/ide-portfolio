@@ -25,9 +25,7 @@ export class PortfolioService {
   }
 
   private getData(callback: (data: Portfolio) => void): Observable<any> {
-    return this.http
-      .get<Portfolio>(this.dataUrl)
-      .pipe(map(data => callback(data)));
+    return this.http.get<Portfolio>(this.dataUrl).pipe(map(data => callback(data)));
   }
 
   getPortfolioData(): Observable<Portfolio> {

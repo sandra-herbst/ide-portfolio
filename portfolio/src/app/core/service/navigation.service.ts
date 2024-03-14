@@ -1,7 +1,7 @@
 import { Injectable } from "@angular/core";
 import { NavigationEnd, Router } from "@angular/router";
 import { NavigationItem } from "../model/local/navigation-item.model";
-import { BehaviorSubject, filter, map } from "rxjs";
+import { BehaviorSubject, filter, map, Observable } from "rxjs";
 import { NavigationFileInfo } from "../model/local/navigation-file-info.model";
 import { NavigationType } from "../model/local/navigation-item.enum";
 import { NavigationFileType } from "../model/local/navigation-file-type.enum";
@@ -10,9 +10,11 @@ import { NavigationFileType } from "../model/local/navigation-file-type.enum";
   providedIn: "root",
 })
 export class NavigationService {
-  private currentRouteSubject: BehaviorSubject<string> =
-    new BehaviorSubject<string>("");
-  public currentRoute$ = this.currentRouteSubject.asObservable();
+  private isSideNavigationOpenSubject: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
+  public isSideNavigationOpen$: Observable<boolean> = this.isSideNavigationOpenSubject.asObservable();
+
+  private currentRouteSubject: BehaviorSubject<string> = new BehaviorSubject<string>("");
+  public currentRoute$: Observable<string> = this.currentRouteSubject.asObservable();
 
   private JAVA_ICON: NavigationFileInfo = {
     fileType: NavigationFileType.JAVA,
@@ -43,16 +45,12 @@ export class NavigationService {
   ];
 
   private dynamicNavItems: NavigationItem[] = [];
-  dynamicNavItems$: BehaviorSubject<NavigationItem[]> = new BehaviorSubject<
-    NavigationItem[]
-  >(this.dynamicNavItems);
+  dynamicNavItems$: BehaviorSubject<NavigationItem[]> = new BehaviorSubject<NavigationItem[]>(this.dynamicNavItems);
 
   constructor(private router: Router) {
     this.router.events
       .pipe(
-        filter(
-          (event): event is NavigationEnd => event instanceof NavigationEnd
-        ),
+        filter((event): event is NavigationEnd => event instanceof NavigationEnd),
         map((event: NavigationEnd) => event.url)
       )
       .subscribe(url => {
@@ -68,9 +66,7 @@ export class NavigationService {
   }
 
   removeDynamicNavItem(item: NavigationItem): void {
-    this.dynamicNavItems = this.dynamicNavItems.filter(
-      dynItem => item.route !== dynItem.route
-    );
+    this.dynamicNavItems = this.dynamicNavItems.filter(dynItem => item.route !== dynItem.route);
     this.dynamicNavItems$.next([...this.dynamicNavItems]);
 
     this.navigateToAvailableRoute(item);
@@ -81,14 +77,22 @@ export class NavigationService {
     let route;
     if (this.currentRouteSubject.value === removedItem.route) {
       if (this.dynamicNavItems.length > 0) {
-        let index: number = this.dynamicNavItems.length - 1;
+        const index: number = this.dynamicNavItems.length - 1;
         route = this.dynamicNavItems[index].route;
       } else {
-        let index: number = this.mainNavigationItems.length - 1;
+        const index: number = this.mainNavigationItems.length - 1;
         route = this.mainNavigationItems[index].route;
       }
       this.router.navigate([route]).then();
     }
+  }
+
+  toggleSideNavigation(): void {
+    this.isSideNavigationOpenSubject.next(!this.isSideNavigationOpenSubject.value);
+  }
+
+  setSideNavigation(value: boolean): void {
+    this.isSideNavigationOpenSubject.next(value);
   }
 
   getMainNavItems(): NavigationItem[] {

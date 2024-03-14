@@ -7,13 +7,7 @@ import { SideNavigationItemComponent } from "../side-navigation-item/side-naviga
 @Component({
   selector: "pw-side-navigation-folder",
   standalone: true,
-  imports: [
-    NgOptimizedImage,
-    NgClass,
-    NgIf,
-    NgForOf,
-    SideNavigationItemComponent,
-  ],
+  imports: [NgOptimizedImage, NgClass, NgIf, NgForOf, SideNavigationItemComponent],
   templateUrl: "./side-navigation-folder.component.html",
   styleUrl: "./side-navigation-folder.component.css",
 })

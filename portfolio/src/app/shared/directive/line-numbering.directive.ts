@@ -36,9 +36,7 @@ export class LineNumberingDirective implements OnInit {
     }
 
     console.log("LineNumberingDirective Height changed:", height);
-    const oldLineCount: number = Math.floor(
-      this.currentHeight / this.lineHeight
-    );
+    const oldLineCount: number = Math.floor(this.currentHeight / this.lineHeight);
     const lineDiff: number = Math.abs(oldLineCount - newLineCount);
     if (this.currentHeight > height) {
       this.reduceNumbering(lineDiff);
@@ -51,10 +49,7 @@ export class LineNumberingDirective implements OnInit {
 
   increaseNumbering(startingIndex: number, lineCountDiff: number): void {
     console.log("increaseNumbering:", lineCountDiff);
-    const lineNumbers: number[] = this.generateNumberArray(
-      startingIndex,
-      lineCountDiff
-    );
+    const lineNumbers: number[] = this.generateNumberArray(startingIndex, lineCountDiff);
 
     lineNumbers.forEach(lineNumber => {
       const tr: HTMLTableRowElement = document.createElement("tr");
@@ -80,11 +75,7 @@ export class LineNumberingDirective implements OnInit {
     const container = this.elRef.nativeElement;
     const children = container.children;
 
-    for (
-      let i = children.length - 1;
-      i >= children.length - lineCountDiff;
-      i--
-    ) {
+    for (let i = children.length - 1; i >= children.length - lineCountDiff; i--) {
       this.renderer.removeChild(container, children[i]);
     }
   }

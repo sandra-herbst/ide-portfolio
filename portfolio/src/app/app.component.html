@@ -1,5 +1,5 @@
 <div
-  class="h-screen gap-y-1 max-laptop:flex max-laptop:flex-col laptop:grid laptop:grid-rows-[48px_1fr_28px] laptop:grid-cols-[auto_1fr] laptop:overflow-hidden">
+  class="h-screen laptop:gap-y-1 max-laptop:flex max-laptop:flex-col laptop:grid laptop:grid-rows-[48px_1fr_28px] laptop:grid-cols-[auto_1fr] laptop:overflow-hidden">
   <!-- top with navigation -->
   <pw-header class="laptop:col-span-4 laptop:row-span-1"></pw-header>
 
@@ -7,11 +7,9 @@
   <pw-side-navigation class="w-min"></pw-side-navigation>
 
   <!-- pages that change with navigation click -->
-  <main
-    class="laptop:col-span-1 laptop:row-span-1 laptop:flex laptop:flex-col laptop:min-h-full w-full">
+  <main class="laptop:col-span-1 flex-grow laptop:row-span-1 laptop:flex laptop:flex-col laptop:min-h-full w-full">
     <pw-top-navigation></pw-top-navigation>
-    <div
-      class="tablet:grid tablet:grid-cols-[3rem_1fr] overflow-y-auto overflow-x-hidden h-full w-full">
+    <div class="tablet:grid tablet:grid-cols-[3rem_1fr] overflow-y-auto overflow-x-hidden h-full w-full">
       <table
         class="hidden tablet:flex tablet:flex-col tablet:flex-grow tablet:justify-start tablet:items-end border-r-2 border-gray-200 pt-8 font-mono pr-4 h-full"
         pwLineNumberingDirective></table>
@@ -22,8 +20,7 @@
   </main>
 
   <!-- bottom links -->
-  <footer
-    class="flex items-center justify-end p-1 pr-4 bg-gray-200 laptop:col-span-4 fixed tablet:relative bottom-0 w-full">
+  <footer class="flex items-center justify-end px-1 pr-4 bg-gray-200 laptop:col-span-4 w-full h-8">
     <p>&copy; 2024 Sandra Herbst</p>
   </footer>
 </div>
