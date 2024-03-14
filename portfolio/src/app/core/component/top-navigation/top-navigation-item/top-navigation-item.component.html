@@ -14,7 +14,7 @@
       ngSrc="assets/icons/{{ navItem?.fileInfo?.fileName }}.{{ navItem?.fileInfo?.fileExtension }}"
       alt="{{ navItem?.fileInfo?.altText }}" />
     <div pwUnderscoreLabel [label]="navItem?.label + '.' + navItem?.fileInfo?.fileType"></div
-    ></a>
+  ></a>
   <div *ngIf="navItem?.navType === NavigationType.DYNAMIC" class="rounded-full hover:bg-black p-1">
     <button (click)="onRemoveTabClick()" class="flex items-center justify-center h-4 w-4">
       <img width="14" height="14" ngSrc="../../../../../assets/icons/close_icon.svg" alt="Close window" />
