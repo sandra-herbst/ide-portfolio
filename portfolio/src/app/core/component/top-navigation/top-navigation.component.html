@@ -1,8 +1,9 @@
 <nav
-  class="bg-gray-200 h-12 laptop:h-8 flex items-center overflow-x-auto sticky top-0 left-0 w-full z-10 laptop:relative">
+  #navContainer
+  class="bg-gray-200 h-12 laptop:h-8 flex items-center overflow-x-auto scroll-smooth sticky top-0 left-0 w-full z-10 laptop:relative">
   <li
     class="list-none flex items-center space-x-2 whitespace-nowrap h-full"
-    *ngFor="let navItem of navItems">
+    *ngFor="let navItem of navItems" #navigationItemRefs>
     <pw-top-navigation-item
       class="h-full"
       [navItem]="navItem"></pw-top-navigation-item>

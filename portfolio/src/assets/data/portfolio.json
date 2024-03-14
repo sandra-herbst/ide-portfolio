@@ -63,8 +63,9 @@
         }
       ],
       "title": "Escape Room",
-      "subtitle": "2D Pixel Point'n'Click Game",
-      "description": "A game that locks the user into a mystery that has yet to be uncovered.",
+      "subtitle": "2D Game",
+      "shortDescription": "A game that locks the user into a mystery that has yet to be uncovered.",
+      "longDescription": "Step into the tumult of 2020, a year marked by the unprecedented impact of the COVID-19 pandemic. When renowned researcher Dr. Deany vanishes after claiming to have found the elusive vaccine ingredients, it's up to you, the detective, to solve the mystery. Unravel clues, decipher messages, and race against time to uncover the solution to the global crisis. Can you find the missing pieces and save the world from despair?",
       "startDate": "2020-10-01",
       "endDate": "2021-02-01",
       "tags": [
@@ -101,7 +102,8 @@
       ],
       "title": "Ludo",
       "subtitle": "2D Board Game",
-      "description": "A local multiplayer board game to finally settle who's the luckiest and most genius among the friendgroup.",
+      "shortDescription": "A local multiplayer board game to finally settle who's the luckiest and most genius among the friend group.",
+      "longDescription": "",
       "startDate": "2020-03-01",
       "endDate": "2020-08-01",
       "tags": [
@@ -125,8 +127,8 @@
         }
       ],
       "title": "Java Learn App",
-      "subtitle": "mobile Android Application",
-      "description": "Guides the user to learn the programming language Java from scratch.",
+      "subtitle": "Android App",
+      "shortDescription": "Guides the user to learn the programming language Java from scratch.",
       "startDate": "2021-03-01",
       "endDate": "2021-08-01",
       "tags": [
@@ -158,8 +160,8 @@
         }
       ],
       "title": "Foodies",
-      "subtitle": "mobile iOS Application",
-      "description": "The app is for coming up with meals for the day. It is based on the ingredients currently stored in the fridge.",
+      "subtitle": "iOS App",
+      "shortDescription": "The app is for coming up with meals for the day. It is based on the ingredients currently stored in the fridge.",
       "startDate": "2022-03-01",
       "endDate": "2022-08-01",
       "tags": [
@@ -183,8 +185,8 @@
         }
       ],
       "title": "Food Mood",
-      "subtitle": "mobile Web Application",
-      "description": "What should I eat today? Just choose the dish that you would rather eat in a specified number of rounds!",
+      "subtitle": "Mobile Web App",
+      "shortDescription": "What should I eat today? Just choose the dish that you would rather eat in a specified number of rounds!",
       "startDate": "2022-10-01",
       "endDate": "2023-02-01",
       "tags": [
@@ -236,8 +238,8 @@
         }
       ],
       "title": "Hitodama",
-      "subtitle": "3D Solo Adventure Game",
-      "description": "A solo player exploration adventure game on PC in which a witchy cat tries to regain their human form by aiding NPCs with their worries.",
+      "subtitle": "3D Game",
+      "shortDescription": "A solo player exploration adventure game on PC in which a witchy cat tries to regain their human form by aiding NPCs with their worries.",
       "startDate": "2022-10-01",
       "endDate": "2023-02-01",
       "tags": [
@@ -265,8 +267,8 @@
         }
       ],
       "title": "Asthma App",
-      "subtitle": "mobile Android Application",
-      "description": "A gamified app made for asthma patients who are looking to integrate buteyko breathing exercises into their daily routine.",
+      "subtitle": "Android App",
+      "shortDescription": "A gamified app made for asthma patients who are looking to integrate buteyko breathing exercises into their daily routine.",
       "startDate": "2023-04-01",
       "endDate": "2023-07-01",
       "tags": [
@@ -294,8 +296,8 @@
         }
       ],
       "title": "IDE Portfolio",
-      "subtitle": "Web Application",
-      "description": "An online portfolio inspired by an integrated development environment.",
+      "subtitle": "Web App",
+      "shortDescription": "An online portfolio inspired by an integrated development environment.",
       "startDate": "2024-01-01",
       "endDate": "2024-03-01",
       "tags": [
@@ -334,8 +336,8 @@
         }
       ],
       "title": "BLIF:Explorer",
-      "subtitle": "Cross-Platform mobile Application",
-      "description": "Pupils can record location-based data to track environmental changes.",
+      "subtitle": "Cross-Platform mobile App",
+      "shortDescription": "Pupils can record location-based data to track environmental changes.",
       "startDate": "2021-09-01",
       "endDate": "2022-08-01",
       "tags": [
