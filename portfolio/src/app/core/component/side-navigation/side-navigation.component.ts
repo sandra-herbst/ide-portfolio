@@ -1,4 +1,4 @@
-import {Component, HostListener, OnInit} from "@angular/core";
+import { Component, HostListener, OnInit } from "@angular/core";
 import { NgClass, NgForOf, NgIf, NgOptimizedImage } from "@angular/common";
 import { NavigationService } from "../../service/navigation.service";
 import { NavigationItem } from "../../model/local/navigation-item.model";
