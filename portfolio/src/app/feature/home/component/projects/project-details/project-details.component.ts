@@ -3,16 +3,21 @@ import { ActivatedRoute } from "@angular/router";
 import { LogService } from "../../../../../core/service/log.service";
 import { NavigationService } from "../../../../../core/service/navigation.service";
 import { PortfolioService } from "../../../../../core/service/portfolio.service";
+import { NgForOf, NgIf } from "@angular/common";
+import { SharedModule } from "../../../../../shared/shared.module";
+import { Project } from "../../../../../core/model/remote/project.model";
+import { UnderscoreLabelDirective } from "../../../../../shared/directive/underscore-label.directive";
 
 @Component({
   selector: "pw-project-details",
   standalone: true,
-  imports: [],
+  imports: [NgForOf, NgIf, SharedModule, UnderscoreLabelDirective],
   templateUrl: "./project-details.component.html",
   styleUrl: "./project-details.component.css",
 })
 export class ProjectDetailsComponent implements OnInit {
   projectId: string | undefined;
+  project: Project | undefined;
 
   constructor(
     private route: ActivatedRoute,
@@ -28,13 +33,12 @@ export class ProjectDetailsComponent implements OnInit {
         this.portfolioService
           .getProjectById(this.projectId)
           .subscribe(project => {
+            this.project = project;
             let navItem =
               this.portfolioService.getNavigationItemFromProject(project);
             this.navService.addDynamicNavItem(navItem);
           });
       }
-
-      this.logger.log("id: ", this.projectId);
     });
   }
 }

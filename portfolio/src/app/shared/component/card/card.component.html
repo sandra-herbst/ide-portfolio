@@ -9,13 +9,13 @@
   </div>
 
   <div class="p-4 flex flex-col items-start justify-center">
-    <h3 class="font-bold font-mono">
+    <h3 class="font-bold">
       {{ title }}
     </h3>
-    <h6 *ngIf="subtitle" class="text-accent pt-1 text-xs tablet:text-sm">
+    <h6 *ngIf="subtitle" class="text-accent pt-1/2 tablet:pt-1 font-mono">
       {{ subtitle }}
     </h6>
-    <p class="pt-4 text-gray-50 line-clamp-3">
+    <p class="pt-2 tablet:pt-4 text-gray-50 line-clamp-5 tablet:line-clamp-3">
       {{ description }}
     </p>
     <div

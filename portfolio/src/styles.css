@@ -33,23 +33,27 @@
 
 @layer base {
   h1 {
-    @apply font-bold text-white text-3xl sm:text-4xl lg:text-6xl;
+    @apply font-bold text-white text-4xl md:text-4xl lg:text-6xl;
   }
 
   h2 {
-    @apply font-sans text-white text-lg sm:text-2xl lg:text-3xl;
+    @apply font-sans text-white text-xl md:text-2xl lg:text-4xl;
   }
 
   h3 {
-    @apply font-sans text-white text-base sm:text-xl lg:text-2xl;
+    @apply font-sans text-white text-lg md:text-xl lg:text-2xl;
   }
 
   h4 {
-    @apply font-sans text-white text-sm sm:text-lg lg:text-xl;
+    @apply font-sans text-white text-base md:text-lg lg:text-xl;
   }
 
   h5 {
-    @apply font-sans text-white text-base sm:text-base lg:text-lg;
+    @apply font-sans text-white text-sm md:text-base lg:text-lg;
+  }
+
+  h6 {
+    @apply font-sans text-white text-xs md:text-sm lg:text-base;
   }
 
   p {
