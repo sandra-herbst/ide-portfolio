@@ -44,22 +44,122 @@
         {
           "id": "0",
           "altText": "image",
-          "imageUrl": "assets/images/escape-room/mainRoom.png"
+          "imageUrl": "assets/images/escape-room/main_room.png"
         },
         {
           "id": "1",
           "altText": "image",
-          "imageUrl": "assets/images/escape-room/password.png"
+          "imageUrl": "assets/images/escape-room/main_screen.png"
         },
         {
           "id": "2",
           "altText": "image",
-          "imageUrl": "assets/images/escape-room/fridge.png"
+          "imageUrl": "assets/images/escape-room/settings.png"
         },
         {
           "id": "3",
           "altText": "image",
+          "imageUrl": "assets/images/escape-room/highscore.png"
+        },
+        {
+          "id": "4",
+          "altText": "image",
+          "imageUrl": "assets/images/escape-room/character_creation.png"
+        },
+        {
+          "id": "5",
+          "altText": "image",
+          "imageUrl": "assets/images/escape-room/tutorial.png"
+        },
+        {
+          "id": "6",
+          "altText": "image",
+          "imageUrl": "assets/images/escape-room/computer_room.png"
+        },
+        {
+          "id": "7",
+          "altText": "image",
+          "imageUrl": "assets/images/escape-room/house_riddle.png"
+        },
+        {
+          "id": "8",
+          "altText": "image",
+          "imageUrl": "assets/images/escape-room/pincode.png"
+        },
+        {
+          "id": "9",
+          "altText": "image",
+          "imageUrl": "assets/images/escape-room/fuse_box_off.png"
+        },
+        {
+          "id": "10",
+          "altText": "image",
           "imageUrl": "assets/images/escape-room/logic.png"
+        },
+        {
+          "id": "11",
+          "altText": "image",
+          "imageUrl": "assets/images/escape-room/main_room.png"
+        },
+        {
+          "id": "12",
+          "altText": "image",
+          "imageUrl": "assets/images/escape-room/dialogue.png"
+        },
+        {
+          "id": "13",
+          "altText": "image",
+          "imageUrl": "assets/images/escape-room/window_key_riddle.png"
+        },
+        {
+          "id": "14",
+          "altText": "image",
+          "imageUrl": "assets/images/escape-room/periodic_table.png"
+        },
+        {
+          "id": "15",
+          "altText": "image",
+          "imageUrl": "assets/images/escape-room/door_riddle.png"
+        },
+        {
+          "id": "16",
+          "altText": "image",
+          "imageUrl": "assets/images/escape-room/second_room.png"
+        },
+        {
+          "id": "17",
+          "altText": "image",
+          "imageUrl": "assets/images/escape-room/fridge.png"
+        },
+        {
+          "id": "18",
+          "altText": "image",
+          "imageUrl": "assets/images/escape-room/four_pictures_one_word.png"
+        },
+        {
+          "id": "19",
+          "altText": "image",
+          "imageUrl": "assets/images/escape-room/tidy_up.png"
+        },
+        {
+          "id": "20",
+          "altText": "image",
+          "imageUrl": "assets/images/escape-room/mixing_table.png"
+        },
+        {
+          "id": "21",
+          "altText": "image",
+          "imageUrl": "assets/images/escape-room/mixing_table2.png"
+        },
+        {
+          "id": "22",
+          "altText": "image",
+          "imageUrl": "assets/images/escape-room/mixing_table3.png"
+        },
+        {
+          "id": "23",
+          "altText": "image",
+          "imageUrl": "assets/images/escape-room/finish.png"
         }
       ],
       "title": "Escape Room",
@@ -98,11 +198,66 @@
           "id": "0",
           "altText": "image",
           "imageUrl": "assets/images/ludo/ludo.png"
+        },
+        {
+          "id": "1",
+          "altText": "image",
+          "imageUrl": "assets/images/ludo/main_screen_dm.png"
+        },
+        {
+          "id": "2",
+          "altText": "image",
+          "imageUrl": "assets/images/ludo/main_screen.png"
+        },
+        {
+          "id": "3",
+          "altText": "image",
+          "imageUrl": "assets/images/ludo/rules.png"
+        },
+        {
+          "id": "4",
+          "altText": "image",
+          "imageUrl": "assets/images/ludo/settings.png"
+        },
+        {
+          "id": "5",
+          "altText": "image",
+          "imageUrl": "assets/images/ludo/start_game_dm.png"
+        },
+        {
+          "id": "6",
+          "altText": "image",
+          "imageUrl": "assets/images/ludo/start_game.png"
+        },
+        {
+          "id": "7",
+          "altText": "image",
+          "imageUrl": "assets/images/ludo/start_game_confirmation.png"
+        },
+        {
+          "id": "8",
+          "altText": "image",
+          "imageUrl": "assets/images/ludo/game_board_dm.png"
+        },
+        {
+          "id": "9",
+          "altText": "image",
+          "imageUrl": "assets/images/ludo/game_board.png"
+        },
+        {
+          "id": "10",
+          "altText": "image",
+          "imageUrl": "assets/images/ludo/dice_6.png"
+        },
+        {
+          "id": "11",
+          "altText": "image",
+          "imageUrl": "assets/images/ludo/opponent_turn.png"
         }
       ],
       "title": "Ludo",
       "subtitle": "2D Board Game",
-      "shortDescription": "A local multiplayer board game to finally settle who's the luckiest and most genius among the friend group.",
+      "shortDescription": "A local multiplayer board game to finally settle who's the luckiest and most genius among friends.",
       "longDescription": "",
       "startDate": "2020-03-01",
       "endDate": "2020-08-01",
