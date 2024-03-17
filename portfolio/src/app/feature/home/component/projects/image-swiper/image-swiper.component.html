@@ -1,11 +1,10 @@
 <section>
-  <swiper-container style="--swiper-navigation-color: #fff" class="h-full w-full" pwSwiper [config]="config">
-    <swiper-slide *ngFor="let image of images" class="">
+  <swiper-container style="--swiper-navigation-color: #fff" pwSwiper [config]="config">
+    <swiper-slide *ngFor="let image of images">
       <img
-        class="w-full h-auto object-center object-cover rounded"
+        class="w-full h-auto min-w-full min-h-full object-center object-cover rounded"
         src="{{ image.imageUrl }}"
         alt="{{ image.altText }}" />
     </swiper-slide>
-    <
   </swiper-container>
 </section>

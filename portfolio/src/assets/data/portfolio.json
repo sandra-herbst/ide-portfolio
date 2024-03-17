@@ -44,6 +44,11 @@
         {
           "id": "0",
           "altText": "image",
+          "imageUrl": "assets/images/escape-room/preview.png"
+        },
+        {
+          "id": "1",
+          "altText": "image",
           "imageUrl": "assets/images/escape-room/main_room.png"
         },
         {
@@ -77,14 +82,14 @@
           "imageUrl": "assets/images/escape-room/four_pictures_one_word.png"
         }
       ],
-      "title": "Escape Room",
+      "title": "Case 2020",
       "subtitle": "2D Game",
       "githubUrl": "https://github.com/sandra-herbst/ide-portfolio",
       "shortDescription": "A game that locks the user into a mystery that has yet to be uncovered.",
       "longDescription": "With it's charming pixel art style, you should not be fooled by the catastrophe that is about to unravel. Find clues, decipher messages, and race against time to uncover the solution to the global crisis. Can you find the missing pieces and save the world from despair? This project is made for laptop and PC and includes a server with a REST-based API endpoint to save player highscores.",
       "implementations": [
         "Point'n'Click core functionality to interact with items and solve puzzles.",
-        "Pixel character creation with a clever overlapping of PNGs in grayscale that are dyed dynamically with image manipulation.",
+        "Pixel character creation with an overlapping of PNGs in grayscale that are dyed dynamically with image manipulation.",
         "Dialogue with a typewriter effect and additional gimmicks, such as inserting pauses and increasing/decreasing the speed of the speak.",
         "A Spring Boot server to save scores of those who finished the game and ranks them according to their performance.",
         "Inventory to collect and inspect items.",
@@ -197,7 +202,7 @@
         {
           "id": "0",
           "altText": "image",
-          "imageUrl": "assets/images/java-learn-app/challenge_list.png"
+          "imageUrl": "assets/images/java-learn-app/preview.png"
         }
       ],
       "title": "Java Learn App",
@@ -236,10 +241,10 @@
         {
           "id": "0",
           "altText": "image",
-          "imageUrl": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=600"
+          "imageUrl": "assets/images/foodies/preview.png"
         }
       ],
-      "title": "Foodies",
+      "title": "Food1es",
       "subtitle": "iOS App",
       "githubUrl": "https://github.com/sandra-herbst/ide-portfolio",
       "shortDescription": "Create perfect meals from the ingredients you have stored in the fridge!",
@@ -247,6 +252,7 @@
       "implementations": [
         "Incorporation of an external REST API endpoint that serves recipes based on given parameters.",
         "Adding, deleting and editing ingredients in your fridge.",
+        "Automatically generated cart based on the portion size.",
         "Made ingredient searching easier by suggesting commonly used ingredients.",
         "German and english translations."
       ],
@@ -269,7 +275,7 @@
         {
           "id": "0",
           "altText": "image",
-          "imageUrl": "assets/images/food-mood/foodmood2.JPG"
+          "imageUrl": "assets/images/food-mood/preview.png"
         }
       ],
       "title": "Food Mood",
@@ -281,6 +287,7 @@
         "Design and implementation of a REST API for the FoodMood application, including all of the CRUD operations that are required.",
         "Ensure data security and confidentiality through appropriate authentication and authorization mechanisms. For example, through user and administrator role permissions and the integration of JWT.",
         "Endpoint testing and CI/CD pipeline with docker.",
+        "Predefined food data by seeding the database at initialization.",
         "Endpoint documentation generation with Swagger API."
       ],
       "startDate": "2022-10-01",
@@ -373,17 +380,18 @@
         {
           "id": "0",
           "altText": "image",
-          "imageUrl": "assets/images/asthma-app/mockup.png"
+          "imageUrl": "assets/images/asthma-app/preview.png"
         }
       ],
       "title": "Asthma App",
       "subtitle": "Android App",
       "githubUrl": "https://github.com/sandra-herbst/ide-portfolio",
       "shortDescription": "For asthma patients integrating Buteyko breathing exercises into their daily routine.",
-      "longDescription": "As the sole developer for the Android version of the Asthma App, I successfully worked with the ARCIM Institute to port the existing iOS version to the Android platform. The project was initiated to provide asthma patients with a comprehensive mobile solution to improve their quality of life through targeted breathing exercises. The application not only offers the basic functionalities of the iOS version, but also relies on gamification to make the application more attractive and motivating.",
+      "longDescription": "As the sole developer for the Android version of the Asthma App, I successfully worked with the ARCIM Institute to port the existing iOS version to the Android platform. The project was initiated to provide asthma patients with a comprehensive mobile solution to improve their quality of life through targeted Buteyko breathing exercises. The application not only offers the basic functionalities of the iOS version, but also relies on gamification to make the application more attractive and motivating.",
       "implementations": [
-        "Implemented the basic functionality of the Asthma App for Android and implemented gamification elements in an additional version of the application.",
-        "rgegregre>GERGEWGRWGRG",
+        "Implemented the basic functionality of the Asthma App for Android.",
+        "Addition of gamification elements according to the Octalysis Framework in an additional version of the application.",
+        "Firebase integration for sharing daily average user statistics.",
         "German and english translations."
       ],
       "startDate": "2023-04-01",
@@ -413,7 +421,7 @@
         {
           "id": "0",
           "altText": "image",
-          "imageUrl": "assets/images/portfolio.png"
+          "imageUrl": "assets/images/portfolio_preview.png"
         }
       ],
       "title": "IDE Portfolio",
@@ -455,12 +463,17 @@
         {
           "id": "0",
           "altText": "image",
-          "imageUrl": "assets/images/blif/project-overview.png"
+          "imageUrl": "assets/images/blif/preview.png"
         },
         {
           "id": "1",
           "altText": "image",
           "imageUrl": "assets/images/blif/login-screen.png"
+        },
+        {
+          "id": "3",
+          "altText": "image",
+          "imageUrl": "assets/images/blif/project_overview.png"
         },
         {
           "id": "2",
@@ -470,7 +483,7 @@
         {
           "id": "3",
           "altText": "image",
-          "imageUrl": "assets/images/blif/preview.png"
+          "imageUrl": "assets/images/blif/project.png"
         }
       ],
       "title": "BLIF:Explorer",
