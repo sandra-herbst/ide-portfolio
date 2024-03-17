@@ -7,6 +7,8 @@ export interface Project {
   subtitle?: string;
   shortDescription: string;
   longDescription: string;
+  implementations: string[];
+  githubUrl: string;
   tags: Tag[];
   images: Image[];
   startDate: Date;

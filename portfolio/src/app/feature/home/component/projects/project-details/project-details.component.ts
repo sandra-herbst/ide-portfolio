@@ -7,11 +7,12 @@ import { NgForOf, NgIf } from "@angular/common";
 import { SharedModule } from "../../../../../shared/shared.module";
 import { Project } from "../../../../../core/model/remote/project.model";
 import { UnderscoreLabelDirective } from "../../../../../shared/directive/underscore-label.directive";
+import { ImageSwiperComponent } from "../image-swiper/image-swiper.component";
 
 @Component({
   selector: "pw-project-details",
   standalone: true,
-  imports: [NgForOf, NgIf, SharedModule, UnderscoreLabelDirective],
+  imports: [NgForOf, NgIf, SharedModule, UnderscoreLabelDirective, ImageSwiperComponent],
   templateUrl: "./project-details.component.html",
   styleUrl: "./project-details.component.css",
 })
