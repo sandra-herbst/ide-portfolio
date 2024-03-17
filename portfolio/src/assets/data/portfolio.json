@@ -44,28 +44,60 @@
         {
           "id": "0",
           "altText": "image",
-          "imageUrl": "assets/images/escape-room/mainRoom.png"
+          "imageUrl": "assets/images/escape-room/preview.png"
         },
         {
           "id": "1",
           "altText": "image",
-          "imageUrl": "assets/images/escape-room/password.png"
+          "imageUrl": "assets/images/escape-room/main_room.png"
+        },
+        {
+          "id": "1",
+          "altText": "image",
+          "imageUrl": "assets/images/escape-room/highscore.png"
         },
         {
           "id": "2",
           "altText": "image",
-          "imageUrl": "assets/images/escape-room/fridge.png"
+          "imageUrl": "assets/images/escape-room/character_creation.png"
         },
         {
           "id": "3",
           "altText": "image",
+          "imageUrl": "assets/images/escape-room/pincode.png"
+        },
+        {
+          "id": "4",
+          "altText": "image",
           "imageUrl": "assets/images/escape-room/logic.png"
+        },
+        {
+          "id": "5",
+          "altText": "image",
+          "imageUrl": "assets/images/escape-room/dialogue.png"
+        },
+        {
+          "id": "6",
+          "altText": "image",
+          "imageUrl": "assets/images/escape-room/four_pictures_one_word.png"
         }
       ],
-      "title": "Escape Room",
+      "title": "Case 2020",
       "subtitle": "2D Game",
+      "githubUrl": "https://github.com/sandra-herbst/ide-portfolio",
       "shortDescription": "A game that locks the user into a mystery that has yet to be uncovered.",
-      "longDescription": "Step into the tumult of 2020, a year marked by the unprecedented impact of the COVID-19 pandemic. When renowned researcher Dr. Deany vanishes after claiming to have found the elusive vaccine ingredients, it's up to you, the detective, to solve the mystery. Unravel clues, decipher messages, and race against time to uncover the solution to the global crisis. Can you find the missing pieces and save the world from despair?",
+      "longDescription": "With it's charming pixel art style, you should not be fooled by the catastrophe that is about to unravel. Find clues, decipher messages, and race against time to uncover the solution to the global crisis. Can you find the missing pieces and save the world from despair? This project is made for laptop and PC and includes a server with a REST-based API endpoint to save player highscores.",
+      "implementations": [
+        "Point'n'Click core functionality to interact with items and solve puzzles.",
+        "Pixel character creation with an overlapping of PNGs in grayscale that are dyed dynamically with image manipulation.",
+        "Dialogue with a typewriter effect and additional gimmicks, such as inserting pauses and increasing/decreasing the speed of the speak.",
+        "A Spring Boot server to save scores of those who finished the game and ranks them according to their performance.",
+        "Inventory to collect and inspect items.",
+        "Save and load mechanic with a serialized JSON file.",
+        "German and english translations.",
+        "Background sound effects and music.",
+        "Dark and light theme."
+      ],
       "startDate": "2020-10-01",
       "endDate": "2021-02-01",
       "tags": [
@@ -78,16 +110,16 @@
           "name": "JavaFX"
         },
         {
+          "id": "20",
+          "name": "CSS"
+        },
+        {
           "id": "2",
           "name": "Spring Boot"
         },
         {
           "id": "3",
           "name": "PostgreSQL"
-        },
-        {
-          "id": "4",
-          "name": "Heroku"
         }
       ]
     },
@@ -98,12 +130,55 @@
           "id": "0",
           "altText": "image",
           "imageUrl": "assets/images/ludo/ludo.png"
+        },
+        {
+          "id": "1",
+          "altText": "image",
+          "imageUrl": "assets/images/ludo/main_screen_dm.png"
+        },
+        {
+          "id": "2",
+          "altText": "image",
+          "imageUrl": "assets/images/ludo/main_screen.png"
+        },
+        {
+          "id": "4",
+          "altText": "image",
+          "imageUrl": "assets/images/ludo/settings.png"
+        },
+        {
+          "id": "5",
+          "altText": "image",
+          "imageUrl": "assets/images/ludo/start_game_dm.png"
+        },
+        {
+          "id": "6",
+          "altText": "image",
+          "imageUrl": "assets/images/ludo/start_game.png"
+        },
+        {
+          "id": "8",
+          "altText": "image",
+          "imageUrl": "assets/images/ludo/game_board_dm.png"
+        },
+        {
+          "id": "9",
+          "altText": "image",
+          "imageUrl": "assets/images/ludo/game_board.png"
         }
       ],
       "title": "Ludo",
       "subtitle": "2D Board Game",
-      "shortDescription": "A local multiplayer board game to finally settle who's the luckiest and most genius among the friend group.",
-      "longDescription": "",
+      "githubUrl": "https://github.com/sandra-herbst/ide-portfolio",
+      "shortDescription": "A local multiplayer game to finally settle who's the greatest strategist among friends.",
+      "longDescription": "Ludo is one of the most popular board games in the world and is truly an old classic. Each player starts the game by rolling the dice until a six is reached. This allows you to place a piece from your home onto your starting point on the board, depending on your color. The players take turns in a sorted order, and can always place a new piece on their starting point if they roll a six again. A six also grants a bonus move for the player who rolls it. Whenever the movement of a piece ends on a square occupied by an opponent's piece, the opponent's piece is returned to its owner's square. The first player to place all four pieces on their home row is the winner!",
+      "implementations": [
+        "Logic of NPC actions and classic Ludo board game rules.",
+        "Game configuration (name, color, amount of players)",
+        "German and english translations.",
+        "Background sound effects and music.",
+        "Dark and light theme."
+      ],
       "startDate": "2020-03-01",
       "endDate": "2020-08-01",
       "tags": [
@@ -114,6 +189,10 @@
         {
           "id": "1",
           "name": "JavaFX"
+        },
+        {
+          "id": "20",
+          "name": "CSS"
         }
       ]
     },
@@ -123,12 +202,22 @@
         {
           "id": "0",
           "altText": "image",
-          "imageUrl": "assets/images/java-learn-app/challenge_list.png"
+          "imageUrl": "assets/images/java-learn-app/preview.png"
         }
       ],
       "title": "Java Learn App",
       "subtitle": "Android App",
+      "githubUrl": "https://github.com/sandra-herbst/ide-portfolio",
       "shortDescription": "Guides the user to learn the programming language Java from scratch.",
+      "longDescription": "The beginning of learning something new is very hard - so it is recommended to motivate yourself regularly to keep going! To solve this problem for people who want to get in touch with their first programming language, this application will help you make your first progress and build your understanding of Java from the ground up.",
+      "implementations": [
+        "Logic of two different types of challenges: Multiple Choice and Programming.",
+        "Gamification with in-game shop and currency that can be exchanged with various goods. The currency can be collected upon solving a challenge and progress in the java lectures.",
+        "Level progression and title system",
+        "Spring Boot server that sanitizes and compiles the user's given Java code and responds with an error or success message.",
+        "German and english translations.",
+        "Dark and light theme."
+      ],
       "startDate": "2021-03-01",
       "endDate": "2021-08-01",
       "tags": [
@@ -143,10 +232,6 @@
         {
           "id": "2",
           "name": "Spring Boot"
-        },
-        {
-          "id": "4",
-          "name": "Heroku"
         }
       ]
     },
@@ -156,12 +241,21 @@
         {
           "id": "0",
           "altText": "image",
-          "imageUrl": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=600"
+          "imageUrl": "assets/images/foodies/preview.png"
         }
       ],
-      "title": "Foodies",
+      "title": "Food1es",
       "subtitle": "iOS App",
-      "shortDescription": "The app is for coming up with meals for the day. It is based on the ingredients currently stored in the fridge.",
+      "githubUrl": "https://github.com/sandra-herbst/ide-portfolio",
+      "shortDescription": "Create perfect meals from the ingredients you have stored in the fridge!",
+      "longDescription": "Have you ever found yourself staring blankly into your fridge, unsure of what to make for dinner with the limited ingredients you have on hand? The application analyzes the ingredients you have and suggests delicious recipes tailored to your available items. Whether you're craving a hearty stew, a refreshing salad, or a decadent dessert, Foodies has you covered with personalized recipe recommendations that make the most of what you already have.",
+      "implementations": [
+        "Incorporation of an external REST API endpoint that serves recipes based on given parameters.",
+        "Adding, deleting and editing ingredients in your fridge.",
+        "Automatically generated cart based on the portion size.",
+        "Made ingredient searching easier by suggesting commonly used ingredients.",
+        "German and english translations."
+      ],
       "startDate": "2022-03-01",
       "endDate": "2022-08-01",
       "tags": [
@@ -181,12 +275,21 @@
         {
           "id": "0",
           "altText": "image",
-          "imageUrl": "assets/images/food-mood/foodmood2.JPG"
+          "imageUrl": "assets/images/food-mood/preview.png"
         }
       ],
       "title": "Food Mood",
       "subtitle": "Mobile Web App",
-      "shortDescription": "What should I eat today? Just choose the dish that you would rather eat in a specified number of rounds!",
+      "githubUrl": "https://github.com/sandra-herbst/ide-portfolio",
+      "shortDescription": "Use FoodMood if you don't know what kind of food you crave today.",
+      "longDescription": "FoodMood is a mobile-first web application built in React that helps users decide what to eat today. Two randomly selected dishes are presented and the user has to decide which one they would rather eat today. The chosen dish then moves to the next round and is compared with another dish until the rounds are over. The last dish to be selected will be the result for the user. Alternatively, it is possible to personalize the experience by adding your own dishes with personal pictures to the predefined data set. These must also be categorized, so that rounds can be started with only vegan dishes, for example, or a specific meal like breakfast, dinner, etc.",
+      "implementations": [
+        "Design and implementation of a REST API for the FoodMood application, including all of the CRUD operations that are required.",
+        "Ensure data security and confidentiality through appropriate authentication and authorization mechanisms. For example, through user and administrator role permissions and the integration of JWT.",
+        "Endpoint testing and CI/CD pipeline with docker.",
+        "Predefined food data by seeding the database at initialization.",
+        "Endpoint documentation generation with Swagger API."
+      ],
       "startDate": "2022-10-01",
       "endDate": "2023-02-01",
       "tags": [
@@ -214,32 +317,46 @@
         {
           "id": "0",
           "altText": "image",
-          "imageUrl": "assets/images/hitodama/hitodama.png"
+          "imageUrl": "assets/images/hitodama/preview.png"
         },
         {
           "id": "1",
           "altText": "image",
-          "imageUrl": "assets/images/hitodama/hitodama_dialogue.png"
+          "imageUrl": "assets/images/hitodama/hitodama.png"
         },
         {
           "id": "2",
           "altText": "image",
-          "imageUrl": "assets/images/hitodama/hitodama_interaction.png"
+          "imageUrl": "assets/images/hitodama/hitodama_dialogue.png"
         },
         {
           "id": "3",
           "altText": "image",
+          "imageUrl": "assets/images/hitodama/hitodama_interaction.png"
+        },
+        {
+          "id": "4",
+          "altText": "image",
           "imageUrl": "assets/images/hitodama/hitodama_inventory.png"
         },
         {
-          "id": "0",
+          "id": "5",
           "altText": "image",
           "imageUrl": "assets/images/hitodama/hitodama_questjournal.png"
         }
       ],
       "title": "Hitodama",
       "subtitle": "3D Game",
-      "shortDescription": "A solo player exploration adventure game on PC in which a witchy cat tries to regain their human form by aiding NPCs with their worries.",
+      "githubUrl": "https://github.com/sandra-herbst/ide-portfolio",
+      "shortDescription": "An exploration game in which a bewitched cat tries to regain their human form.",
+      "longDescription": "A single player 3D adventure exploration game for the PC in which a little bewitched cat tries to regain her human form. To do this, she helps the forest dwellers out of difficult situations. The player can collect and use spells to progress through the game. The area can also be explored, items collected and dialogues held. The tasks of the inhabitants are recorded in the player's journal.",
+      "implementations": [
+        "Design and implementation of game mechanics, including animations, 3D models, 2D UI elements and controls with keyboard/controller.",
+        "Interaction with NPCs, items and spell related obstacles.",
+        "Dialogue with a typewriter effect and additional gimmicks, such as inserting pauses and increasing/decreasing the speed of the speak.",
+        "Inventory to collect and inspect items.",
+        "Background sound effects and music."
+      ],
       "startDate": "2022-10-01",
       "endDate": "2023-02-01",
       "tags": [
@@ -263,18 +380,26 @@
         {
           "id": "0",
           "altText": "image",
-          "imageUrl": "assets/images/asthma-app/mockup.png"
+          "imageUrl": "assets/images/asthma-app/preview.png"
         }
       ],
       "title": "Asthma App",
       "subtitle": "Android App",
-      "shortDescription": "A gamified app made for asthma patients who are looking to integrate buteyko breathing exercises into their daily routine.",
+      "githubUrl": "https://github.com/sandra-herbst/ide-portfolio",
+      "shortDescription": "For asthma patients integrating Buteyko breathing exercises into their daily routine.",
+      "longDescription": "As the sole developer for the Android version of the Asthma App, I successfully worked with the ARCIM Institute to port the existing iOS version to the Android platform. The project was initiated to provide asthma patients with a comprehensive mobile solution to improve their quality of life through targeted Buteyko breathing exercises. The application not only offers the basic functionalities of the iOS version, but also relies on gamification to make the application more attractive and motivating.",
+      "implementations": [
+        "Implemented the basic functionality of the Asthma App for Android.",
+        "Addition of gamification elements according to the Octalysis Framework in an additional version of the application.",
+        "Firebase integration for sharing daily average user statistics.",
+        "German and english translations."
+      ],
       "startDate": "2023-04-01",
       "endDate": "2023-07-01",
       "tags": [
         {
-          "id": "0",
-          "name": "Java"
+          "id": "21",
+          "name": "Kotlin"
         },
         {
           "id": "5",
@@ -283,6 +408,10 @@
         {
           "id": "15",
           "name": "Jetpack Compose"
+        },
+        {
+          "id": "19",
+          "name": "Firebase"
         }
       ]
     },
@@ -292,11 +421,12 @@
         {
           "id": "0",
           "altText": "image",
-          "imageUrl": "assets/images/portfolio.png"
+          "imageUrl": "assets/images/portfolio_preview.png"
         }
       ],
       "title": "IDE Portfolio",
       "subtitle": "Web App",
+      "githubUrl": "https://github.com/sandra-herbst/ide-portfolio",
       "shortDescription": "An online portfolio inspired by an integrated development environment.",
       "startDate": "2024-01-01",
       "endDate": "2024-03-01",
@@ -308,6 +438,22 @@
         {
           "id": "16",
           "name": "Angular"
+        },
+        {
+          "id": "20",
+          "name": "CSS"
+        },
+        {
+          "id": "22",
+          "name": "HTML"
+        },
+        {
+          "id": "23",
+          "name": "Tailwind"
+        },
+        {
+          "id": "9",
+          "name": "Docker"
         }
       ]
     },
@@ -317,12 +463,17 @@
         {
           "id": "0",
           "altText": "image",
-          "imageUrl": "assets/images/blif/project-overview.png"
+          "imageUrl": "assets/images/blif/preview.png"
         },
         {
           "id": "1",
           "altText": "image",
           "imageUrl": "assets/images/blif/login-screen.png"
+        },
+        {
+          "id": "3",
+          "altText": "image",
+          "imageUrl": "assets/images/blif/project_overview.png"
         },
         {
           "id": "2",
@@ -332,11 +483,12 @@
         {
           "id": "3",
           "altText": "image",
-          "imageUrl": "assets/images/blif/preview.png"
+          "imageUrl": "assets/images/blif/project.png"
         }
       ],
       "title": "BLIF:Explorer",
       "subtitle": "Cross-Platform mobile App",
+      "githubUrl": "https://github.com/sandra-herbst/ide-portfolio",
       "shortDescription": "Pupils can record location-based data to track environmental changes.",
       "startDate": "2021-09-01",
       "endDate": "2022-08-01",

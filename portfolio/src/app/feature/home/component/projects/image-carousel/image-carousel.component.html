@@ -1,0 +1,44 @@
+<section class="flex flex-col justify-center items-center w-full">
+  <div
+    class="relative overflow-hidden h-80 w-full laptop:w-[30rem] rounded"
+    (touchstart)="onTouchStart($event)"
+    (touchmove)="onTouchMove($event)"
+    (touchend)="onTouchEnd()">
+    <div class="flex transition-transform duration-300 ease-in-out h-full w-full">
+      <ng-container *ngFor="let image of images; let i = index">
+        <img
+          class="object-center object-cover"
+          [ngClass]="{ hidden: currentIndex !== i, block: currentIndex === i }"
+          ngSrc="image.imageUrl"
+          alt="{{ image.altText }}" />
+      </ng-container>
+    </div>
+
+    <button class="hidden laptop:block laptop:absolute bottom-1/2 left-0 ml-4" (click)="decreaseIndex()">
+      <div class="rounded-full p-2 bg-black hover:bg-gray-100">
+        <img class="transform scale-x-[-1]" ngSrc="assets/icons/chevron_right.svg" height="24" width="24" />
+      </div>
+    </button>
+
+    <button class="hidden laptop:block laptop:absolute bottom-1/2 right-0 mr-4" (click)="increaseIndex()">
+      <div class="rounded-full p-2 bg-black hover:bg-gray-100">
+        <img ngSrc="assets/icons/chevron_right.svg" height="24" width="24" />
+      </div>
+    </button>
+  </div>
+
+  <div class="flex flex-wrap justify-center gap-1 mt-2">
+    <button *ngFor="let images of images; let i = index" (click)="onCircleIndexClick(i)">
+      <svg width="12" height="12">
+        <circle
+          cx="6"
+          cy="6"
+          r="5"
+          fill="currentColor"
+          stroke="currentColor"
+          stroke-width="1"
+          [ngClass]="{ 'text-gray-0 fill-none': currentIndex !== i, 'text-accent fill-accent': currentIndex === i }" />
+      </svg>
+    </button>
+  </div>
+</section>
