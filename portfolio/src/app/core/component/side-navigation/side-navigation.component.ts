@@ -1,4 +1,4 @@
-import { Component, HostListener, OnInit } from "@angular/core";
+import { Component, ElementRef, HostListener, OnInit, Renderer2, ViewChild } from "@angular/core";
 import { NgClass, NgForOf, NgIf, NgOptimizedImage } from "@angular/common";
 import { NavigationService } from "../../service/navigation.service";
 import { NavigationItem } from "../../model/local/navigation-item.model";
@@ -18,16 +18,20 @@ export class SideNavigationComponent implements OnInit {
   projectNavItems: NavigationItem[] = [];
   mainNavItems: NavigationItem[] = [];
   isOpen: boolean | undefined;
+  @ViewChild("sidenav") sideNav!: ElementRef;
+  private outsideClickListener: (() => void) | undefined;
 
   constructor(
     private navService: NavigationService,
     private portfolioService: PortfolioService,
+    private renderer: Renderer2,
     private logger: LogService
   ) {}
 
   ngOnInit(): void {
     this.navService.isSideNavigationOpen$.subscribe(value => {
       this.isOpen = value;
+      this.isOpen && window.innerWidth < 1024 ? this.addMenuDismissListener() : this.removeMenuDismissListener();
     });
     this.mainNavItems = this.navService.getMainNavItems();
     this.portfolioService.getProjects().subscribe(data => {
@@ -53,5 +57,29 @@ export class SideNavigationComponent implements OnInit {
 
   onNavigationToggleClick(): void {
     this.navService.toggleSideNavigation();
+  }
+
+  private onMenuDismissedClicked(event: MouseEvent): void {
+    event.stopPropagation();
+    const eventTarget: HTMLElement = event.target as HTMLElement;
+    const clickedInside: boolean = eventTarget && this.sideNav.nativeElement.contains(eventTarget);
+    if (clickedInside) {
+      return;
+    }
+
+    this.navService.setSideNavigation(false);
+    this.removeMenuDismissListener();
+  }
+
+  private addMenuDismissListener(): void {
+    this.outsideClickListener = this.renderer.listen("document", "click", event => {
+      this.onMenuDismissedClicked(event);
+    });
+  }
+
+  private removeMenuDismissListener(): void {
+    if (this.outsideClickListener) {
+      this.outsideClickListener();
+    }
   }
 }

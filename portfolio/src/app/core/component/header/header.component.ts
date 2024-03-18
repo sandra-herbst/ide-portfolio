@@ -21,7 +21,8 @@ export class HeaderComponent implements OnInit {
     });
   }
 
-  onHamburgerMenuButtonClicked(): void {
+  onHamburgerMenuClicked(event: MouseEvent): void {
+    event.stopPropagation();
     this.navService.toggleSideNavigation();
   }
 }
