@@ -24,15 +24,13 @@ export class TopNavigationComponent implements OnInit, OnDestroy, AfterViewInit 
 
   ngAfterViewInit(): void {
     this.navService.currentRoute$.subscribe(route => {
-      setTimeout(() => {
-        this.navigationItemRefs.forEach((component, index) => {
-          const navItem = this.navItems[index];
-          if (navItem?.route === route) {
-            this.scrollToHiddenItem(component);
-            return;
-          }
-        });
-      }, 25);
+      this.navigationItemRefs.forEach((component, index) => {
+        const navItem = this.navItems[index];
+        if (navItem?.route === route) {
+          this.scrollToHiddenItem(component);
+          return;
+        }
+      });
     });
   }
 
@@ -41,6 +39,11 @@ export class TopNavigationComponent implements OnInit, OnDestroy, AfterViewInit 
     this.dynamicNavItemsSubscription = this.navService.dynamicNavItems$.subscribe(items => {
       this.dynamicNavItems = items;
       this.navItems = [...this.mainNavItems, ...this.dynamicNavItems];
+
+      setTimeout(() => {
+        const item: ElementRef<HTMLElement> | undefined = this.navigationItemRefs.get(this.navItems.length - 1);
+        if (item) this.scrollToHiddenItem(item);
+      });
     });
   }
 
@@ -58,11 +61,13 @@ export class TopNavigationComponent implements OnInit, OnDestroy, AfterViewInit 
     ) {
       return;
     }
-
-    item.nativeElement.scrollIntoView({
-      behavior: "smooth",
-      block: "nearest",
-      inline: "start",
+    window.scrollTo({ top: 0, behavior: "instant" });
+    setTimeout(() => {
+      item.nativeElement.scrollIntoView({
+        behavior: "smooth",
+        block: "nearest",
+        inline: "start",
+      });
     });
   }
 }

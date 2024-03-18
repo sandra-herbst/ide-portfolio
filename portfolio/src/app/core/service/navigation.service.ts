@@ -16,6 +16,8 @@ export class NavigationService {
   private currentRouteSubject: BehaviorSubject<string> = new BehaviorSubject<string>("");
   public currentRoute$: Observable<string> = this.currentRouteSubject.asObservable();
 
+  private MAX_DYNAMIC_ITEMS = 3;
+
   private JAVA_ICON: NavigationFileInfo = {
     fileType: NavigationFileType.JAVA,
     fileName: "class_icon",
@@ -61,6 +63,10 @@ export class NavigationService {
   addDynamicNavItem(item: NavigationItem): void {
     if (!this.dynamicNavItems.some(dynItem => item.route === dynItem.route)) {
       this.dynamicNavItems.push(item);
+      // Limit
+      if (this.dynamicNavItems.length > this.MAX_DYNAMIC_ITEMS) {
+        this.dynamicNavItems.shift();
+      }
       this.dynamicNavItems$.next([...this.dynamicNavItems]);
     }
   }
@@ -68,7 +74,6 @@ export class NavigationService {
   removeDynamicNavItem(item: NavigationItem): void {
     this.dynamicNavItems = this.dynamicNavItems.filter(dynItem => item.route !== dynItem.route);
     this.dynamicNavItems$.next([...this.dynamicNavItems]);
-
     this.navigateToAvailableRoute(item);
   }
 

@@ -16,7 +16,6 @@ export class NavigationComponent {
   onHamburgerMenuButtonClicked(event: MouseEvent): void {
     event.stopPropagation();
     this.menuOpen = !this.menuOpen;
-
     this.menuOpen ? this.addMenuDismissListener() : this.removeMenuDismissListener();
   }
 
