@@ -19,14 +19,8 @@ export class SideNavigationFolderComponent {
   constructor(private logger: LogService) {}
 
   // the arrow beside the folder has been clicked
-  onArrowClick(): void {
+  onArrowClick(event: MouseEvent): void {
+    event.stopPropagation();
     this.isExpanded = !this.isExpanded;
-    this.logger.log("onArrowClick");
-    // all children of the folder have to be closed
-  }
-
-  // the area beside the arrow has been clicked, marking it active
-  onBodyClick(): void {
-    // TODO Remove or generalize
   }
 }

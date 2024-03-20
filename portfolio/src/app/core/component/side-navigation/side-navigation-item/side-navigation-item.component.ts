@@ -26,6 +26,6 @@ export class SideNavigationItemComponent {
     if (this.navItem && this.navItem.navType == NavigationType.DYNAMIC) {
       this.navService.addDynamicNavItem(this.navItem);
     }
-    this.navService.setSideNavigation(false);
+    if (window.innerWidth < 1024) this.navService.setSideNavigation(false);
   }
 }
