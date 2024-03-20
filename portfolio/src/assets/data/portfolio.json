@@ -213,7 +213,7 @@
       "implementations": [
         "Logic of two different types of challenges: Multiple Choice and Programming.",
         "Gamification with in-game shop and currency that can be exchanged with various goods. The currency can be collected upon solving a challenge and progress in the java lectures.",
-        "Level progression and title system",
+        "Level progression and title system.",
         "Spring Boot server that sanitizes and compiles the user's given Java code and responds with an error or success message.",
         "German and english translations.",
         "Dark and light theme."
@@ -251,8 +251,8 @@
       "longDescription": "Have you ever found yourself staring blankly into your fridge, unsure of what to make for dinner with the limited ingredients you have on hand? The application analyzes the ingredients you have and suggests delicious recipes tailored to your available items. Whether you're craving a hearty stew, a refreshing salad, or a decadent dessert, Foodies has you covered with personalized recipe recommendations that make the most of what you already have.",
       "implementations": [
         "Incorporation of an external REST API endpoint that serves recipes based on given parameters.",
-        "Adding, deleting and editing ingredients in your fridge.",
-        "Automatically generated cart based on the portion size.",
+        "Adding, deleting and editing ingredients in your fridge and cart.",
+        "Automatically generated cart based on the portion size of a recipe.",
         "Made ingredient searching easier by suggesting commonly used ingredients.",
         "German and english translations."
       ],
@@ -391,7 +391,7 @@
       "implementations": [
         "Implemented the basic functionality of the Asthma App for Android.",
         "Addition of gamification elements according to the Octalysis Framework in an additional version of the application.",
-        "Firebase integration for sharing daily average user statistics.",
+        "Firebase integration for sharing daily anonymous user statistics.",
         "German and english translations."
       ],
       "startDate": "2023-04-01",
@@ -428,6 +428,13 @@
       "subtitle": "Web App",
       "githubUrl": "https://github.com/sandra-herbst/ide-portfolio",
       "shortDescription": "An online portfolio inspired by an integrated development environment.",
+      "longDescription": "My Online IDE Portfolio is a web application designed to showcase my skills, experiences, and projects as a software developer in an interactive and user-friendly manner for any device. It includes an extensive showcase of my software development projects, ranging from personal experiments to professional endeavors. Users can browse through project thumbnails, each leading to a separate details page with comprehensive information about the project's purpose, technologies used, noteworthy implementations and outcomes achieved.",
+      "implementations": [
+        "Implementation of a top and side navigation similar to modern IDEs.",
+        "The data is saved in a JSON file, allowing a potential future implementation of an API.",
+        "Optimized and responsive for all screen sizes, such as mobile, tablet, laptop and desktop.",
+        "CI pipeline with docker."
+      ],
       "startDate": "2024-01-01",
       "endDate": "2024-03-01",
       "tags": [
@@ -440,16 +447,12 @@
           "name": "Angular"
         },
         {
-          "id": "20",
-          "name": "CSS"
-        },
-        {
           "id": "22",
           "name": "HTML"
         },
         {
           "id": "23",
-          "name": "Tailwind"
+          "name": "TailwindCSS"
         },
         {
           "id": "9",
@@ -487,9 +490,17 @@
         }
       ],
       "title": "BLIF:Explorer",
-      "subtitle": "Cross-Platform mobile App",
+      "subtitle": "Cross-Platform App",
       "githubUrl": "https://github.com/sandra-herbst/ide-portfolio",
       "shortDescription": "Pupils can record location-based data to track environmental changes.",
+      "longDescription": "The BLIF:Explorer app helps students better understand the consequences of regional climate change or biodiversity loss by combining satellite imagery and field work. The app allows young people to view pre-processed satellite images in the field and collect location-based information for further analysis. Pupils can record their own data in the form of text, photos and audio.",
+      "implementations": [
+        "Incorporation of an external API for project related data, such as location, user submissions, polygon coordinates and tasks.",
+        "Usage and implementation of a framework related to satellite imagery based on geographical coordinates.",
+        "Map customization with zoom, centering on the polygon and switching between different map styles.",
+        "Offline download of projects and map data.",
+        "Synchronization of project data that is updated periodically."
+      ],
       "startDate": "2021-09-01",
       "endDate": "2022-08-01",
       "tags": [
