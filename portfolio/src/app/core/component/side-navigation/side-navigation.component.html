@@ -24,7 +24,7 @@
       </a>
     </div>
   </div>
-  <div *ngIf="isOpen" class="overflow-y-auto laptop:overflow-hidden w-60">
+  <div class="overflow-y-auto laptop:overflow-hidden w-60" [ngClass]="{ 'laptop:hidden': !isOpen }">
     <p class="py-3 px-4 laptop:py-1.5 border-b-2 border-gray-300 text-white">Project</p>
     <nav class="mt-4 mx-4 my-2">
       <li class="list-none">

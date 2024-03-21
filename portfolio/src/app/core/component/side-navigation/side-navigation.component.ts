@@ -20,6 +20,7 @@ export class SideNavigationComponent implements OnInit {
   isOpen: boolean | undefined;
   @ViewChild("sidenav") sideNav!: ElementRef;
   private outsideClickListener: (() => void) | undefined;
+  private outsideScrollListener: (() => void) | undefined;
 
   constructor(
     private navService: NavigationService,
@@ -75,11 +76,17 @@ export class SideNavigationComponent implements OnInit {
     this.outsideClickListener = this.renderer.listen("document", "click", event => {
       this.onMenuDismissedClicked(event);
     });
+    this.outsideScrollListener = this.renderer.listen("document", "scroll", event => {
+      this.onMenuDismissedClicked(event);
+    });
   }
 
   private removeMenuDismissListener(): void {
     if (this.outsideClickListener) {
       this.outsideClickListener();
+    }
+    if (this.outsideScrollListener) {
+      this.outsideScrollListener();
     }
   }
 }
