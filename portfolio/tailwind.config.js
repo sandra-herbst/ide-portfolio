@@ -43,7 +43,7 @@ module.exports = {
           "pink": "#fda4af",
         },
         "secondary": {
-          "blue": "#3673F1",
+          "blue": "#1057E5",
           "dark-blue": "#2C436E",
           "active-blue": "#282a36",
         },
@@ -52,7 +52,7 @@ module.exports = {
         },
         "gray": {
           0: "#AAAAAA",
-          50: "#65666d",
+          50: "#989898",
           100: "#3f4046",
           200: "#2B2C32",
           300: "#25252c",

@@ -103,7 +103,8 @@
       "tags": [
         {
           "id": "0",
-          "name": "Java"
+          "name": "Java",
+          "isImportant": true
         },
         {
           "id": "1",
@@ -184,7 +185,8 @@
       "tags": [
         {
           "id": "0",
-          "name": "Java"
+          "name": "Java",
+          "isImportant": true
         },
         {
           "id": "1",
@@ -223,7 +225,8 @@
       "tags": [
         {
           "id": "0",
-          "name": "Java"
+          "name": "Java",
+          "isImportant": true
         },
         {
           "id": "5",
@@ -261,7 +264,8 @@
       "tags": [
         {
           "id": "6",
-          "name": "Swift"
+          "name": "Swift",
+          "isImportant": true
         },
         {
           "id": "7",
@@ -295,7 +299,8 @@
       "tags": [
         {
           "id": "8",
-          "name": "TypeScript"
+          "name": "TypeScript",
+          "isImportant": true
         },
         {
           "id": "9",
@@ -362,7 +367,8 @@
       "tags": [
         {
           "id": "12",
-          "name": "C#"
+          "name": "C#",
+          "isImportant": true
         },
         {
           "id": "13",
@@ -399,7 +405,8 @@
       "tags": [
         {
           "id": "21",
-          "name": "Kotlin"
+          "name": "Kotlin",
+          "isImportant": true
         },
         {
           "id": "5",
@@ -440,7 +447,8 @@
       "tags": [
         {
           "id": "8",
-          "name": "TypeScript"
+          "name": "TypeScript",
+          "isImportant": true
         },
         {
           "id": "16",
@@ -506,7 +514,8 @@
       "tags": [
         {
           "id": "17",
-          "name": "Dart"
+          "name": "Dart",
+          "isImportant": true
         },
         {
           "id": "18",

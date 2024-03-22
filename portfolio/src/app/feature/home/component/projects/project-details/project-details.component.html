@@ -22,18 +22,18 @@
       <div class="font-bold text-sm">Github</div>
     </a>
     <div class="flex flex-wrap gap-x-1 gap-y-1 pt-6 items-start justify-start">
-      <pw-tag *ngFor="let tag of project?.tags" label="{{ tag.name }}"></pw-tag>
+      <pw-tag *ngFor="let tag of project?.tags" label="{{ tag.name }}" [isImportant]="tag.isImportant"></pw-tag>
     </div>
     <p class="pt-2 text-gray-50 line-clamp-5 tablet:line-clamp-3 max-w-2xl">
       {{ project?.shortDescription }}
     </p>
 
-    <h6 class="font-bold pt-6 laptop:pt-10">Description</h6>
+    <h5 class="font-bold pt-6 laptop:pt-10">Description</h5>
     <p class="pt-1 text-gray-0 max-w-xl">
       {{ project?.longDescription }}
     </p>
 
-    <h6 class="font-bold pt-8">Tasks</h6>
+    <h5 class="font-bold pt-8">Tasks</h5>
     <ul class="ml-4">
       <li class="pt-1 text-gray-0 max-w-xl text-sm list-disc" *ngFor="let impl of project?.implementations">
         {{ impl }}
