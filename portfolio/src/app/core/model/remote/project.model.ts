@@ -1,5 +1,6 @@
 import { Image } from "./image.model";
 import { Tag } from "./tag.model";
+import { Link } from "./link.model";
 
 export interface Project {
   id: string;
@@ -8,7 +9,7 @@ export interface Project {
   shortDescription: string;
   longDescription: string;
   implementations: string[];
-  githubUrl: string;
+  links?: Link[];
   tags: Tag[];
   images: Image[];
   startDate: Date;

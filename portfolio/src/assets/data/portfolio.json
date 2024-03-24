@@ -44,47 +44,55 @@
         {
           "id": "0",
           "altText": "image",
-          "imageUrl": "assets/images/escape-room/preview.png"
+          "url": "assets/images/escape-room/preview.png"
         },
         {
           "id": "1",
           "altText": "image",
-          "imageUrl": "assets/images/escape-room/main_room.png"
+          "url": "assets/images/escape-room/main_room.png"
         },
         {
           "id": "1",
           "altText": "image",
-          "imageUrl": "assets/images/escape-room/highscore.png"
+          "url": "assets/images/escape-room/highscore.png"
         },
         {
           "id": "2",
           "altText": "image",
-          "imageUrl": "assets/images/escape-room/character_creation.png"
+          "url": "assets/images/escape-room/character_creation.png"
         },
         {
           "id": "3",
           "altText": "image",
-          "imageUrl": "assets/images/escape-room/pincode.png"
+          "url": "assets/images/escape-room/pincode.png"
         },
         {
           "id": "4",
           "altText": "image",
-          "imageUrl": "assets/images/escape-room/logic.png"
+          "url": "assets/images/escape-room/logic.png"
         },
         {
           "id": "5",
           "altText": "image",
-          "imageUrl": "assets/images/escape-room/dialogue.png"
+          "url": "assets/images/escape-room/dialogue.png"
         },
         {
           "id": "6",
           "altText": "image",
-          "imageUrl": "assets/images/escape-room/four_pictures_one_word.png"
+          "url": "assets/images/escape-room/four_pictures_one_word.png"
         }
       ],
       "title": "Case 2020",
       "subtitle": "2D Game",
-      "githubUrl": "https://github.com/sandra-herbst/ide-portfolio",
+      "links": [
+        {
+          "id": "0",
+          "url": "",
+          "altText": "",
+          "label": "",
+          "type": "GITHUB"
+        }
+      ],
       "shortDescription": "A game that locks the user into a mystery that has yet to be uncovered.",
       "longDescription": "With it's charming pixel art style, you should not be fooled by the catastrophe that is about to unravel. Find clues, decipher messages, and race against time to uncover the solution to the global crisis. Can you find the missing pieces and save the world from despair? This project is made for laptop and PC and includes a server with a REST-based API endpoint to save player highscores.",
       "implementations": [
@@ -130,42 +138,42 @@
         {
           "id": "0",
           "altText": "image",
-          "imageUrl": "assets/images/ludo/ludo.png"
+          "url": "assets/images/ludo/ludo.png"
         },
         {
           "id": "1",
           "altText": "image",
-          "imageUrl": "assets/images/ludo/main_screen_dm.png"
+          "url": "assets/images/ludo/main_screen_dm.png"
         },
         {
           "id": "2",
           "altText": "image",
-          "imageUrl": "assets/images/ludo/main_screen.png"
+          "url": "assets/images/ludo/main_screen.png"
         },
         {
           "id": "4",
           "altText": "image",
-          "imageUrl": "assets/images/ludo/settings.png"
+          "url": "assets/images/ludo/settings.png"
         },
         {
           "id": "5",
           "altText": "image",
-          "imageUrl": "assets/images/ludo/start_game_dm.png"
+          "url": "assets/images/ludo/start_game_dm.png"
         },
         {
           "id": "6",
           "altText": "image",
-          "imageUrl": "assets/images/ludo/start_game.png"
+          "url": "assets/images/ludo/start_game.png"
         },
         {
           "id": "8",
           "altText": "image",
-          "imageUrl": "assets/images/ludo/game_board_dm.png"
+          "url": "assets/images/ludo/game_board_dm.png"
         },
         {
           "id": "9",
           "altText": "image",
-          "imageUrl": "assets/images/ludo/game_board.png"
+          "url": "assets/images/ludo/game_board.png"
         }
       ],
       "title": "Ludo",
@@ -204,7 +212,7 @@
         {
           "id": "0",
           "altText": "image",
-          "imageUrl": "assets/images/java-learn-app/preview.png"
+          "url": "assets/images/java-learn-app/preview.png"
         }
       ],
       "title": "Java Learn App",
@@ -244,7 +252,7 @@
         {
           "id": "0",
           "altText": "image",
-          "imageUrl": "assets/images/foodies/preview.png"
+          "url": "assets/images/foodies/preview.png"
         }
       ],
       "title": "Food1es",
@@ -279,7 +287,7 @@
         {
           "id": "0",
           "altText": "image",
-          "imageUrl": "assets/images/food-mood/preview.png"
+          "url": "assets/images/food-mood/preview.png"
         }
       ],
       "title": "Food Mood",
@@ -322,32 +330,32 @@
         {
           "id": "0",
           "altText": "image",
-          "imageUrl": "assets/images/hitodama/preview.png"
+          "url": "assets/images/hitodama/preview.png"
         },
         {
           "id": "1",
           "altText": "image",
-          "imageUrl": "assets/images/hitodama/hitodama.png"
+          "url": "assets/images/hitodama/hitodama.png"
         },
         {
           "id": "2",
           "altText": "image",
-          "imageUrl": "assets/images/hitodama/hitodama_dialogue.png"
+          "url": "assets/images/hitodama/hitodama_dialogue.png"
         },
         {
           "id": "3",
           "altText": "image",
-          "imageUrl": "assets/images/hitodama/hitodama_interaction.png"
+          "url": "assets/images/hitodama/hitodama_interaction.png"
         },
         {
           "id": "4",
           "altText": "image",
-          "imageUrl": "assets/images/hitodama/hitodama_inventory.png"
+          "url": "assets/images/hitodama/hitodama_inventory.png"
         },
         {
           "id": "5",
           "altText": "image",
-          "imageUrl": "assets/images/hitodama/hitodama_questjournal.png"
+          "url": "assets/images/hitodama/hitodama_questjournal.png"
         }
       ],
       "title": "Hitodama",
@@ -361,6 +369,22 @@
         "Dialogue with a typewriter effect and additional gimmicks, such as inserting pauses and increasing/decreasing the speed of the speak.",
         "Inventory to collect and inspect items.",
         "Background sound effects and music."
+      ],
+      "links":  [
+        {
+          "id": "0",
+          "url": "https://www.edit-magazin.de/hitodama-eine-verhexte-katze-jagt-das-irrlicht.html",
+          "altText": "Edit Interview about Hitodama",
+          "label": "Interview",
+          "type": "ARTICLE"
+        },
+        {
+          "id": "1",
+          "url": "https://www.hdm-stuttgart.de/stage/projekt_detail/projekt_details?projekt_ID=4019",
+          "altText": "Project archive page of Hitodama",
+          "label": "HdM Stage",
+          "type": "ARTICLE"
+        }
       ],
       "startDate": "2022-10-01",
       "endDate": "2023-02-01",
@@ -386,7 +410,7 @@
         {
           "id": "0",
           "altText": "image",
-          "imageUrl": "assets/images/asthma-app/preview.png"
+          "url": "assets/images/asthma-app/preview.png"
         }
       ],
       "title": "Asthma App",
@@ -428,7 +452,7 @@
         {
           "id": "0",
           "altText": "image",
-          "imageUrl": "assets/images/portfolio_preview.png"
+          "url": "assets/images/portfolio_preview.png"
         }
       ],
       "title": "IDE Portfolio",
@@ -474,27 +498,27 @@
         {
           "id": "0",
           "altText": "image",
-          "imageUrl": "assets/images/blif/preview.png"
+          "url": "assets/images/blif/preview.png"
         },
         {
           "id": "1",
           "altText": "image",
-          "imageUrl": "assets/images/blif/login-screen.png"
+          "url": "assets/images/blif/login-screen.png"
         },
         {
           "id": "3",
           "altText": "image",
-          "imageUrl": "assets/images/blif/project_overview.png"
+          "url": "assets/images/blif/project_overview.png"
         },
         {
           "id": "2",
           "altText": "image",
-          "imageUrl": "assets/images/blif/create_entry.png"
+          "url": "assets/images/blif/create_entry.png"
         },
         {
           "id": "3",
           "altText": "image",
-          "imageUrl": "assets/images/blif/project.png"
+          "url": "assets/images/blif/project.png"
         }
       ],
       "title": "BLIF:Explorer",
@@ -508,6 +532,20 @@
         "Map customization with zoom, centering on the polygon and switching between different map styles.",
         "Offline download of projects and map data.",
         "Synchronization of project data that is updated periodically."
+      ],
+      "links":  [
+        {
+          "id": "0",
+          "url": "https://play.google.com/store/apps/details?id=io.bitfactory.geo_spektiv_2_go",
+          "altText": "Google Play page of BLIF:Explorer",
+          "type": "PLAY_STORE"
+        },
+        {
+          "id": "1",
+          "url": "https://apps.apple.com/at/app/blif-explorer/id1662905998",
+          "altText": "Apple Store page of BLIF:Explorer",
+          "type": "APPLE_STORE"
+        }
       ],
       "startDate": "2021-09-01",
       "endDate": "2022-08-01",

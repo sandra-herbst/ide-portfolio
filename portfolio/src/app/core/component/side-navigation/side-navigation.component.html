@@ -9,13 +9,16 @@
     class="hidden laptop:flex justify-between flex-shrink-0 flex-grow-0 w-14 flex-col border-r-4 border-black overflow-hidden">
     <button
       (click)="onNavigationToggleClick()"
-      class="flex items-center justify-center p-2 m-2 rounded bg-gray-50"
-      [ngClass]="{ 'bg-secondary-blue': isOpen }">
+      class="flex items-center justify-center p-2 m-2 rounded"
+      [ngClass]="isOpen ? 'bg-secondary-blue' : 'bg-gray-100'">
       <img class="" width="24" height="24" ngSrc="assets/icons/folder_icon.svg" alt="Open or close side navigation" />
     </button>
 
     <div class="flex flex-col items-center justify-center m-2 gap-y-6 pb-2">
-      <a href="https://www.linkedin.com/in/sandra-herbst" target="_blank" class="text-white transition-transform ease-in-out hover:-translate-y-1">
+      <a
+        href="https://www.linkedin.com/in/sandra-herbst"
+        target="_blank"
+        class="text-white transition-transform ease-in-out hover:-translate-y-1">
         <svg
           width="24"
           height="24"
@@ -29,7 +32,10 @@
         </svg>
       </a>
 
-      <a href="https://github.com/sandra-herbst" target="_blank" class="text-white transition-transform ease-in-out hover:-translate-y-1">
+      <a
+        href="https://github.com/sandra-herbst"
+        target="_blank"
+        class="text-white transition-transform ease-in-out hover:-translate-y-1">
         <svg
           width="25"
           height="24"
