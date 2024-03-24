@@ -6,5 +6,6 @@ import { Component, Input } from "@angular/core";
 })
 export class TagComponent {
   @Input() backgroundColorClass: string = "bg-secondary-blue";
+  @Input() isImportant: boolean = false;
   @Input() label: string | undefined;
 }

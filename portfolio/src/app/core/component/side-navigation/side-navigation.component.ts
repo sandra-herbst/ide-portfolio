@@ -6,11 +6,20 @@ import { SideNavigationFolderComponent } from "./side-navigation-folder/side-nav
 import { LogService } from "../../service/log.service";
 import { SideNavigationItemComponent } from "./side-navigation-item/side-navigation-item.component";
 import { PortfolioService } from "../../service/portfolio.service";
+import { SocialLinksComponent } from "../social-links/social-links.component";
 
 @Component({
   selector: "pw-side-navigation",
   standalone: true,
-  imports: [NgOptimizedImage, SideNavigationFolderComponent, SideNavigationItemComponent, NgForOf, NgClass, NgIf],
+  imports: [
+    NgOptimizedImage,
+    SideNavigationFolderComponent,
+    SideNavigationItemComponent,
+    NgForOf,
+    NgClass,
+    NgIf,
+    SocialLinksComponent,
+  ],
   templateUrl: "./side-navigation.component.html",
   styleUrl: "./side-navigation.component.css",
 })
