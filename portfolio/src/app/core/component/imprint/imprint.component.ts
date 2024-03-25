@@ -1,18 +1,16 @@
-import { Component } from "@angular/core";
-import { SocialLinksComponent } from "../social-links/social-links.component";
-import { NavigationService } from "../../service/navigation.service";
+import { Component, OnInit } from "@angular/core";
 import { NavigationItem } from "../../model/local/navigation-item.model";
 import { NavigationType } from "../../model/local/navigation-item.enum";
 import { NavigationFileType } from "../../model/local/navigation-file-type.enum";
+import { NavigationService } from "../../service/navigation.service";
 
 @Component({
-  selector: "pw-footer",
+  selector: "pw-imprint",
   standalone: true,
-  imports: [SocialLinksComponent],
-  templateUrl: "./footer.component.html",
+  imports: [],
+  templateUrl: "./imprint.component.html",
 })
-export class FooterComponent {
-  currentYear: number;
+export class ImprintComponent implements OnInit {
   private navItem: NavigationItem = {
     label: "Imprint",
     route: "/imprint",
@@ -25,11 +23,9 @@ export class FooterComponent {
     },
   };
 
-  constructor(private navService: NavigationService) {
-    this.currentYear = new Date().getFullYear();
-  }
+  constructor(private navService: NavigationService) {}
 
-  onImprintClick(): void {
+  ngOnInit(): void {
     this.navService.addDynamicNavItem(this.navItem);
   }
 }
