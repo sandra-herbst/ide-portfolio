@@ -26,7 +26,10 @@ export class FooterComponent {
     },
   };
 
-  constructor(private navService: NavigationService, private router: Router) {
+  constructor(
+    private navService: NavigationService,
+    private router: Router
+  ) {
     this.currentYear = new Date().getFullYear();
   }
 
