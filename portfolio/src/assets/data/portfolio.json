@@ -1,0 +1,552 @@
+{
+  "id": "0",
+  "about": {
+    "id": "0",
+    "name": "Sandra Herbst",
+    "contactEmail": "sandraherbst2000@gmail.com",
+    "jobTitle": "Software Engineer",
+    "description": "I'm a passionate and intrinsically motivated software developer with a Bachelor of Science degree in Media Informatics. I believe in the importance of writing clean, efficient code that not only solves problems but also sets new standards for excellence in software development."
+  },
+  "experiences": [
+    {
+      "id": "0",
+      "jobTitle": "Student",
+      "startDate": "2023-01-01",
+      "endDate": "2023-01-01",
+      "company": "Company",
+      "description": "Description",
+      "tags": [
+        {
+          "id": "0",
+          "name": "Full time"
+        }
+      ]
+    },
+    {
+      "id": "1",
+      "jobTitle": "Working Student",
+      "startDate": "2023-01-01",
+      "endDate": "2023-01-01",
+      "company": "Company",
+      "description": "Description",
+      "tags": [
+        {
+          "id": "0",
+          "name": "Part time"
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "0",
+      "images": [
+        {
+          "id": "0",
+          "altText": "image",
+          "url": "assets/images/escape-room/preview.png"
+        },
+        {
+          "id": "1",
+          "altText": "image",
+          "url": "assets/images/escape-room/main_room.png"
+        },
+        {
+          "id": "1",
+          "altText": "image",
+          "url": "assets/images/escape-room/highscore.png"
+        },
+        {
+          "id": "2",
+          "altText": "image",
+          "url": "assets/images/escape-room/character_creation.png"
+        },
+        {
+          "id": "3",
+          "altText": "image",
+          "url": "assets/images/escape-room/pincode.png"
+        },
+        {
+          "id": "4",
+          "altText": "image",
+          "url": "assets/images/escape-room/logic.png"
+        },
+        {
+          "id": "5",
+          "altText": "image",
+          "url": "assets/images/escape-room/dialogue.png"
+        },
+        {
+          "id": "6",
+          "altText": "image",
+          "url": "assets/images/escape-room/four_pictures_one_word.png"
+        }
+      ],
+      "title": "Case 2020",
+      "subtitle": "2D Game",
+      "shortDescription": "A game that locks the user into a mystery that has yet to be uncovered.",
+      "longDescription": "With it's charming pixel art style, you should not be fooled by the catastrophe that is about to unravel. Find clues, decipher messages, and race against time to uncover the solution to the global crisis. Can you find the missing pieces and save the world from despair? This project is made for laptop and PC and includes a server with a REST-based API endpoint to save player highscores.",
+      "implementations": [
+        "Point'n'Click core functionality to interact with items and solve puzzles.",
+        "Pixel character creation with an overlapping of PNGs in grayscale that are dyed dynamically with image manipulation.",
+        "Dialogue with a typewriter effect and additional gimmicks, such as inserting pauses and increasing/decreasing the speed of the speak.",
+        "A Spring Boot server to save scores of those who finished the game and ranks them according to their performance.",
+        "Inventory to collect and inspect items.",
+        "Save and load mechanic with a serialized JSON file.",
+        "German and english translations.",
+        "Background sound effects and music.",
+        "Dark and light theme."
+      ],
+      "startDate": "2020-10-01",
+      "endDate": "2021-02-01",
+      "tags": [
+        {
+          "id": "0",
+          "name": "Java",
+          "isImportant": true
+        },
+        {
+          "id": "1",
+          "name": "JavaFX"
+        },
+        {
+          "id": "20",
+          "name": "CSS"
+        },
+        {
+          "id": "2",
+          "name": "Spring Boot"
+        },
+        {
+          "id": "3",
+          "name": "PostgreSQL"
+        }
+      ]
+    },
+    {
+      "id": "1",
+      "images": [
+        {
+          "id": "0",
+          "altText": "image",
+          "url": "assets/images/ludo/ludo.png"
+        },
+        {
+          "id": "1",
+          "altText": "image",
+          "url": "assets/images/ludo/main_screen_dm.png"
+        },
+        {
+          "id": "2",
+          "altText": "image",
+          "url": "assets/images/ludo/main_screen.png"
+        },
+        {
+          "id": "4",
+          "altText": "image",
+          "url": "assets/images/ludo/settings.png"
+        },
+        {
+          "id": "5",
+          "altText": "image",
+          "url": "assets/images/ludo/start_game_dm.png"
+        },
+        {
+          "id": "6",
+          "altText": "image",
+          "url": "assets/images/ludo/start_game.png"
+        },
+        {
+          "id": "8",
+          "altText": "image",
+          "url": "assets/images/ludo/game_board_dm.png"
+        },
+        {
+          "id": "9",
+          "altText": "image",
+          "url": "assets/images/ludo/game_board.png"
+        }
+      ],
+      "title": "Ludo",
+      "subtitle": "2D Board Game",
+      "shortDescription": "A local multiplayer game to finally settle who's the greatest strategist among friends.",
+      "longDescription": "Ludo is one of the most popular board games in the world and is truly an old classic. Each player starts the game by rolling the dice until a six is reached. This allows you to place a piece from your home onto your starting point on the board, depending on your color. The players take turns in a sorted order, and can always place a new piece on their starting point if they roll a six again. A six also grants a bonus move for the player who rolls it. Whenever the movement of a piece ends on a square occupied by an opponent's piece, the opponent's piece is returned to its owner's square. The first player to place all four pieces on their home row is the winner!",
+      "implementations": [
+        "Logic of NPC actions and classic Ludo board game rules.",
+        "Game configuration (name, color, amount of players)",
+        "German and english translations.",
+        "Background sound effects and music.",
+        "Dark and light theme."
+      ],
+      "startDate": "2020-03-01",
+      "endDate": "2020-08-01",
+      "tags": [
+        {
+          "id": "0",
+          "name": "Java",
+          "isImportant": true
+        },
+        {
+          "id": "1",
+          "name": "JavaFX"
+        },
+        {
+          "id": "20",
+          "name": "CSS"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "images": [
+        {
+          "id": "0",
+          "altText": "image",
+          "url": "assets/images/java-learn-app/preview.png"
+        }
+      ],
+      "title": "Java Learn App",
+      "subtitle": "Android App",
+      "shortDescription": "Guides the user to learn the programming language Java from scratch.",
+      "longDescription": "The beginning of learning something new is very hard - so it is recommended to motivate yourself regularly to keep going! To solve this problem for people who want to get in touch with their first programming language, this application will help you make your first progress and build your understanding of Java from the ground up.",
+      "implementations": [
+        "Logic of two different types of challenges: Multiple Choice and Programming.",
+        "Gamification with in-game shop and currency that can be exchanged with various goods. The currency can be collected upon solving a challenge and progress in the java lectures.",
+        "Level progression and title system.",
+        "Spring Boot server that sanitizes and compiles the user's given Java code and responds with an error or success message.",
+        "German and english translations.",
+        "Dark and light theme."
+      ],
+      "startDate": "2021-03-01",
+      "endDate": "2021-08-01",
+      "tags": [
+        {
+          "id": "0",
+          "name": "Java",
+          "isImportant": true
+        },
+        {
+          "id": "5",
+          "name": "Android SDK"
+        },
+        {
+          "id": "2",
+          "name": "Spring Boot"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "images": [
+        {
+          "id": "0",
+          "altText": "image",
+          "url": "assets/images/foodies/preview.png"
+        }
+      ],
+      "title": "Food1es",
+      "subtitle": "iOS App",
+      "shortDescription": "Create perfect meals from the ingredients you have stored in the fridge!",
+      "longDescription": "Have you ever found yourself staring blankly into your fridge, unsure of what to make for dinner with the limited ingredients you have on hand? The application analyzes the ingredients you have and suggests delicious recipes tailored to your available items. Whether you're craving a hearty stew, a refreshing salad, or a decadent dessert, Foodies has you covered with personalized recipe recommendations that make the most of what you already have.",
+      "implementations": [
+        "Incorporation of an external REST API endpoint that serves recipes based on given parameters.",
+        "Adding, deleting and editing ingredients in your fridge and cart.",
+        "Automatically generated cart based on the portion size of a recipe.",
+        "Made ingredient searching easier by suggesting commonly used ingredients.",
+        "German and english translations."
+      ],
+      "startDate": "2022-03-01",
+      "endDate": "2022-08-01",
+      "tags": [
+        {
+          "id": "6",
+          "name": "Swift",
+          "isImportant": true
+        },
+        {
+          "id": "7",
+          "name": "iOS SDK"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "images": [
+        {
+          "id": "0",
+          "altText": "image",
+          "url": "assets/images/food-mood/preview.png"
+        }
+      ],
+      "title": "Food Mood",
+      "subtitle": "Mobile Web App",
+      "shortDescription": "Use FoodMood if you don't know what kind of food you crave today.",
+      "longDescription": "FoodMood is a mobile-first web application built in React that helps users decide what to eat today. Two randomly selected dishes are presented and the user has to decide which one they would rather eat today. The chosen dish then moves to the next round and is compared with another dish until the rounds are over. The last dish to be selected will be the result for the user. Alternatively, it is possible to personalize the experience by adding your own dishes with personal pictures to the predefined data set. These must also be categorized, so that rounds can be started with only vegan dishes, for example, or a specific meal like breakfast, dinner, etc.",
+      "implementations": [
+        "Design and implementation of a REST API for the FoodMood application, including all of the CRUD operations that are required.",
+        "Ensure data security and confidentiality through appropriate authentication and authorization mechanisms. For example, through user and administrator role permissions and the integration of JWT.",
+        "Endpoint testing and CI/CD pipeline with docker.",
+        "Predefined food data by seeding the database at initialization.",
+        "Endpoint documentation generation with Swagger API."
+      ],
+      "startDate": "2022-10-01",
+      "endDate": "2023-02-01",
+      "tags": [
+        {
+          "id": "8",
+          "name": "TypeScript",
+          "isImportant": true
+        },
+        {
+          "id": "9",
+          "name": "Docker"
+        },
+        {
+          "id": "10",
+          "name": "NestJS"
+        },
+        {
+          "id": "11",
+          "name": "React"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "images": [
+        {
+          "id": "0",
+          "altText": "image",
+          "url": "assets/images/hitodama/preview.png"
+        },
+        {
+          "id": "1",
+          "altText": "image",
+          "url": "assets/images/hitodama/hitodama.png"
+        },
+        {
+          "id": "2",
+          "altText": "image",
+          "url": "assets/images/hitodama/hitodama_dialogue.png"
+        },
+        {
+          "id": "3",
+          "altText": "image",
+          "url": "assets/images/hitodama/hitodama_interaction.png"
+        },
+        {
+          "id": "4",
+          "altText": "image",
+          "url": "assets/images/hitodama/hitodama_inventory.png"
+        },
+        {
+          "id": "5",
+          "altText": "image",
+          "url": "assets/images/hitodama/hitodama_questjournal.png"
+        }
+      ],
+      "title": "Hitodama",
+      "subtitle": "3D Game",
+      "shortDescription": "An exploration game in which a bewitched cat tries to regain their human form.",
+      "longDescription": "A single player 3D adventure exploration game for the PC in which a little bewitched cat tries to regain her human form. To do this, she helps the forest dwellers out of difficult situations. The player can collect and use spells to progress through the game. The area can also be explored, items collected and dialogues held. The tasks of the inhabitants are recorded in the player's journal.",
+      "implementations": [
+        "Design and implementation of game mechanics, including animations, 3D models, 2D UI elements and controls with keyboard/controller.",
+        "Interaction with NPCs, items and spell related obstacles.",
+        "Dialogue with a typewriter effect and additional gimmicks, such as inserting pauses and increasing/decreasing the speed of the speak.",
+        "Inventory to collect and inspect items.",
+        "Background sound effects and music."
+      ],
+      "links":  [
+        {
+          "id": "0",
+          "url": "https://www.edit-magazin.de/hitodama-eine-verhexte-katze-jagt-das-irrlicht.html",
+          "altText": "Edit Interview about Hitodama",
+          "label": "Interview",
+          "type": "ARTICLE"
+        },
+        {
+          "id": "1",
+          "url": "https://www.hdm-stuttgart.de/stage/projekt_detail/projekt_details?projekt_ID=4019",
+          "altText": "Project archive page of Hitodama",
+          "label": "HdM Stage",
+          "type": "ARTICLE"
+        }
+      ],
+      "startDate": "2022-10-01",
+      "endDate": "2023-02-01",
+      "tags": [
+        {
+          "id": "12",
+          "name": "C#",
+          "isImportant": true
+        },
+        {
+          "id": "13",
+          "name": "Unity"
+        },
+        {
+          "id": "14",
+          "name": "Blender"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "images": [
+        {
+          "id": "0",
+          "altText": "image",
+          "url": "assets/images/asthma-app/preview.png"
+        }
+      ],
+      "title": "Asthma App",
+      "subtitle": "Android App",
+      "shortDescription": "For asthma patients integrating Buteyko breathing exercises into their daily routine.",
+      "longDescription": "As the sole developer for the Android version of the Asthma App, I successfully worked with the ARCIM Institute to port the existing iOS version to the Android platform. The project was initiated to provide asthma patients with a comprehensive mobile solution to improve their quality of life through targeted Buteyko breathing exercises. The application not only offers the basic functionalities of the iOS version, but also relies on gamification to make the application more attractive and motivating.",
+      "implementations": [
+        "Implemented the basic functionality of the Asthma App for Android.",
+        "Addition of gamification elements according to the Octalysis Framework in an additional version of the application.",
+        "Firebase integration for sharing daily anonymous user statistics.",
+        "German and english translations."
+      ],
+      "startDate": "2023-04-01",
+      "endDate": "2023-07-01",
+      "tags": [
+        {
+          "id": "21",
+          "name": "Kotlin",
+          "isImportant": true
+        },
+        {
+          "id": "5",
+          "name": "Android SDK"
+        },
+        {
+          "id": "15",
+          "name": "Jetpack Compose"
+        },
+        {
+          "id": "19",
+          "name": "Firebase"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "images": [
+        {
+          "id": "0",
+          "altText": "image",
+          "url": "assets/images/portfolio_preview.png"
+        }
+      ],
+      "title": "IDE Portfolio",
+      "subtitle": "Web App",
+      "shortDescription": "An online portfolio inspired by an integrated development environment.",
+      "longDescription": "My Online IDE Portfolio is a web application designed to showcase my skills, experiences, and projects as a software developer in an interactive and user-friendly manner for any device. It includes an extensive showcase of my software development projects, ranging from personal experiments to professional endeavors. Users can browse through project thumbnails, each leading to a separate details page with comprehensive information about the project's purpose, technologies used, noteworthy implementations and outcomes achieved.",
+      "implementations": [
+        "Implementation of a top and side navigation similar to modern IDEs.",
+        "The data is saved in a JSON file, allowing a potential future implementation of an API.",
+        "Optimized and responsive for all screen sizes, such as mobile, tablet, laptop and desktop.",
+        "CI pipeline with docker."
+      ],
+      "startDate": "2024-01-01",
+      "endDate": "2024-03-01",
+      "tags": [
+        {
+          "id": "8",
+          "name": "TypeScript",
+          "isImportant": true
+        },
+        {
+          "id": "16",
+          "name": "Angular"
+        },
+        {
+          "id": "22",
+          "name": "HTML"
+        },
+        {
+          "id": "23",
+          "name": "TailwindCSS"
+        },
+        {
+          "id": "9",
+          "name": "Docker"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "images": [
+        {
+          "id": "0",
+          "altText": "image",
+          "url": "assets/images/blif/preview.png"
+        },
+        {
+          "id": "1",
+          "altText": "image",
+          "url": "assets/images/blif/login-screen.png"
+        },
+        {
+          "id": "3",
+          "altText": "image",
+          "url": "assets/images/blif/project_overview.png"
+        },
+        {
+          "id": "2",
+          "altText": "image",
+          "url": "assets/images/blif/create_entry.png"
+        },
+        {
+          "id": "3",
+          "altText": "image",
+          "url": "assets/images/blif/project.png"
+        }
+      ],
+      "title": "BLIF:Explorer",
+      "subtitle": "Cross-Platform App",
+      "shortDescription": "Pupils can record location-based data to track environmental changes.",
+      "longDescription": "The BLIF:Explorer app helps students better understand the consequences of regional climate change or biodiversity loss by combining satellite imagery and field work. The app allows young people to view pre-processed satellite images in the field and collect location-based information for further analysis. Pupils can record their own data in the form of text, photos and audio.",
+      "implementations": [
+        "Incorporation of an external API for project related data, such as location, user submissions, polygon coordinates and tasks.",
+        "Usage and implementation of a framework related to satellite imagery based on geographical coordinates.",
+        "Map customization with zoom, centering on the polygon and switching between different map styles.",
+        "Offline download of projects and map data.",
+        "Synchronization of project data that is updated periodically."
+      ],
+      "links":  [
+        {
+          "id": "0",
+          "url": "https://play.google.com/store/apps/details?id=io.bitfactory.geo_spektiv_2_go",
+          "altText": "Google Play page of BLIF:Explorer",
+          "type": "PLAY_STORE"
+        },
+        {
+          "id": "1",
+          "url": "https://apps.apple.com/at/app/blif-explorer/id1662905998",
+          "altText": "Apple Store page of BLIF:Explorer",
+          "type": "APPLE_STORE"
+        }
+      ],
+      "startDate": "2021-09-01",
+      "endDate": "2022-08-01",
+      "tags": [
+        {
+          "id": "17",
+          "name": "Dart",
+          "isImportant": true
+        },
+        {
+          "id": "18",
+          "name": "Flutter"
+        },
+        {
+          "id": "19",
+          "name": "Firebase"
+        }
+      ]
+    }
+  ]
+}
