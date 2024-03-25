@@ -6,10 +6,11 @@ import { LogService } from "./service/log.service";
 import { HttpClientModule } from "@angular/common/http";
 import { HeaderComponent } from "./component/header/header.component";
 import { NavigationService } from "./service/navigation.service";
+import { TextButtonComponent } from "../shared/component/text-button/text-button.component";
 
 @NgModule({
   declarations: [PageNotFoundComponent, HeaderComponent],
-  imports: [CommonModule, HttpClientModule],
+  imports: [CommonModule, HttpClientModule, TextButtonComponent],
   providers: [LogService, PortfolioService, NavigationService],
   exports: [HeaderComponent],
 })
