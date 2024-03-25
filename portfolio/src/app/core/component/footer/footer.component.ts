@@ -4,6 +4,7 @@ import { NavigationService } from "../../service/navigation.service";
 import { NavigationItem } from "../../model/local/navigation-item.model";
 import { NavigationType } from "../../model/local/navigation-item.enum";
 import { NavigationFileType } from "../../model/local/navigation-file-type.enum";
+import { Router } from "@angular/router";
 
 @Component({
   selector: "pw-footer",
@@ -25,11 +26,12 @@ export class FooterComponent {
     },
   };
 
-  constructor(private navService: NavigationService) {
+  constructor(private navService: NavigationService, private router: Router) {
     this.currentYear = new Date().getFullYear();
   }
 
   onImprintClick(): void {
     this.navService.addDynamicNavItem(this.navItem);
+    this.router.navigate([this.navItem.route]).then();
   }
 }
