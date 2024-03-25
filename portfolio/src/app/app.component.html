@@ -1,12 +1,9 @@
 <div
   class="h-screen laptop:gap-y-1 max-laptop:flex max-laptop:flex-col laptop:grid laptop:grid-rows-[48px_1fr_28px] laptop:grid-cols-[auto_1fr] laptop:overflow-hidden">
-  <!-- top with navigation -->
   <pw-header class="laptop:col-span-4 laptop:row-span-1"></pw-header>
 
-  <!-- navigation -->
   <pw-side-navigation class="w-min"></pw-side-navigation>
 
-  <!-- pages that change with navigation click -->
   <main class="laptop:col-span-1 flex-grow laptop:row-span-1 laptop:flex laptop:flex-col laptop:min-h-full w-full">
     <pw-top-navigation></pw-top-navigation>
     <div class="tablet:grid tablet:grid-cols-[4rem_1fr] overflow-y-auto overflow-x-hidden h-full w-full">
@@ -20,8 +17,5 @@
     </div>
   </main>
 
-  <!-- bottom links -->
-  <footer class="flex items-center justify-end px-1 pr-4 bg-gray-200 laptop:col-span-4 w-full h-8">
-    <p>&copy; 2024 Sandra Herbst</p>
-  </footer>
+  <pw-footer class="flex items-center justify-end laptop:px-4 bg-gray-200 laptop:col-span-4 w-full"></pw-footer>
 </div>

@@ -9,6 +9,7 @@ import { TopNavigationComponent } from "./core/component/top-navigation/top-navi
 import { SideNavigationComponent } from "./core/component/side-navigation/side-navigation.component";
 import { LineNumberingDirective } from "./shared/directive/line-numbering.directive";
 import { HeightChangeDirective } from "./shared/directive/height-change.directive";
+import { FooterComponent } from "./core/component/footer/footer.component";
 
 @NgModule({
   declarations: [AppComponent],
@@ -22,6 +23,7 @@ import { HeightChangeDirective } from "./shared/directive/height-change.directiv
     SideNavigationComponent,
     LineNumberingDirective,
     HeightChangeDirective,
+    FooterComponent,
   ],
   providers: [],
   bootstrap: [AppComponent],

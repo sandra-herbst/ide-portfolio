@@ -1,4 +1,4 @@
-<header class="h-12 bg-gray-200 flex w-full z-10 justify-between items-center px-4">
+<header class="h-12 bg-gray-200 flex w-full z-10 justify-between items-center pl-4 pr-2 laptop:px-4">
   <div class="flex items-center gap-x-8">
     <a href="/">
       <h4 class="font-bold">Portfolio</h4>
@@ -25,7 +25,7 @@
     (click)="onHamburgerMenuClicked($event)"
     data-collapse-toggle="navbar-default"
     type="button"
-    class="laptop:hidden inline-flex items-center w-10 h-10 justify-center text-sm text-white rounded-lg"
+    class="laptop:hidden inline-flex items-center p-2 justify-center text-sm text-white rounded-lg"
     [ngClass]="{ 'bg-secondary-blue': isSideNavOpen }"
     aria-controls="navbar-default"
     aria-expanded="false">
