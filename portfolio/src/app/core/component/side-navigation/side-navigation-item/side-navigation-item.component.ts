@@ -12,7 +12,6 @@ import { UnderscoreLabelDirective } from "../../../../shared/directive/underscor
   standalone: true,
   imports: [NgOptimizedImage, NgClass, RouterLink, RouterLinkActive, UnderscoreLabelDirective],
   templateUrl: "./side-navigation-item.component.html",
-  styleUrl: "./side-navigation-item.component.css",
 })
 export class SideNavigationItemComponent {
   @Input() navItem: NavigationItem | undefined;

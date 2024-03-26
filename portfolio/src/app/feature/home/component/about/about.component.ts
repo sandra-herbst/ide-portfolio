@@ -5,7 +5,6 @@ import { About } from "../../../../core/model/remote/about.model";
 @Component({
   selector: "pw-about",
   templateUrl: "./about.component.html",
-  styleUrls: ["./about.component.css"],
 })
 export class AboutComponent implements OnInit {
   about: About | undefined;

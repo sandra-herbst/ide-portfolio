@@ -21,7 +21,6 @@ import { SocialLinksComponent } from "../social-links/social-links.component";
     SocialLinksComponent,
   ],
   templateUrl: "./side-navigation.component.html",
-  styleUrl: "./side-navigation.component.css",
 })
 export class SideNavigationComponent implements OnInit {
   projectNavItems: NavigationItem[] = [];

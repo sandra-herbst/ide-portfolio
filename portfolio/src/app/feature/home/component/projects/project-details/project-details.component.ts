@@ -26,7 +26,6 @@ import { iconSrcFromLinkType, LinkType } from "../../../../../core/model/remote/
     NgSwitchDefault,
   ],
   templateUrl: "./project-details.component.html",
-  styleUrl: "./project-details.component.css",
 })
 export class ProjectDetailsComponent implements OnInit {
   projectId: string | undefined;

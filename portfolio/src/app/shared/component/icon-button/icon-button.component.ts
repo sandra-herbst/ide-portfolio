@@ -5,7 +5,6 @@ import { Component, Input } from "@angular/core";
   standalone: true,
   imports: [],
   templateUrl: "./icon-button.component.html",
-  styleUrl: "./icon-button.component.css",
 })
 export class IconButtonComponent {
   @Input() label: string | undefined;

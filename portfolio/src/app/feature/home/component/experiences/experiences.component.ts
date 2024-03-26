@@ -5,7 +5,6 @@ import { Experience } from "../../../../core/model/remote/experience.model";
 @Component({
   selector: "pw-experiences",
   templateUrl: "./experiences.component.html",
-  styleUrls: ["./experiences.component.css"],
 })
 export class ExperiencesComponent implements OnInit {
   experiences: Experience[] | undefined;
