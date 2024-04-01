@@ -12,8 +12,6 @@ export class AboutComponent implements OnInit {
   constructor(private portfolioService: PortfolioService) {}
 
   ngOnInit(): void {
-    this.portfolioService.getAbout().subscribe(data => {
-      this.about = data;
-    });
+    this.about = this.portfolioService.getAbout();
   }
 }

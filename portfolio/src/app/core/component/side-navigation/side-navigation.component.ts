@@ -43,10 +43,8 @@ export class SideNavigationComponent implements OnInit {
       this.isOpen && window.innerWidth < 1024 ? this.addMenuDismissListener() : this.removeMenuDismissListener();
     });
     this.mainNavItems = this.navService.getMainNavItems();
-    this.portfolioService.getProjects().subscribe(data => {
-      this.projectNavItems = data.map(project => {
-        return this.portfolioService.getNavigationItemFromProject(project);
-      });
+    this.projectNavItems = this.portfolioService.getProjects().map(project => {
+      return this.portfolioService.getNavigationItemFromProject(project);
     });
     this.onInitNavigation();
   }

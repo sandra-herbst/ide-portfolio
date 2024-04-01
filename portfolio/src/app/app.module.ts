@@ -1,4 +1,4 @@
-import { NgModule } from "@angular/core";
+import { APP_INITIALIZER, NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
@@ -10,6 +10,11 @@ import { SideNavigationComponent } from "./core/component/side-navigation/side-n
 import { LineNumberingDirective } from "./shared/directive/line-numbering.directive";
 import { HeightChangeDirective } from "./shared/directive/height-change.directive";
 import { FooterComponent } from "./core/component/footer/footer.component";
+import { PortfolioService } from "./core/service/portfolio.service";
+
+function portfolioServiceFactory(portfolioService: PortfolioService) {
+  return () => portfolioService.loadData();
+}
 
 @NgModule({
   declarations: [AppComponent],
@@ -25,7 +30,10 @@ import { FooterComponent } from "./core/component/footer/footer.component";
     HeightChangeDirective,
     FooterComponent,
   ],
-  providers: [],
+  providers: [
+    PortfolioService,
+    { provide: APP_INITIALIZER, useFactory: portfolioServiceFactory, deps: [PortfolioService], multi: true },
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

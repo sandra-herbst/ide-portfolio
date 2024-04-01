@@ -10,6 +10,7 @@ import { UnderscoreLabelDirective } from "../../../../../shared/directive/unders
 import { ImageSwiperComponent } from "../image-swiper/image-swiper.component";
 import { IconButtonComponent } from "../../../../../shared/component/icon-button/icon-button.component";
 import { iconSrcFromLinkType, LinkType } from "../../../../../core/model/remote/link-type.enum";
+import { NavigationItem } from "../../../../../core/model/local/navigation-item.model";
 
 @Component({
   selector: "pw-project-details",
@@ -42,11 +43,9 @@ export class ProjectDetailsComponent implements OnInit {
     this.route.params.subscribe(params => {
       this.projectId = params["id"];
       if (this.projectId) {
-        this.portfolioService.getProjectById(this.projectId).subscribe(project => {
-          this.project = project;
-          const navItem = this.portfolioService.getNavigationItemFromProject(project);
-          this.navService.addDynamicNavItem(navItem);
-        });
+        this.project = this.portfolioService.getProjectById(this.projectId);
+        const navItem: NavigationItem = this.portfolioService.getNavigationItemFromProject(this.project);
+        this.navService.addDynamicNavItem(navItem);
       }
     });
   }
