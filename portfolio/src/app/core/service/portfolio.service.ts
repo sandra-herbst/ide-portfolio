@@ -2,7 +2,7 @@ import { Injectable } from "@angular/core";
 import { LogService } from "./log.service";
 import { Portfolio } from "../model/remote/portfolio.model";
 import { HttpClient } from "@angular/common/http";
-import { map, Observable, tap } from "rxjs";
+import { Observable, tap } from "rxjs";
 import { About } from "../model/remote/about.model";
 import { Experience } from "../model/remote/experience.model";
 import { Project } from "../model/remote/project.model";
