@@ -2,7 +2,7 @@ import { Injectable } from "@angular/core";
 import { LogService } from "./log.service";
 import { Portfolio } from "../model/remote/portfolio.model";
 import { HttpClient } from "@angular/common/http";
-import { map, Observable } from "rxjs";
+import { Observable, tap } from "rxjs";
 import { About } from "../model/remote/about.model";
 import { Experience } from "../model/remote/experience.model";
 import { Project } from "../model/remote/project.model";
@@ -10,7 +10,7 @@ import { NavigationItem } from "../model/local/navigation-item.model";
 import { NavigationType } from "../model/local/navigation-item.enum";
 import { NavigationFileType } from "../model/local/navigation-file-type.enum";
 
-@Injectable()
+@Injectable({ providedIn: "root" })
 export class PortfolioService {
   private dataUrl: string = "assets/data/portfolio.json";
   private portfolioData: Portfolio | undefined;
@@ -18,38 +18,32 @@ export class PortfolioService {
   constructor(
     private logger: LogService,
     private http: HttpClient
-  ) {
-    this.http.get<Portfolio>(this.dataUrl).subscribe(data => {
-      this.portfolioData = data;
-    });
-  }
+  ) {}
 
-  private getData(callback: (data: Portfolio) => void): Observable<any> {
-    return this.http.get<Portfolio>(this.dataUrl).pipe(map(data => callback(data)));
-  }
-
-  getPortfolioData(): Observable<Portfolio> {
-    return this.http.get<Portfolio>(this.dataUrl);
-  }
-
-  getAbout(): Observable<About> {
-    return this.getData(data => data.about);
-  }
-
-  getExperiences(): Observable<Experience[]> {
-    return this.getData(data => data.experiences);
-  }
-
-  getProjects(): Observable<Project[]> {
-    return this.getData(data => data.projects);
-  }
-
-  getProjectById(id: string): Observable<Project> {
-    return this.getData(data =>
-      data.projects.find(project => {
-        return project.id == id;
+  loadData(): Observable<Portfolio> {
+    return this.http.get<Portfolio>(this.dataUrl).pipe(
+      tap(data => {
+        this.portfolioData = data;
       })
     );
+  }
+
+  getAbout(): About {
+    return <About>this.portfolioData?.about;
+  }
+
+  getExperiences(): Experience[] {
+    return <Experience[]>this.portfolioData?.experiences;
+  }
+
+  getProjects(): Project[] {
+    return <Project[]>this.portfolioData?.projects;
+  }
+
+  getProjectById(id: string): Project {
+    return <Project>this.portfolioData?.projects.find(project => {
+      return project.id == id;
+    });
   }
 
   getNavigationItemFromProject(project: Project): NavigationItem {

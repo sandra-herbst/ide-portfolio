@@ -16,12 +16,10 @@ export class ProjectsComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.portfolioService.getProjects().subscribe(data => {
-      this.projectData = data.sort((a, b) => {
-        const dateA = new Date(a.startDate);
-        const dateB = new Date(b.startDate);
-        return dateB.getTime() - dateA.getTime();
-      });
+    this.projectData = this.portfolioService.getProjects().sort((a: Project, b: Project) => {
+      const dateA = new Date(a.startDate);
+      const dateB = new Date(b.startDate);
+      return dateB.getTime() - dateA.getTime();
     });
   }
 }

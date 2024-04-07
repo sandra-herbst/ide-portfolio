@@ -32,12 +32,12 @@ export class NavigationService {
       navType: NavigationType.MAIN,
       fileInfo: this.JAVA_ICON,
     },
-    {
+    /*    {
       label: "Experiences",
       route: "/experiences",
       navType: NavigationType.MAIN,
       fileInfo: this.JAVA_ICON,
-    },
+    },*/
     {
       label: "Projects",
       route: "/projects",

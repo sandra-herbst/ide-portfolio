@@ -34,17 +34,22 @@
       {{ project?.shortDescription }}
     </p>
 
-    <h5 class="font-bold pt-6">Description</h5>
-    <p class="pt-1 text-gray-0 max-w-xl">
-      {{ project?.longDescription }}
-    </p>
+    <div class="flex flex-col desktop:flex-row desktop:gap-x-32 desktop:items-start w-full desktop:flex-wrap">
+      <div>
+        <h5 class="font-bold pt-6">Description</h5>
+        <p class="pt-1 text-gray-0 max-w-xl">
+          {{ project?.longDescription }}
+        </p>
 
-    <h5 class="font-bold pt-6">Tasks</h5>
-    <ul class="ml-4">
-      <li class="pt-1 text-gray-0 max-w-xl text-sm list-disc" *ngFor="let impl of project?.implementations">
-        {{ impl }}
-      </li>
-    </ul>
-    <pw-image-swiper class="pt-8 w-full tablet:w-[35rem]" [images]="project?.images"></pw-image-swiper>
+        <h5 class="font-bold pt-6">Tasks</h5>
+        <ul class="ml-4">
+          <li class="pt-1 text-gray-0 max-w-xl text-sm list-disc" *ngFor="let impl of project?.implementations">
+            {{ impl }}
+          </li>
+        </ul>
+      </div>
+
+      <pw-image-swiper class="pt-8 w-full tablet:w-[35rem]" [images]="project?.images"></pw-image-swiper>
+    </div>
   </div>
 </section>

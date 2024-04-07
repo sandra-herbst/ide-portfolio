@@ -8,9 +8,7 @@ import { ProjectsComponent } from "./component/projects/projects.component";
 import { ProjectListComponent } from "./component/projects/projectlist/project-list.component";
 import { TextButtonComponent } from "../../shared/component/text-button/text-button.component";
 import { ImageSwiperComponent } from "./component/projects/image-swiper/image-swiper.component";
-import { register } from "swiper/element/bundle";
 
-register();
 @NgModule({
   declarations: [AboutComponent, ExperiencesComponent, ProjectsComponent, ProjectListComponent],
   imports: [CommonModule, SharedModule, RouterLink, NgOptimizedImage, TextButtonComponent, ImageSwiperComponent],

@@ -6,7 +6,6 @@ import { NgClass, NgForOf, NgOptimizedImage } from "@angular/common";
   selector: "pw-image-carousel",
   standalone: true,
   templateUrl: "./image-carousel.component.html",
-  styleUrl: "./image-carousel.component.css",
   imports: [NgForOf, NgClass, NgOptimizedImage],
 })
 export class ImageCarouselComponent implements OnInit {

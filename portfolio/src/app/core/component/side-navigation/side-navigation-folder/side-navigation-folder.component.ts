@@ -9,7 +9,6 @@ import { SideNavigationItemComponent } from "../side-navigation-item/side-naviga
   standalone: true,
   imports: [NgOptimizedImage, NgClass, NgIf, NgForOf, SideNavigationItemComponent],
   templateUrl: "./side-navigation-folder.component.html",
-  styleUrl: "./side-navigation-folder.component.css",
 })
 export class SideNavigationFolderComponent {
   isExpanded: boolean = true;
