@@ -5,7 +5,6 @@ import { NavigationService } from "../../service/navigation.service";
 @Component({
   selector: "pw-header",
   templateUrl: "./header.component.html",
-  styleUrls: ["./header.component.css"],
 })
 export class HeaderComponent implements OnInit {
   isSideNavOpen: boolean | undefined;

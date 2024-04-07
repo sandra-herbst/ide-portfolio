@@ -1,4 +1,6 @@
-<footer class="flex flex-col items-end justify-end gap-y-2 p-4 laptop:p-0 mt-auto laptop:mt-0 w-full bg-gray-200">
+<footer
+  class="flex flex-col items-end justify-end gap-2 laptop:gap-x-8 p-4 laptop:flex-row laptop:p-0 mt-auto laptop:mt-0 w-full bg-gray-200">
   <pw-social-links class="laptop:hidden"></pw-social-links>
+  <a (click)="onImprintClick()" class="hover:bg-gray-100 rounded h-full px-1 cursor-pointer">Imprint</a>
   <p>&copy; {{ currentYear }} Sandra Herbst</p>
 </footer>

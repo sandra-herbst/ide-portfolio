@@ -3,7 +3,9 @@ import { AppModule } from "./app/app.module";
 import { environment } from "./environments/environment";
 import { inject } from "@vercel/analytics";
 import { injectSpeedInsights } from "@vercel/speed-insights";
+import { register as registerSwiperElements } from "swiper/element/bundle";
 
+registerSwiperElements();
 injectSpeedInsights({ sampleRate: 0.5 });
 inject();
 

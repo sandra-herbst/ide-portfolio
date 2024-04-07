@@ -5,7 +5,6 @@ import { About } from "../../../../core/model/remote/about.model";
 @Component({
   selector: "pw-about",
   templateUrl: "./about.component.html",
-  styleUrls: ["./about.component.css"],
 })
 export class AboutComponent implements OnInit {
   about: About | undefined;
@@ -13,8 +12,6 @@ export class AboutComponent implements OnInit {
   constructor(private portfolioService: PortfolioService) {}
 
   ngOnInit(): void {
-    this.portfolioService.getAbout().subscribe(data => {
-      this.about = data;
-    });
+    this.about = this.portfolioService.getAbout();
   }
 }

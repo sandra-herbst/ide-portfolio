@@ -11,7 +11,6 @@ import { Subscription } from "rxjs";
   standalone: true,
   imports: [NgForOf, RouterLink, TopNavigationItemComponent],
   templateUrl: "./top-navigation.component.html",
-  styleUrl: "./top-navigation.component.css",
 })
 export class TopNavigationComponent implements OnInit, OnDestroy, AfterViewInit {
   @ViewChildren("navigationItemRefs") navigationItemRefs!: QueryList<ElementRef<HTMLElement>>;
