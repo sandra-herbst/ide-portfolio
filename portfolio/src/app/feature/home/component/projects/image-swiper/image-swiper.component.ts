@@ -22,7 +22,6 @@ export class ImageSwiperComponent {
     modules: [Navigation, Pagination, A11y, Mousewheel],
     grabCursor: true,
     navigation: true,
-    updateOnWindowResize: true,
     pagination: { clickable: true, dynamicBullets: false },
     spaceBetween: 0,
     slidesPerView: 1,

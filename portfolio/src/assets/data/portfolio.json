@@ -203,6 +203,16 @@
           "id": "0",
           "altText": "image",
           "url": "assets/images/java-learn-app/preview.png"
+        },
+        {
+          "id": "0",
+          "altText": "image",
+          "url": "assets/images/java-learn-app/screens.png"
+        },
+        {
+          "id": "0",
+          "altText": "image",
+          "url": "assets/images/java-learn-app/screens2.png"
         }
       ],
       "title": "Java Learn App",
@@ -242,6 +252,21 @@
           "id": "0",
           "altText": "image",
           "url": "assets/images/foodies/preview.png"
+        },
+        {
+          "id": "0",
+          "altText": "image",
+          "url": "assets/images/foodies/screens.png"
+        },
+        {
+          "id": "0",
+          "altText": "image",
+          "url": "assets/images/foodies/screens2.png"
+        },
+        {
+          "id": "0",
+          "altText": "image",
+          "url": "assets/images/foodies/screens3.png"
         }
       ],
       "title": "Food1es",
@@ -276,6 +301,16 @@
           "id": "0",
           "altText": "image",
           "url": "assets/images/food-mood/preview.png"
+        },
+        {
+          "id": "0",
+          "altText": "image",
+          "url": "assets/images/food-mood/screens.png"
+        },
+        {
+          "id": "0",
+          "altText": "image",
+          "url": "assets/images/food-mood/screens2.png"
         }
       ],
       "title": "Food Mood",
@@ -397,6 +432,21 @@
           "id": "0",
           "altText": "image",
           "url": "assets/images/asthma-app/preview.png"
+        },
+        {
+          "id": "0",
+          "altText": "image",
+          "url": "assets/images/asthma-app/screens.png"
+        },
+        {
+          "id": "0",
+          "altText": "image",
+          "url": "assets/images/asthma-app/screens2.png"
+        },
+        {
+          "id": "0",
+          "altText": "image",
+          "url": "assets/images/asthma-app/screens3.png"
         }
       ],
       "title": "Asthma App",
@@ -487,22 +537,12 @@
         {
           "id": "1",
           "altText": "image",
-          "url": "assets/images/blif/login-screen.png"
+          "url": "assets/images/blif/screens.png"
         },
         {
           "id": "3",
           "altText": "image",
-          "url": "assets/images/blif/project_overview.png"
-        },
-        {
-          "id": "2",
-          "altText": "image",
-          "url": "assets/images/blif/create_entry.png"
-        },
-        {
-          "id": "3",
-          "altText": "image",
-          "url": "assets/images/blif/project.png"
+          "url": "assets/images/blif/screens2.png"
         }
       ],
       "title": "BLIF:Explorer",

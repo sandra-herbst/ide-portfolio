@@ -24,7 +24,6 @@ export class PortfolioService {
     return this.http.get<Portfolio>(this.dataUrl).pipe(
       tap(data => {
         this.portfolioData = data;
-        console.log(this.portfolioData);
       })
     );
   }
