@@ -9,7 +9,11 @@ import { Project } from "../../../../../core/model/remote/project.model";
 import { UnderscoreLabelDirective } from "../../../../../shared/directive/underscore-label.directive";
 import { ImageSwiperComponent } from "../image-swiper/image-swiper.component";
 import { IconButtonComponent } from "../../../../../shared/component/icon-button/icon-button.component";
-import { iconSrcFromLinkType, LinkType } from "../../../../../core/model/remote/link-type.enum";
+import {
+  buttonLabelFromLinkType,
+  iconSrcFromLinkType,
+  LinkType,
+} from "../../../../../core/model/remote/link-type.enum";
 import { NavigationItem } from "../../../../../core/model/local/navigation-item.model";
 
 @Component({
@@ -52,4 +56,5 @@ export class ProjectDetailsComponent implements OnInit {
 
   protected readonly iconSrcFromLinkType = iconSrcFromLinkType;
   protected readonly LinkType = LinkType;
+  protected readonly buttonLabelFromLinkType = buttonLabelFromLinkType;
 }

@@ -3,8 +3,45 @@
   <h1 class="mb-1">{{ about?.name }}</h1>
   <h3 class="mb-4 font-mono text-accent">{{ about?.jobTitle }}</h3>
   <p class="max-w-xl">{{ about?.description }}</p>
-  <div class="pt-8">
-    <pw-text-button label="View Work" route="/projects"></pw-text-button>
+  <div class="flex flex-wrap gap-8 pt-12 w-full">
+    <pw-text-button label="View Projects" route="/projects"></pw-text-button>
+    <button
+      (click)="copyToClipboard()"
+      class="flex flex-row gap-x-2 items-center justify-center rounded px-4 py-2 border-2 border-text-gray-0 hover:border-secondary-blue w-36">
+      <svg
+        *ngIf="!hasCopied"
+        class="text-gray-0 fill-current"
+        width="20"
+        height="20"
+        viewBox="0 0 1024 1024"
+        fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M232 706H374C396.1 706 414 723.9 414 746V888H664V264H232V706Z"
+          fill="currentColor"
+          fill-opacity="0.15" />
+        <path
+          d="M832 64H296C291.6 64 288 67.6 288 72V128C288 132.4 291.6 136 296 136H792V824C792 828.4 795.6 832 800 832H856C860.4 832 864 828.4 864 824V96C864 78.3 849.7 64 832 64Z"
+          fill="currentColor" />
+        <path
+          d="M704 192H192C174.3 192 160 206.3 160 224V754.7C160 763.2 163.4 771.3 169.4 777.3L342.7 950.6C344.9 952.8 347.4 954.6 350.1 956.1V958H354.3C357.8 959.3 361.5 960 365.3 960H704C721.7 960 736 945.7 736 928V224C736 206.3 721.7 192 704 192ZM350 856.2L263.9 770H350V856.2ZM664 888H414V746C414 723.9 396.1 706 374 706H232V264H664V888Z"
+          fill="currentColor" />
+      </svg>
+      <div *ngIf="hasCopied">
+        <svg
+          class="w-4 h-4 text-success fill-current animate-jump-in-out"
+          viewBox="0 0 16 16"
+          fill="currentColor"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M14.0461 3.48601C14.1823 3.63083 14.2555 3.82385 14.2495 4.02263C14.2435 4.22141 14.1588 4.40967 14.0141 4.54601L6.08406 12.02C5.9224 12.1722 5.70759 12.2552 5.48558 12.2511C5.26356 12.247 5.05197 12.1561 4.89606 11.998L2.21606 9.27801C2.14509 9.20828 2.0887 9.12512 2.05019 9.03339C2.01167 8.94165 1.99179 8.84317 1.9917 8.74368C1.99161 8.64418 2.01132 8.54567 2.04968 8.45387C2.08804 8.36207 2.14428 8.27881 2.21513 8.20896C2.28598 8.13911 2.37002 8.08405 2.46235 8.04699C2.55469 8.00993 2.65347 7.99162 2.75296 7.99311C2.85244 7.99461 2.95063 8.01588 3.04181 8.05569C3.13299 8.0955 3.21534 8.15306 3.28406 8.22501L5.51806 10.492L12.9861 3.45401C13.1309 3.31772 13.3239 3.24452 13.5227 3.25053C13.7215 3.25653 13.9097 3.34123 14.0461 3.48601Z"
+            fill="currentColor" />
+        </svg>
+      </div>
+      <div class="font-bold text-gray-0" [ngClass]="{ 'text-success': hasCopied }">
+        {{ hasCopied ? "Copied!" : "Copy Email" }}
+      </div>
+    </button>
   </div>
   <div class="relative -top-48 right-0">
     <div
