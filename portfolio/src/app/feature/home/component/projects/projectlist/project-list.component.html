@@ -1,4 +1,4 @@
-<div class="grid grid-cols-2 tablet:flex tablet:flex-wrap max-laptop:justify-start gap-x-2 gap-y-4 tablet:gap-8 w-full">
+<section class="grid grid-cols-2 tablet:flex tablet:flex-wrap max-laptop:justify-start gap-x-2 gap-y-4 tablet:gap-8 w-full">
   <pw-card
     *ngFor="let project of projects"
     [title]="project.title"
@@ -7,4 +7,4 @@
     [tags]="project.tags"
     [images]="project.images"
     [url]="'/projects/' + project.id"></pw-card>
-</div>
+</section>

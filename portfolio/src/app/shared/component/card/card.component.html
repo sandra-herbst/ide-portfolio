@@ -1,12 +1,12 @@
-<div
+<article
   class="group cursor-pointer flex flex-col overflow-hidden rounded-xl shadow-xl bg-gray-300 tablet:w-60 h-full desktop:w-64 laptop:hover:bg-secondary-active-blue laptop:hover:shadow-2xl"
   (click)="onClick()">
-  <div class="relative h-24 tablet:h-40 overflow-hidden">
+  <figure class="relative h-24 tablet:h-40 overflow-hidden">
     <img
       class="w-full h-full object-cover object-center group-hover:scale-110 transition-all duration-300 rounded-t-xl"
       src="{{ images[0].url }}"
       alt="{{ images[0].altText }}" />
-  </div>
+  </figure>
 
   <div class="p-4 flex flex-col items-start justify-center">
     <h3 class="font-bold">
@@ -22,4 +22,4 @@
       <pw-tag *ngFor="let tag of tags" label="{{ tag.name }}" [isImportant]="tag.isImportant"></pw-tag>
     </div>
   </div>
-</div>
+</article>

@@ -41,7 +41,7 @@
           {{ project?.longDescription }}
         </p>
 
-        <h5 class="font-bold pt-6">Tasks</h5>
+        <h5 class="font-bold pt-6">Tasks and Implementations</h5>
         <ul class="ml-4">
           <li class="pt-1 text-gray-0 max-w-xl text-sm list-disc" *ngFor="let impl of project?.implementations">
             {{ impl }}
@@ -49,7 +49,7 @@
         </ul>
       </div>
 
-      <pw-image-swiper class="pt-8 w-full tablet:w-[35rem]" [images]="project?.images"></pw-image-swiper>
+      <pw-image-swiper class="pt-8" [images]="project?.images"></pw-image-swiper>
     </div>
   </div>
 </section>

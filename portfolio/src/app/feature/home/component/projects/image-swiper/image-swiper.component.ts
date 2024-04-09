@@ -22,8 +22,15 @@ export class ImageSwiperComponent {
   public config: SwiperOptions = {
     modules: [Navigation, Pagination, A11y, Mousewheel],
     grabCursor: true,
-    navigation: true,
-    pagination: { clickable: true, dynamicBullets: false },
+    navigation: {
+      nextEl: ".button-next",
+      prevEl: ".button-prev",
+    },
+    pagination: {
+      el: ".pagination",
+      clickable: true,
+      dynamicBullets: false,
+    },
     spaceBetween: 0,
     slidesPerView: 1,
     centeredSlides: true,
