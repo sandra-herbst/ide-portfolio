@@ -490,6 +490,14 @@
           "url": "assets/images/portfolio_preview.png"
         }
       ],
+      "links":  [
+        {
+          "id": "0",
+          "url": "https://github.com/sandra-herbst/ide-portfolio",
+          "altText": "GitHub page of the IDE-Portfolio Project",
+          "type": "GITHUB"
+        }
+      ],
       "title": "IDE Portfolio",
       "subtitle": "Web App",
       "shortDescription": "An online portfolio inspired by an integrated development environment.",

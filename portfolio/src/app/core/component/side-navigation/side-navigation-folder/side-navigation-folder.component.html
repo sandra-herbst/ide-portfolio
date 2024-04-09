@@ -2,17 +2,12 @@
   <div class="flex justify-start items-center rounded w-full py-1">
     <button class="inline-block pr-1" (click)="onArrowClick($event)" aria-label="Close or open navigation">
       <img
-        *ngIf="isExpanded"
+        class="transition-all ease-in-out duration-300"
+        [ngClass]="isExpanded ? 'rotate-0' : '-rotate-90'"
         width="24"
         height="24"
         ngSrc="../../../../../assets/icons/chevron_down.svg"
         alt="Arrow down" />
-      <img
-        *ngIf="!isExpanded"
-        width="24"
-        height="24"
-        ngSrc="../../../../../assets/icons/chevron_right.svg"
-        alt="Arrow right" />
     </button>
     <div class="flex items-center space-x-2 w-full h-full">
       <img

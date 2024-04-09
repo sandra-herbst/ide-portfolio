@@ -13,6 +13,7 @@ import { Image } from "../../../../../core/model/remote/image.model";
   standalone: true,
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   templateUrl: "./image-swiper.component.html",
+  styleUrl: "./image-swiper.component.css",
   imports: [NgForOf, SwiperDirective],
 })
 export class ImageSwiperComponent {

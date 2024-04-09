@@ -20,7 +20,7 @@
         <ng-template #iconButton>
           <pw-icon-button
             url="{{ link.url }}"
-            label="{{ link.label ? link.label : link.type }}"
+            label="{{ link.label || buttonLabelFromLinkType(link.type) || link.type }}"
             altText="{{ link.altText }}"
             iconSrc="{{ iconSrcFromLinkType(link.type) }}"></pw-icon-button>
         </ng-template>
