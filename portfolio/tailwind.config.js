@@ -27,10 +27,16 @@ module.exports = {
             transform: 'translateY(-10px)',
           },
         },
+        'jump-in-out': {
+          '0%': { transform: 'scale(0)' },
+          '50%': { transform: 'scale(1)' },
+          '100%': { transform: 'scale(0)' },
+        },
       },
       animation: {
         'fade-in-down': 'fade-in-down 0.25s ease-out',
-        'fade-out-up': 'fade-out-up 0.25s ease-out'
+        'fade-out-up': 'fade-out-up 0.25s ease-out',
+        'jump-in-out': 'jump-in-out 2s',
       },
       screens: {
         'tablet': '640px',
@@ -49,6 +55,9 @@ module.exports = {
         },
         "accent": {
           DEFAULT: "#CC7832",
+        },
+        "success": {
+          DEFAULT: "#19b963",
         },
         "gray": {
           0: "#AAAAAA",

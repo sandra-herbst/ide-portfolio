@@ -8,10 +8,19 @@ import { ProjectsComponent } from "./component/projects/projects.component";
 import { ProjectListComponent } from "./component/projects/projectlist/project-list.component";
 import { TextButtonComponent } from "../../shared/component/text-button/text-button.component";
 import { ImageSwiperComponent } from "./component/projects/image-swiper/image-swiper.component";
+import { IconButtonComponent } from "../../shared/component/icon-button/icon-button.component";
 
 @NgModule({
   declarations: [AboutComponent, ExperiencesComponent, ProjectsComponent, ProjectListComponent],
-  imports: [CommonModule, SharedModule, RouterLink, NgOptimizedImage, TextButtonComponent, ImageSwiperComponent],
+  imports: [
+    CommonModule,
+    SharedModule,
+    RouterLink,
+    NgOptimizedImage,
+    TextButtonComponent,
+    ImageSwiperComponent,
+    IconButtonComponent,
+  ],
   exports: [],
 })
 export class HomeModule {}

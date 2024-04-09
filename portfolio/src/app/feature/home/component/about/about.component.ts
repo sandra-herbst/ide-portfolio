@@ -8,10 +8,20 @@ import { About } from "../../../../core/model/remote/about.model";
 })
 export class AboutComponent implements OnInit {
   about: About | undefined;
+  hasCopied: boolean = false;
 
   constructor(private portfolioService: PortfolioService) {}
 
   ngOnInit(): void {
     this.about = this.portfolioService.getAbout();
+  }
+
+  copyToClipboard(): void {
+    navigator.clipboard.writeText(this.about?.contactEmail!).then(() => {
+      this.hasCopied = true;
+      setTimeout(() => {
+        this.hasCopied = false;
+      }, 2000);
+    });
   }
 }

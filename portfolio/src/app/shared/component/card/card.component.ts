@@ -8,23 +8,12 @@ import { Router } from "@angular/router";
   templateUrl: "./card.component.html",
 })
 export class CardComponent {
-  @Input()
-  title: string = "Title";
-
-  @Input()
-  subtitle?: string;
-
-  @Input()
-  description: string = "description";
-
-  @Input()
-  tags!: Tag[];
-
-  @Input()
-  images: Image[] = [];
-
-  @Input()
-  url?: string;
+  @Input() title: string = "Title";
+  @Input() subtitle?: string;
+  @Input() description: string = "description";
+  @Input() tags!: Tag[];
+  @Input() images: Image[] = [];
+  @Input() url?: string;
 
   constructor(private router: Router) {}
 
