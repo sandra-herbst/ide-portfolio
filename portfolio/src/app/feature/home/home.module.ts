@@ -9,6 +9,7 @@ import { ProjectListComponent } from "./component/projects/projectlist/project-l
 import { TextButtonComponent } from "../../shared/component/text-button/text-button.component";
 import { ImageSwiperComponent } from "./component/projects/image-swiper/image-swiper.component";
 import { IconButtonComponent } from "../../shared/component/icon-button/icon-button.component";
+import { PageTitleComponent } from "../../shared/component/page-title/page-title.component";
 
 @NgModule({
   declarations: [AboutComponent, ExperiencesComponent, ProjectsComponent, ProjectListComponent],
@@ -20,6 +21,7 @@ import { IconButtonComponent } from "../../shared/component/icon-button/icon-but
     TextButtonComponent,
     ImageSwiperComponent,
     IconButtonComponent,
+    PageTitleComponent,
   ],
   exports: [],
 })

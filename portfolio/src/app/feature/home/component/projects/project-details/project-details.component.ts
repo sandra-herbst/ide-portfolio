@@ -15,6 +15,7 @@ import {
   LinkType,
 } from "../../../../../core/model/remote/link-type.enum";
 import { NavigationItem } from "../../../../../core/model/local/navigation-item.model";
+import { PageTitleComponent } from "../../../../../shared/component/page-title/page-title.component";
 
 @Component({
   selector: "pw-project-details",
@@ -29,6 +30,7 @@ import { NavigationItem } from "../../../../../core/model/local/navigation-item.
     NgSwitchCase,
     NgSwitch,
     NgSwitchDefault,
+    PageTitleComponent,
   ],
   templateUrl: "./project-details.component.html",
 })

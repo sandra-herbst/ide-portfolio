@@ -1,10 +1,10 @@
 <div
-  class="pl-4 h-full flex items-center justify-center space-x-4 tablet:space-x-2 border-b-4 tablet:border-b-2 hover:bg-gray-100 hover:text-black"
+  class="pl-4 h-full flex items-center justify-center space-x-4 tablet:space-x-2 border-b-4 tablet:border-b-2 laptop:hover:bg-gray-100 laptop:hover:secondary-blue"
   [ngClass]="{
     'pr-2': navItem?.navType === NavigationType.DYNAMIC,
     'pr-6': navItem?.navType === NavigationType.MAIN
   }"
-  [routerLinkActive]="'hover:secondary-blue border-secondary-blue bg-black text-secondary-blue'"
+  [routerLinkActive]="'border-secondary-blue bg-black'"
   [routerLinkActiveOptions]="{ exact: true }">
   <a class="h-full w-full flex items-center justify-center" [routerLink]="navItem?.route">
     <img

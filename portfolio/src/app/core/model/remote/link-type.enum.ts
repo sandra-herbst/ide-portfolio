@@ -11,7 +11,7 @@ export function iconSrcFromLinkType(type: LinkType): string {
     case LinkType.GITHUB:
       return "assets/icons/github_icon.svg";
     case LinkType.ARTICLE:
-      return "assets/icons/file-info-icon.svg";
+      return "assets/icons/globe.svg";
     case LinkType.DOWNLOAD:
       return "assets/icons/download.png";
     case LinkType.PLAY_STORE:
