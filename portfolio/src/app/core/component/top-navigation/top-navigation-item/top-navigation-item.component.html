@@ -17,10 +17,11 @@
   </a>
 
   <div *ngIf="navItem?.navType === NavigationType.DYNAMIC" class="pr-2">
-    <button
-      (click)="onRemoveTabClick()"
-      class="flex items-center justify-center rounded-full hover:bg-secondary-active-blue p-1">
-      <img width="20" height="20" ngSrc="../../../../../assets/icons/close_icon.svg" alt="Close window" />
-    </button>
+    <div class="rounded-full hover:bg-secondary-active-blue p-1">
+      <button (click)="onRemoveTabClick()" class="flex items-center justify-center h-4 w-4">
+        <img width="14" height="14" ngSrc="../../../../../assets/icons/close_icon.svg" alt="Close window" />
+      </button>
+    </div>
   </div>
+
 </div>
