@@ -1,23 +1,26 @@
 <div
-  class="pl-4 h-full flex items-center justify-center space-x-4 tablet:space-x-2 border-b-4 tablet:border-b-2 laptop:hover:bg-gray-100 laptop:hover:secondary-blue"
-  [ngClass]="{
-    'pr-2': navItem?.navType === NavigationType.DYNAMIC,
-    'pr-6': navItem?.navType === NavigationType.MAIN
-  }"
-  [routerLinkActive]="'border-secondary-blue bg-black'"
+  class="h-full flex items-center justify-center space-x-4 tablet:space-x-2 border-b-4 tablet:border-b-2 laptop:hover:bg-gray-100 laptop:hover:secondary-blue"
+  [routerLinkActive]="'border-secondary-blue bg-black laptop:hover:bg-black'"
   [routerLinkActiveOptions]="{ exact: true }">
-  <a class="h-full w-full flex items-center justify-center" [routerLink]="navItem?.route">
+  <a
+    class="pl-6 pr-8 laptop:pl-4 laptop:pr-6 h-full w-full flex items-center justify-center gap-x-2"
+    [routerLink]="navItem?.route"
+    [ngClass]="{
+      'pr-0 laptop:pr-0': navItem?.navType === NavigationType.DYNAMIC
+    }">
     <img
-      class="mr-2"
       width="16"
       height="16"
       ngSrc="assets/icons/{{ navItem?.fileInfo?.fileName }}.{{ navItem?.fileInfo?.fileExtension }}"
       alt="{{ navItem?.fileInfo?.altText }}" />
-    <div pwUnderscoreLabel [label]="navItem?.label + '.' + navItem?.fileInfo?.fileType"></div
-  ></a>
-  <div *ngIf="navItem?.navType === NavigationType.DYNAMIC" class="rounded-full hover:bg-black p-1">
-    <button (click)="onRemoveTabClick()" class="flex items-center justify-center h-4 w-4">
-      <img width="14" height="14" ngSrc="../../../../../assets/icons/close_icon.svg" alt="Close window" />
+    <div pwUnderscoreLabel [label]="navItem?.label + '.' + navItem?.fileInfo?.fileType"></div>
+  </a>
+
+  <div *ngIf="navItem?.navType === NavigationType.DYNAMIC" class="pr-2">
+    <button
+      (click)="onRemoveTabClick()"
+      class="flex items-center justify-center rounded-full hover:bg-secondary-active-blue p-1">
+      <img width="20" height="20" ngSrc="../../../../../assets/icons/close_icon.svg" alt="Close window" />
     </button>
   </div>
 </div>
