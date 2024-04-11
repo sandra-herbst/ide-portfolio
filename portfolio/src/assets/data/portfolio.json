@@ -3,7 +3,7 @@
   "about": {
     "id": "0",
     "name": "Sandra Herbst",
-    "contactEmail": "sandraherbst2000@gmail.com",
+    "email": "info@sandra-herbst.com",
     "jobTitle": "Software Engineer",
     "description": "I'm a passionate and intrinsically motivated software developer with a Bachelor of Science degree in Media Informatics. I believe in the importance of writing clean, efficient code that not only solves problems but also sets new standards for excellence in software development."
   },
@@ -247,7 +247,7 @@
           "type": "GITHUB"
         }
       ],
-      "title": "Java Learn App",
+      "title": "JLearn",
       "subtitle": "Android App",
       "shortDescription": "Guides the user to learn the programming language Java from scratch.",
       "longDescription": "The beginning of learning something new is very hard - so it is recommended to motivate yourself regularly to keep going! To solve this problem for people who want to get in touch with their first programming language, this application will help you make your first progress and build your understanding of Java from the ground up.",

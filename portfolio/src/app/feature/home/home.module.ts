@@ -10,6 +10,7 @@ import { TextButtonComponent } from "../../shared/component/text-button/text-but
 import { ImageSwiperComponent } from "./component/projects/image-swiper/image-swiper.component";
 import { IconButtonComponent } from "../../shared/component/icon-button/icon-button.component";
 import { PageTitleComponent } from "../../shared/component/page-title/page-title.component";
+import { ExperienceCategoryComponent } from "./component/experiences/experience-category/experience-category.component";
 
 @NgModule({
   declarations: [AboutComponent, ExperiencesComponent, ProjectsComponent, ProjectListComponent],
@@ -22,6 +23,7 @@ import { PageTitleComponent } from "../../shared/component/page-title/page-title
     ImageSwiperComponent,
     IconButtonComponent,
     PageTitleComponent,
+    ExperienceCategoryComponent,
   ],
   exports: [],
 })
