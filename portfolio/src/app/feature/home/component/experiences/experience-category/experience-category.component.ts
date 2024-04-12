@@ -1,9 +1,11 @@
 import { Component, Input } from "@angular/core";
+import { ExperienceCategoryItem } from "../../../../../core/model/remote/experience-category-item";
+import { NgForOf } from "@angular/common";
 
 @Component({
   selector: "pw-experience-category",
   standalone: true,
-  imports: [],
+  imports: [NgForOf],
   templateUrl: "./experience-category.component.html",
 })
 export class ExperienceCategoryComponent {
@@ -11,5 +13,5 @@ export class ExperienceCategoryComponent {
   @Input() iconSrcAltTxt: string | undefined;
   @Input() title: string | undefined;
   @Input() description: string | undefined;
-  @Input() items: string | undefined;
+  @Input() items: ExperienceCategoryItem[] | undefined;
 }

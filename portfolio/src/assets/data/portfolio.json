@@ -7,36 +7,277 @@
     "jobTitle": "Software Engineer",
     "description": "I'm a passionate and intrinsically motivated software developer with a Bachelor of Science degree in Media Informatics. I believe in the importance of writing clean, efficient code that not only solves problems but also sets new standards for excellence in software development."
   },
-  "experiences": [
-    {
-      "id": "0",
-      "jobTitle": "Student",
-      "startDate": "2023-01-01",
-      "endDate": "2023-01-01",
-      "company": "Company",
-      "description": "Description",
-      "tags": [
-        {
-          "id": "0",
-          "name": "Full time"
-        }
-      ]
-    },
-    {
-      "id": "1",
-      "jobTitle": "Working Student",
-      "startDate": "2023-01-01",
-      "endDate": "2023-01-01",
-      "company": "Company",
-      "description": "Description",
-      "tags": [
-        {
-          "id": "0",
-          "name": "Part time"
-        }
-      ]
-    }
-  ],
+  "experiences": {
+    "id": 0,
+    "programmingLanguages": [
+      {
+        "id": 0,
+        "label": "Java",
+        "iconSrc": "assets/icons/languages/java.svg"
+      },
+      {
+        "id": 0,
+        "label": "Kotlin",
+        "iconSrc": "assets/icons/languages/kotlin.svg"
+      },
+      {
+        "id": 0,
+        "label": "C#",
+        "iconSrc": "assets/icons/languages/c-sharp.svg"
+      },
+      {
+        "id": 0,
+        "label": "TypeScript",
+        "iconSrc": "assets/icons/languages/typescript.svg"
+      },
+      {
+        "id": 0,
+        "label": "JavaScript",
+        "iconSrc": "assets/icons/languages/javascript.svg"
+      },
+      {
+        "id": 0,
+        "label": "Dart",
+        "iconSrc": "assets/icons/languages/dart.svg"
+      },
+      {
+        "id": 0,
+        "label": "Swift",
+        "iconSrc": "assets/icons/languages/swift.svg"
+      }
+    ],
+    "frameworks": [
+      {
+        "id": 0,
+        "label": "Android",
+        "iconSrc": "assets/icons/frameworks/android.svg"
+      },
+      {
+        "id": 0,
+        "label": "Flutter",
+        "iconSrc": "assets/icons/frameworks/flutter.svg"
+      },
+      {
+        "id": 0,
+        "label": "Angular",
+        "iconSrc": "assets/icons/frameworks/angular.svg"
+      },
+      {
+        "id": 0,
+        "label": "Docker",
+        "iconSrc": "assets/icons/frameworks/docker.svg"
+      },
+      {
+        "id": 0,
+        "label": "Unity",
+        "iconSrc": "assets/icons/frameworks/unity.svg"
+      },
+      {
+        "id": 0,
+        "label": "Spring Boot",
+        "iconSrc": "assets/icons/frameworks/spring.svg"
+      },
+      {
+        "id": 0,
+        "label": "NestJS",
+        "iconSrc": "assets/icons/frameworks/nestjs.svg"
+      },
+      {
+        "id": 0,
+        "label": "JavaFX",
+        "iconSrc": "assets/icons/languages/java.svg"
+      },
+      {
+        "id": 0,
+        "label": "no/SQL",
+        "iconSrc": "assets/icons/frameworks/sql.svg"
+      },
+      {
+        "id": 0,
+        "label": "Firebase",
+        "iconSrc": "assets/icons/frameworks/firebase.svg"
+      }
+    ],
+    "tools": [
+      {
+        "id": 0,
+        "label": "Atlassian",
+        "iconSrc": "assets/icons/languages/typescript.svg"
+      },
+      {
+        "id": 0,
+        "label": "Git",
+        "iconSrc": "assets/icons/languages/typescript.svg"
+      },
+      {
+        "id": 0,
+        "label": "Scrum",
+        "iconSrc": "assets/icons/languages/typescript.svg"
+      },
+      {
+        "id": 0,
+        "label": "Postman",
+        "iconSrc": "assets/icons/languages/typescript.svg"
+      },
+      {
+        "id": 0,
+        "label": "IntelliJ IDEA",
+        "iconSrc": "assets/icons/languages/typescript.svg"
+      },
+      {
+        "id": 0,
+        "label": "Android Studio",
+        "iconSrc": "assets/icons/languages/typescript.svg"
+      },
+      {
+        "id": 0,
+        "label": "Xcode",
+        "iconSrc": "assets/icons/languages/typescript.svg"
+      },
+      {
+        "id": 0,
+        "label": "VS Code",
+        "iconSrc": "assets/icons/languages/typescript.svg"
+      },
+      {
+        "id": 0,
+        "label": "Rider",
+        "iconSrc": "assets/icons/languages/typescript.svg"
+      },
+      {
+        "id": 0,
+        "label": "Figma",
+        "iconSrc": "assets/icons/languages/typescript.svg"
+      }
+    ],
+    "workExperiences": [
+      {
+        "id": "0",
+        "jobTitle": "Software Engineer",
+        "subTitle": "Intern & Working Student",
+        "startDate": "2021-09-01",
+        "endDate": "2022-08-01",
+        "company": "Bitfactory",
+        "description": "Significant project responsibility in a team environment as a developer. Programming Flutter cross-platform or Android mobile applications. Improving and modernizing already-existing programs and creating upcoming new initiatives. Developing E2E and unit tests for project quality assurance. Engaging in customer discussions during sprint reviews and continuously implementing customer requirements.",
+        "tags": [
+          {
+            "id": "0",
+            "name": "Java",
+            "isImportant": true
+          },
+          {
+            "id": "0",
+            "name": "Kotlin",
+            "isImportant": true
+          },
+          {
+            "id": "0",
+            "name": "Dart",
+            "isImportant": true
+          },
+          {
+            "id": "0",
+            "name": "Flutter"
+          },
+          {
+            "id": "0",
+            "name": "Android"
+          },
+          {
+            "id": "0",
+            "name": "Firebase"
+          },
+          {
+            "id": "0",
+            "name": "Jenkins"
+          },
+          {
+            "id": "0",
+            "name": "Scrum"
+          }
+        ]
+      }
+    ],
+    "education": [
+      {
+        "id": "0",
+        "jobTitle": "Media Informatics",
+        "subTitle": "Bachelor of Science",
+        "startDate": "2019-09-01",
+        "endDate": "2023-08-31",
+        "company": "HdM",
+        "description": "Specialization in computer science with an extensive range of media-specific application possibilities. Projects ranged between AI, gaming, web, mobile applications and computer animations. For the projects, I have assumed the highest level of responsibility.",
+        "tags": [
+          {
+            "id": "0",
+            "name": "Java",
+            "isImportant": true
+          },
+          {
+            "id": "0",
+            "name": "Kotlin",
+            "isImportant": true
+          },
+          {
+            "id": "0",
+            "name": "C#",
+            "isImportant": true
+          },
+          {
+            "id": "0",
+            "name": "TypeScript",
+            "isImportant": true
+          },
+          {
+            "id": "0",
+            "name": "JavaScript",
+            "isImportant": true
+          },
+          {
+            "id": "0",
+            "name": "Swift",
+            "isImportant": true
+          },
+          {
+            "id": "0",
+            "name": "Scrum"
+          },
+          {
+            "id": "0",
+            "name": "Adobe"
+          }
+        ]
+      },
+      {
+        "id": "0",
+        "jobTitle": "A-Level",
+        "subTitle": "Design and media technology",
+        "startDate": "2016-09-01",
+        "endDate": "2019-07-31",
+        "company": "Johannes-Gutenberg-Schule",
+        "description": "Technical high school with a focus on media design. Original graphics and animations were created by utilizing various Adobe products. One exam demanded to develop a website using the vanilla tech stack of JavaScript, HTML and CSS.",
+        "tags": [
+          {
+            "id": "0",
+            "name": "JavaScript",
+            "isImportant": true
+          },
+          {
+            "id": "0",
+            "name": "HTML"
+          },
+          {
+            "id": "0",
+            "name": "CSS"
+          },
+          {
+            "id": "0",
+            "name": "Adobe"
+          }
+        ]
+      }
+    ]
+  },
   "projects": [
     {
       "id": "0",
@@ -82,7 +323,7 @@
           "url": "assets/images/escape-room/four_pictures_one_word.png"
         }
       ],
-      "links":  [
+      "links": [
         {
           "id": "0",
           "url": "https://github.com/sandra-herbst/case2020",
@@ -179,7 +420,7 @@
           "url": "assets/images/ludo/game_board.png"
         }
       ],
-      "links":  [
+      "links": [
         {
           "id": "0",
           "url": "https://github.com/sandra-herbst/ludo",
@@ -239,7 +480,7 @@
           "url": "assets/images/java-learn-app/screens2.png"
         }
       ],
-      "links":  [
+      "links": [
         {
           "id": "0",
           "url": "https://github.com/sandra-herbst/java-learn",
@@ -305,7 +546,7 @@
           "url": "assets/images/foodies/screens3.png"
         }
       ],
-      "links":  [
+      "links": [
         {
           "id": "0",
           "url": "https://github.com/sandra-herbst/food1es",
@@ -369,7 +610,7 @@
           "url": "assets/images/food-mood/screens2.png"
         }
       ],
-      "links":  [
+      "links": [
         {
           "id": "0",
           "url": "https://github.com/sandra-herbst/food-mood",
@@ -459,7 +700,7 @@
         "Inventory to collect and inspect items.",
         "Background sound effects and music."
       ],
-      "links":  [
+      "links": [
         {
           "id": "0",
           "url": "https://www.edit-magazin.de/hitodama-eine-verhexte-katze-jagt-das-irrlicht.html",
@@ -558,7 +799,7 @@
           "url": "assets/images/portfolio_preview.png"
         }
       ],
-      "links":  [
+      "links": [
         {
           "id": "0",
           "url": "https://github.com/sandra-herbst/ide-portfolio",
@@ -632,7 +873,7 @@
         "Offline download of projects and map data.",
         "Synchronization of project data that is updated periodically."
       ],
-      "links":  [
+      "links": [
         {
           "id": "0",
           "url": "https://play.google.com/store/apps/details?id=io.bitfactory.geo_spektiv_2_go",

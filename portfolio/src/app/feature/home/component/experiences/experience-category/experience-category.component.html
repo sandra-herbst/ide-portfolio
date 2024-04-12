@@ -1,6 +1,17 @@
 <section
-  class="flex flex-col gap-y-2 my-4 p-6 rounded border-2 border-dashed border-secondary-active-blue laptop:hover:bg-secondary-active-blue laptop:hover:bg-opacity-25">
+  class="flex flex-col justify-start items-start gap-y-2 my-4 p-6 rounded border-2 border-dashed border-secondary-active-blue h-full">
   <img class="w-10 h-10" src="{{ iconSrc }}" alt="{{ iconSrcAltTxt }}" />
-  <h3 class="flex-1 font-bold">{{ title }}</h3>
-  <p class="flex-1">{{ description }}</p>
+  <h3 class="font-bold">{{ title }}</h3>
+  <p>{{ description }}</p>
+  <div class="flex flex-wrap justify-center gap-y-4 gap-x-6 mt-4">
+    <div
+      *ngFor="let item of items"
+      class="flex p-2 rounded flex-col items-center justify-center w-20 h-20 gap-y-2 bg-secondary-active-blue bg-opacity-40 group">
+      <img
+        src="{{ item.iconSrc }}"
+        alt="Icon of {{ item.label }}"
+        class="w-10 h-10 filter grayscale group-hover:filter-none" />
+      <!--      <div class="text-gray-50 font-bold text-center text-xs font-mono">{{ item.label }}</div>-->
+    </div>
+  </div>
 </section>

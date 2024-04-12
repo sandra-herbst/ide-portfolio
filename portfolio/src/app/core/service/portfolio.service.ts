@@ -4,11 +4,11 @@ import { Portfolio } from "../model/remote/portfolio.model";
 import { HttpClient } from "@angular/common/http";
 import { Observable, tap } from "rxjs";
 import { About } from "../model/remote/about.model";
-import { Experience } from "../model/remote/experience.model";
 import { Project } from "../model/remote/project.model";
 import { NavigationItem } from "../model/local/navigation-item.model";
 import { NavigationType } from "../model/local/navigation-item.enum";
 import { NavigationFileType } from "../model/local/navigation-file-type.enum";
+import { Experiences } from "../model/remote/experiences.model";
 
 @Injectable({ providedIn: "root" })
 export class PortfolioService {
@@ -32,8 +32,8 @@ export class PortfolioService {
     return <About>this.portfolioData?.about;
   }
 
-  getExperiences(): Experience[] {
-    return <Experience[]>this.portfolioData?.experiences;
+  getExperiences(): Experiences {
+    return <Experiences>this.portfolioData?.experiences;
   }
 
   getProjects(): Project[] {

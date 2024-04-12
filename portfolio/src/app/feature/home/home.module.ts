@@ -11,6 +11,7 @@ import { ImageSwiperComponent } from "./component/projects/image-swiper/image-sw
 import { IconButtonComponent } from "../../shared/component/icon-button/icon-button.component";
 import { PageTitleComponent } from "../../shared/component/page-title/page-title.component";
 import { ExperienceCategoryComponent } from "./component/experiences/experience-category/experience-category.component";
+import { ExperienceItemComponent } from "./component/experiences/experience-item/experience-item.component";
 
 @NgModule({
   declarations: [AboutComponent, ExperiencesComponent, ProjectsComponent, ProjectListComponent],
@@ -24,6 +25,7 @@ import { ExperienceCategoryComponent } from "./component/experiences/experience-
     IconButtonComponent,
     PageTitleComponent,
     ExperienceCategoryComponent,
+    ExperienceItemComponent,
   ],
   exports: [],
 })

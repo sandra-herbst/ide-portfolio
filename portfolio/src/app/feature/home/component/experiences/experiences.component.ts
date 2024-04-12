@@ -1,13 +1,13 @@
 import { Component, OnInit } from "@angular/core";
 import { PortfolioService } from "../../../../core/service/portfolio.service";
-import { Experience } from "../../../../core/model/remote/experience.model";
+import { Experiences } from "../../../../core/model/remote/experiences.model";
 
 @Component({
   selector: "pw-experiences",
   templateUrl: "./experiences.component.html",
 })
 export class ExperiencesComponent implements OnInit {
-  experiences: Experience[] | undefined;
+  experiences: Experiences | undefined;
 
   constructor(private portfolioService: PortfolioService) {}
 
