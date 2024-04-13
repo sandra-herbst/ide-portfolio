@@ -1,13 +1,16 @@
 <section>
-  <p class="mb-2 font-mono text-accent">&#64;About</p>
-  <h1 class="mb-1">{{ about?.name }}</h1>
-  <h3 class="mb-4 font-mono text-accent">{{ about?.jobTitle }}</h3>
-  <p class="max-w-xl">{{ about?.description }}</p>
+  <pw-page-title [title]="about?.name" annotationText="About"></pw-page-title>
+  <h3 class="mt-1 mb-4 font-mono text-accent">{{ about?.jobTitle }}</h3>
+  <p class="max-w-xl animate-[fade-in-down_300ms_ease-in-out] laptop:animate-[fade-in-down_600ms_ease-in-out]">
+    {{ about?.description }}
+  </p>
+
   <div class="flex flex-wrap gap-8 pt-12 w-full">
     <pw-text-button label="View Projects" route="/projects"></pw-text-button>
+
     <button
       (click)="copyToClipboard()"
-      class="flex flex-row gap-x-2 items-center justify-center rounded px-4 py-2 border-2 border-text-gray-0 hover:border-secondary-blue w-36">
+      class="flex flex-row gap-x-2 items-center justify-center rounded px-4 py-2 border-2 border-secondary-active-blue hover:bg-secondary-active-blue w-36">
       <svg
         *ngIf="!hasCopied"
         class="text-gray-0 fill-current"
@@ -27,6 +30,7 @@
           d="M704 192H192C174.3 192 160 206.3 160 224V754.7C160 763.2 163.4 771.3 169.4 777.3L342.7 950.6C344.9 952.8 347.4 954.6 350.1 956.1V958H354.3C357.8 959.3 361.5 960 365.3 960H704C721.7 960 736 945.7 736 928V224C736 206.3 721.7 192 704 192ZM350 856.2L263.9 770H350V856.2ZM664 888H414V746C414 723.9 396.1 706 374 706H232V264H664V888Z"
           fill="currentColor" />
       </svg>
+
       <div *ngIf="hasCopied">
         <svg
           class="w-4 h-4 text-success fill-current animate-jump-in-out"
@@ -43,7 +47,7 @@
       </div>
     </button>
   </div>
-  <div class="relative -top-48 right-0">
+  <div class="-z-10 relative -bottom-32 tablet:-top-48 right-0">
     <div
       class="absolute top-0 right-0 bg-cover bg-right-top h-64 w-1/2 laptop:h-96"
       style="

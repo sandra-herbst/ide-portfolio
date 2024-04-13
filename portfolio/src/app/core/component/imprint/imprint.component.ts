@@ -3,11 +3,12 @@ import { NavigationItem } from "../../model/local/navigation-item.model";
 import { NavigationType } from "../../model/local/navigation-item.enum";
 import { NavigationFileType } from "../../model/local/navigation-file-type.enum";
 import { NavigationService } from "../../service/navigation.service";
+import { PageTitleComponent } from "../../../shared/component/page-title/page-title.component";
 
 @Component({
   selector: "pw-imprint",
   standalone: true,
-  imports: [],
+  imports: [PageTitleComponent],
   templateUrl: "./imprint.component.html",
 })
 export class ImprintComponent implements OnInit {

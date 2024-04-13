@@ -3,40 +3,276 @@
   "about": {
     "id": "0",
     "name": "Sandra Herbst",
-    "contactEmail": "sandraherbst2000@gmail.com",
+    "email": "info@sandra-herbst.com",
     "jobTitle": "Software Engineer",
     "description": "I'm a passionate and intrinsically motivated software developer with a Bachelor of Science degree in Media Informatics. I believe in the importance of writing clean, efficient code that not only solves problems but also sets new standards for excellence in software development."
   },
-  "experiences": [
-    {
-      "id": "0",
-      "jobTitle": "Student",
-      "startDate": "2023-01-01",
-      "endDate": "2023-01-01",
-      "company": "Company",
-      "description": "Description",
-      "tags": [
-        {
-          "id": "0",
-          "name": "Full time"
-        }
-      ]
-    },
-    {
-      "id": "1",
-      "jobTitle": "Working Student",
-      "startDate": "2023-01-01",
-      "endDate": "2023-01-01",
-      "company": "Company",
-      "description": "Description",
-      "tags": [
-        {
-          "id": "0",
-          "name": "Part time"
-        }
-      ]
-    }
-  ],
+  "experiences": {
+    "id": 0,
+    "programmingLanguages": [
+      {
+        "id": 0,
+        "label": "Java",
+        "iconSrc": "assets/icons/languages/java.svg"
+      },
+      {
+        "id": 0,
+        "label": "Kotlin",
+        "iconSrc": "assets/icons/languages/kotlin.svg"
+      },
+      {
+        "id": 0,
+        "label": "C#",
+        "iconSrc": "assets/icons/languages/c-sharp.svg"
+      },
+      {
+        "id": 0,
+        "label": "Type Script",
+        "iconSrc": "assets/icons/languages/typescript.svg"
+      },
+      {
+        "id": 0,
+        "label": "Java Script",
+        "iconSrc": "assets/icons/languages/javascript.svg"
+      },
+      {
+        "id": 0,
+        "label": "Dart",
+        "iconSrc": "assets/icons/languages/dart.svg"
+      },
+      {
+        "id": 0,
+        "label": "Swift",
+        "iconSrc": "assets/icons/languages/swift.svg"
+      }
+    ],
+    "frameworks": [
+      {
+        "id": 0,
+        "label": "Android",
+        "iconSrc": "assets/icons/frameworks/android.svg"
+      },
+      {
+        "id": 0,
+        "label": "Flutter",
+        "iconSrc": "assets/icons/frameworks/flutter.svg"
+      },
+      {
+        "id": 0,
+        "label": "Angular",
+        "iconSrc": "assets/icons/frameworks/angular.svg"
+      },
+      {
+        "id": 0,
+        "label": "Docker",
+        "iconSrc": "assets/icons/frameworks/docker.svg"
+      },
+      {
+        "id": 0,
+        "label": "Unity",
+        "iconSrc": "assets/icons/frameworks/unity.svg"
+      },
+      {
+        "id": 0,
+        "label": "Spring Boot",
+        "iconSrc": "assets/icons/frameworks/spring.svg"
+      },
+      {
+        "id": 0,
+        "label": "NestJS",
+        "iconSrc": "assets/icons/frameworks/nestjs.svg"
+      },
+      {
+        "id": 0,
+        "label": "JavaFX",
+        "iconSrc": "assets/icons/languages/java.svg"
+      },
+      {
+        "id": 0,
+        "label": "no/SQL",
+        "iconSrc": "assets/icons/frameworks/sql.svg"
+      },
+      {
+        "id": 0,
+        "label": "Firebase",
+        "iconSrc": "assets/icons/frameworks/firebase.svg"
+      }
+    ],
+    "tools": [
+      {
+        "id": 0,
+        "label": "Atlassian",
+        "iconSrc": "assets/icons/tools/atlassian.svg"
+      },
+      {
+        "id": 0,
+        "label": "Git",
+        "iconSrc": "assets/icons/tools/git.svg"
+      },
+      {
+        "id": 0,
+        "label": "Scrum",
+        "iconSrc": "assets/icons/tools/scrum.svg"
+      },
+      {
+        "id": 0,
+        "label": "Postman",
+        "iconSrc": "assets/icons/tools/postman.svg"
+      },
+      {
+        "id": 0,
+        "label": "Jetbrains",
+        "iconSrc": "assets/icons/tools/jetbrains.svg"
+      },
+      {
+        "id": 0,
+        "label": "Android Studio",
+        "iconSrc": "assets/icons/tools/android-studio.svg"
+      },
+      {
+        "id": 0,
+        "label": "Xcode",
+        "iconSrc": "assets/icons/tools/x-code.svg"
+      },
+      {
+        "id": 0,
+        "label": "VS Code",
+        "iconSrc": "assets/icons/tools/vscode.svg"
+      },
+      {
+        "id": 0,
+        "label": "Figma",
+        "iconSrc": "assets/icons/tools/figma.svg"
+      }
+    ],
+    "workExperiences": [
+      {
+        "id": "0",
+        "jobTitle": "Software Engineer",
+        "subTitle": "Intern & Working Student",
+        "startDate": "2021-09-01",
+        "endDate": "2022-08-01",
+        "company": "Bitfactory",
+        "description": "Significant project responsibility in a team environment as a developer. Programming Flutter cross-platform or Android mobile applications. Improving and modernizing already-existing programs and creating upcoming new initiatives. Developing E2E and unit tests for project quality assurance. Engaging in customer discussions during sprint reviews and continuously implementing customer requirements.",
+        "tags": [
+          {
+            "id": "0",
+            "name": "Java",
+            "isImportant": true
+          },
+          {
+            "id": "0",
+            "name": "Kotlin",
+            "isImportant": true
+          },
+          {
+            "id": "0",
+            "name": "Dart",
+            "isImportant": true
+          },
+          {
+            "id": "0",
+            "name": "Flutter"
+          },
+          {
+            "id": "0",
+            "name": "Android"
+          },
+          {
+            "id": "0",
+            "name": "Firebase"
+          },
+          {
+            "id": "0",
+            "name": "Jenkins"
+          },
+          {
+            "id": "0",
+            "name": "Scrum"
+          }
+        ]
+      }
+    ],
+    "education": [
+      {
+        "id": "0",
+        "jobTitle": "Media Informatics",
+        "subTitle": "Bachelor of Science",
+        "startDate": "2019-09-01",
+        "endDate": "2023-08-31",
+        "company": "HdM",
+        "description": "Specialization in computer science with an extensive range of media-specific application possibilities. Projects ranged between AI, gaming, web, mobile applications and computer animations. For the projects, I have assumed the highest level of responsibility and contributed greatly to their success.",
+        "tags": [
+          {
+            "id": "0",
+            "name": "Java",
+            "isImportant": true
+          },
+          {
+            "id": "0",
+            "name": "Kotlin",
+            "isImportant": true
+          },
+          {
+            "id": "0",
+            "name": "C#",
+            "isImportant": true
+          },
+          {
+            "id": "0",
+            "name": "TypeScript",
+            "isImportant": true
+          },
+          {
+            "id": "0",
+            "name": "JavaScript",
+            "isImportant": true
+          },
+          {
+            "id": "0",
+            "name": "Swift",
+            "isImportant": true
+          },
+          {
+            "id": "0",
+            "name": "Scrum"
+          },
+          {
+            "id": "0",
+            "name": "Adobe"
+          }
+        ]
+      },
+      {
+        "id": "0",
+        "jobTitle": "A-Level",
+        "subTitle": "Design and media technology",
+        "startDate": "2016-09-01",
+        "endDate": "2019-07-31",
+        "company": "Johannes-Gutenberg-Schule",
+        "description": "Technical high school with a focus on media design. Original graphics and animations were created by utilizing various Adobe products. One exam demanded to develop a website using the vanilla tech stack of JavaScript, HTML and CSS.",
+        "tags": [
+          {
+            "id": "0",
+            "name": "JavaScript",
+            "isImportant": true
+          },
+          {
+            "id": "0",
+            "name": "HTML"
+          },
+          {
+            "id": "0",
+            "name": "CSS"
+          },
+          {
+            "id": "0",
+            "name": "Adobe"
+          }
+        ]
+      }
+    ]
+  },
   "projects": [
     {
       "id": "0",
@@ -82,11 +318,11 @@
           "url": "assets/images/escape-room/four_pictures_one_word.png"
         }
       ],
-      "links":  [
+      "links": [
         {
           "id": "0",
           "url": "https://github.com/sandra-herbst/case2020",
-          "altText": "GitHub page of the project Java Learn App",
+          "altText": "GitHub page of the project Case2020",
           "type": "GITHUB"
         }
       ],
@@ -128,6 +364,10 @@
         {
           "id": "3",
           "name": "PostgreSQL"
+        },
+        {
+          "id": "26",
+          "name": "JUnit"
         }
       ]
     },
@@ -175,11 +415,11 @@
           "url": "assets/images/ludo/game_board.png"
         }
       ],
-      "links":  [
+      "links": [
         {
           "id": "0",
           "url": "https://github.com/sandra-herbst/ludo",
-          "altText": "GitHub page of the project Java Learn App",
+          "altText": "GitHub page of the project Ludo",
           "type": "GITHUB"
         }
       ],
@@ -209,6 +449,10 @@
         {
           "id": "20",
           "name": "CSS"
+        },
+        {
+          "id": "26",
+          "name": "JUnit"
         }
       ]
     },
@@ -231,7 +475,7 @@
           "url": "assets/images/java-learn-app/screens2.png"
         }
       ],
-      "links":  [
+      "links": [
         {
           "id": "0",
           "url": "https://github.com/sandra-herbst/java-learn",
@@ -239,7 +483,7 @@
           "type": "GITHUB"
         }
       ],
-      "title": "Java Learn App",
+      "title": "JLearn",
       "subtitle": "Android App",
       "shortDescription": "Guides the user to learn the programming language Java from scratch.",
       "longDescription": "The beginning of learning something new is very hard - so it is recommended to motivate yourself regularly to keep going! To solve this problem for people who want to get in touch with their first programming language, this application will help you make your first progress and build your understanding of Java from the ground up.",
@@ -266,6 +510,10 @@
         {
           "id": "2",
           "name": "Spring Boot"
+        },
+        {
+          "id": "26",
+          "name": "Espresso"
         }
       ]
     },
@@ -293,7 +541,7 @@
           "url": "assets/images/foodies/screens3.png"
         }
       ],
-      "links":  [
+      "links": [
         {
           "id": "0",
           "url": "https://github.com/sandra-herbst/food1es",
@@ -327,6 +575,14 @@
         {
           "id": "24",
           "name": "SwiftUI"
+        },
+        {
+          "id": "27",
+          "name": "XCTest"
+        },
+        {
+          "id": "28",
+          "name": "Core Data"
         }
       ]
     },
@@ -349,7 +605,7 @@
           "url": "assets/images/food-mood/screens2.png"
         }
       ],
-      "links":  [
+      "links": [
         {
           "id": "0",
           "url": "https://github.com/sandra-herbst/food-mood",
@@ -363,7 +619,7 @@
       "longDescription": "FoodMood is a mobile-first web application built in React that helps users decide what to eat today. Two randomly selected dishes are presented and the user has to decide which one they would rather eat today. The chosen dish then moves to the next round and is compared with another dish until the rounds are over. The last dish to be selected will be the result for the user. Alternatively, it is possible to personalize the experience by adding your own dishes with personal pictures to the predefined data set. These must also be categorized, so that rounds can be started with only vegan dishes, for example, or a specific meal like breakfast, dinner, etc.",
       "implementations": [
         "Design and implementation of a REST API for the FoodMood application, including all of the CRUD operations that are required.",
-        "Ensure data security and confidentiality through appropriate authentication and authorization mechanisms. For example, through user and administrator role permissions and the integration of JWT.",
+        "Ensured data security and confidentiality through appropriate authentication and authorization mechanisms. For example, through user and administrator role permissions and the integration of JWT.",
         "Endpoint testing and CI/CD pipeline with docker.",
         "Predefined food data by seeding the database at initialization.",
         "Endpoint documentation generation with Swagger API."
@@ -439,7 +695,7 @@
         "Inventory to collect and inspect items.",
         "Background sound effects and music."
       ],
-      "links":  [
+      "links": [
         {
           "id": "0",
           "url": "https://www.edit-magazin.de/hitodama-eine-verhexte-katze-jagt-das-irrlicht.html",
@@ -538,7 +794,7 @@
           "url": "assets/images/portfolio_preview.png"
         }
       ],
-      "links":  [
+      "links": [
         {
           "id": "0",
           "url": "https://github.com/sandra-herbst/ide-portfolio",
@@ -612,7 +868,7 @@
         "Offline download of projects and map data.",
         "Synchronization of project data that is updated periodically."
       ],
-      "links":  [
+      "links": [
         {
           "id": "0",
           "url": "https://play.google.com/store/apps/details?id=io.bitfactory.geo_spektiv_2_go",

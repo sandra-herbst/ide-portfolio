@@ -1,14 +1,6 @@
 <section>
   <div class="flex flex-col items-start justify-center">
-    <h6
-      *ngIf="project?.subtitle"
-      class="mb-2 text-accent text-xs tablet:text-sm font-mono"
-      pwUnderscoreLabel
-      [label]="'@' + project?.subtitle"></h6>
-
-    <h1 class="font-bold">
-      {{ project?.title }}
-    </h1>
+    <pw-page-title [title]="project?.title" [annotationText]="project?.subtitle"></pw-page-title>
 
     <div *ngIf="project?.links" class="mt-6 flex flex-wrap gap-2 items-start justify-start">
       <div *ngFor="let link of project?.links">
@@ -36,14 +28,14 @@
 
     <div class="flex flex-col desktop:flex-row desktop:gap-x-32 desktop:items-start w-full desktop:flex-wrap">
       <div>
-        <h5 class="font-bold pt-6">Description</h5>
-        <p class="pt-1 text-gray-0 max-w-xl">
+        <h3 class="font-bold pt-6">Description</h3>
+        <p class="pt-2 text-gray-0 max-w-xl">
           {{ project?.longDescription }}
         </p>
 
-        <h5 class="font-bold pt-6">Tasks and Implementations</h5>
-        <ul class="ml-4">
-          <li class="pt-1 text-gray-0 max-w-xl text-sm list-disc" *ngFor="let impl of project?.implementations">
+        <h3 class="font-bold pt-6">Tasks and Implementations</h3>
+        <ul class="ml-4 pt-2 flex flex-col gap-y-2">
+          <li class="text-gray-0 max-w-xl text-sm list-disc" *ngFor="let impl of project?.implementations">
             {{ impl }}
           </li>
         </ul>

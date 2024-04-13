@@ -1,7 +1,7 @@
 <a
-  class="px-2 py-1 my-0.5 pl-7 flex justify-start items-center rounded w-full h-full"
+  class="px-2 py-1 my-0.5 pl-7 flex justify-start items-center rounded w-full h-full hover:bg-gray-100 hover:bg-opacity-25"
   [routerLink]="navItem?.route"
-  [routerLinkActive]="'border-secondary-dark-blue bg-secondary-dark-blue'"
+  [routerLinkActive]="'border-secondary-dark-blue !bg-secondary-dark-blue'"
   [routerLinkActiveOptions]="{ exact: true }"
   (click)="onLinkClick()"
   [ngClass]="{ 'bg-secondary-blue': false }">
