@@ -3,7 +3,7 @@
 
   <div class="flex flex-col gap-x-8 mt-8 desktop:pr-40">
     <div class="flex flex-wrap mb-8 gap-8 laptop:gap-x-8 laptop:justify-between w-full">
-      <div class="flex gap-x-4 items-start">
+      <section class="flex gap-x-4 items-start">
         <img ngSrc="assets/images/branch.svg" class="row-span-full mt-1" height="213" width="20" />
         <div class="flex flex-col gap-y-8">
           <h3 class="font-bold -mb-6">Education</h3>
@@ -11,9 +11,9 @@
             *ngFor="let educationExperience of experiences?.education"
             [experience]="educationExperience"></pw-experience-item>
         </div>
-      </div>
+      </section>
 
-      <div class="flex gap-x-4 items-start">
+      <section class="flex gap-x-4 items-start">
         <img ngSrc="assets/images/branch.svg" class="row-span-full mt-1" height="213" width="20" />
         <div class="flex flex-col gap-y-8">
           <h3 class="font-bold -mb-6">Work</h3>
@@ -21,11 +21,12 @@
             *ngFor="let workExperience of experiences?.workExperiences"
             [experience]="workExperience"></pw-experience-item>
         </div>
-      </div>
+      </section>
     </div>
 
-    <div class="flex flex-col laptop:grid laptop:grid-cols-3 gap-x-8 w-full">
+    <div class="flex flex-col flex-wrap laptop:flex-row gap-8 w-full">
       <pw-experience-category
+        class="flex-1 laptop:min-w-[15rem]"
         iconSrc="assets/icons/curly_brackets.svg"
         iconSrcAltTxt="Image of curly brackets"
         title="Programming Languages"
@@ -33,12 +34,14 @@
         time in projects."
         [items]="experiences?.programmingLanguages"></pw-experience-category>
       <pw-experience-category
+        class="flex-1 laptop:min-w-[15rem]"
         iconSrc="assets/icons/books.svg"
         iconSrcAltTxt="Image of books"
         title="Frameworks & Systems"
         description="Any system that requires a significant amount of time to understand to get the most out of optimization and in order to apply best practices."
         [items]="experiences?.frameworks"></pw-experience-category>
       <pw-experience-category
+        class="flex-1 laptop:min-w-[15rem]"
         iconSrc="assets/icons/tools.svg"
         iconSrcAltTxt="Image of tools"
         title="Tools & Platforms"

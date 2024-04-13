@@ -27,12 +27,12 @@
       },
       {
         "id": 0,
-        "label": "TypeScript",
+        "label": "Type Script",
         "iconSrc": "assets/icons/languages/typescript.svg"
       },
       {
         "id": 0,
-        "label": "JavaScript",
+        "label": "Java Script",
         "iconSrc": "assets/icons/languages/javascript.svg"
       },
       {
@@ -102,52 +102,47 @@
       {
         "id": 0,
         "label": "Atlassian",
-        "iconSrc": "assets/icons/languages/typescript.svg"
+        "iconSrc": "assets/icons/tools/atlassian.svg"
       },
       {
         "id": 0,
         "label": "Git",
-        "iconSrc": "assets/icons/languages/typescript.svg"
+        "iconSrc": "assets/icons/tools/git.svg"
       },
       {
         "id": 0,
         "label": "Scrum",
-        "iconSrc": "assets/icons/languages/typescript.svg"
+        "iconSrc": "assets/icons/tools/scrum.svg"
       },
       {
         "id": 0,
         "label": "Postman",
-        "iconSrc": "assets/icons/languages/typescript.svg"
+        "iconSrc": "assets/icons/tools/postman.svg"
       },
       {
         "id": 0,
-        "label": "IntelliJ IDEA",
-        "iconSrc": "assets/icons/languages/typescript.svg"
+        "label": "Jetbrains",
+        "iconSrc": "assets/icons/tools/jetbrains.svg"
       },
       {
         "id": 0,
         "label": "Android Studio",
-        "iconSrc": "assets/icons/languages/typescript.svg"
+        "iconSrc": "assets/icons/tools/android-studio.svg"
       },
       {
         "id": 0,
         "label": "Xcode",
-        "iconSrc": "assets/icons/languages/typescript.svg"
+        "iconSrc": "assets/icons/tools/x-code.svg"
       },
       {
         "id": 0,
         "label": "VS Code",
-        "iconSrc": "assets/icons/languages/typescript.svg"
-      },
-      {
-        "id": 0,
-        "label": "Rider",
-        "iconSrc": "assets/icons/languages/typescript.svg"
+        "iconSrc": "assets/icons/tools/vscode.svg"
       },
       {
         "id": 0,
         "label": "Figma",
-        "iconSrc": "assets/icons/languages/typescript.svg"
+        "iconSrc": "assets/icons/tools/figma.svg"
       }
     ],
     "workExperiences": [
@@ -206,7 +201,7 @@
         "startDate": "2019-09-01",
         "endDate": "2023-08-31",
         "company": "HdM",
-        "description": "Specialization in computer science with an extensive range of media-specific application possibilities. Projects ranged between AI, gaming, web, mobile applications and computer animations. For the projects, I have assumed the highest level of responsibility.",
+        "description": "Specialization in computer science with an extensive range of media-specific application possibilities. Projects ranged between AI, gaming, web, mobile applications and computer animations. For the projects, I have assumed the highest level of responsibility and contributed greatly to their success.",
         "tags": [
           {
             "id": "0",
@@ -624,7 +619,7 @@
       "longDescription": "FoodMood is a mobile-first web application built in React that helps users decide what to eat today. Two randomly selected dishes are presented and the user has to decide which one they would rather eat today. The chosen dish then moves to the next round and is compared with another dish until the rounds are over. The last dish to be selected will be the result for the user. Alternatively, it is possible to personalize the experience by adding your own dishes with personal pictures to the predefined data set. These must also be categorized, so that rounds can be started with only vegan dishes, for example, or a specific meal like breakfast, dinner, etc.",
       "implementations": [
         "Design and implementation of a REST API for the FoodMood application, including all of the CRUD operations that are required.",
-        "Ensure data security and confidentiality through appropriate authentication and authorization mechanisms. For example, through user and administrator role permissions and the integration of JWT.",
+        "Ensured data security and confidentiality through appropriate authentication and authorization mechanisms. For example, through user and administrator role permissions and the integration of JWT.",
         "Endpoint testing and CI/CD pipeline with docker.",
         "Predefined food data by seeding the database at initialization.",
         "Endpoint documentation generation with Swagger API."

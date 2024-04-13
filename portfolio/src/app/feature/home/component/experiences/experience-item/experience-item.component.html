@@ -1,17 +1,17 @@
 <div class="flex items-baseline gap-x-6">
   <div class="flex-col text-sm text-gray-50">
     {{ experience?.startDate | date: "MMM yyyy" | uppercase }}
-    <div class="justify-self-center w-full">-</div>
+    <div class="w-full text-center">-</div>
     {{ (experience?.endDate | date: "MMM yyyy" | uppercase) || "PRESENT" }}
   </div>
 
   <div class="flex flex-col gap-y-1">
-    <h4 class="font-bold">{{ experience?.jobTitle }} · {{ experience?.company }}</h4>
+    <h5 class="font-bold">{{ experience?.jobTitle }} · {{ experience?.company }}</h5>
     <h6 class="text-accent font-mono">{{ experience?.subTitle }}</h6>
     <p class="max-w-sm mt-2 animate-[fade-in-down_300ms_ease-in-out] laptop:animate-[fade-in-down_600ms_ease-in-out]">
       {{ experience?.description }}
     </p>
-    <div class="pt-2 tablet:flex flex-wrap max-w-sm gap-x-1 gap-y-1 items-start justify-start">
+    <div class="pt-2 flex flex-wrap max-w-sm gap-x-1 gap-y-1 items-start justify-start">
       <pw-tag *ngFor="let tag of experience?.tags" label="{{ tag.name }}" [isImportant]="tag.isImportant"></pw-tag>
     </div>
   </div>
