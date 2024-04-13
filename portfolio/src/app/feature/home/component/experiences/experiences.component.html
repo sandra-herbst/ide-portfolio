@@ -1,17 +1,52 @@
 <section>
-  <p class="mb-2 font-mono text-accent">&#64;Experiences</p>
-  <h1 class="mb-4">Experiences</h1>
-  <p class="max-w-xl">
-    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-    magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
-    gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
-    elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
-    eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
-    dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-    labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-    Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
-    consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
-    diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-    sanctus est Lorem ipsum dolor sit amet.
-  </p>
+  <pw-page-title title="Experiences" annotationText="Relevant Knowledge"></pw-page-title>
+
+  <div class="flex flex-col gap-x-8 mt-8 desktop:pr-40">
+    <div class="flex flex-wrap mb-8 gap-8 laptop:gap-x-8 laptop:justify-between w-full">
+      <section class="flex gap-x-4 items-start">
+        <img ngSrc="assets/images/branch.svg" class="row-span-full mt-1" height="213" width="20" />
+        <div class="flex flex-col gap-y-8">
+          <h3 class="font-bold -mb-6">Education</h3>
+          <pw-experience-item
+            *ngFor="let educationExperience of experiences?.education"
+            [experience]="educationExperience"></pw-experience-item>
+        </div>
+      </section>
+
+      <section class="flex gap-x-4 items-start">
+        <img ngSrc="assets/images/branch.svg" class="row-span-full mt-1" height="213" width="20" />
+        <div class="flex flex-col gap-y-8">
+          <h3 class="font-bold -mb-6">Work</h3>
+          <pw-experience-item
+            *ngFor="let workExperience of experiences?.workExperiences"
+            [experience]="workExperience"></pw-experience-item>
+        </div>
+      </section>
+    </div>
+
+    <div class="flex flex-col flex-wrap laptop:flex-row gap-8 w-full">
+      <pw-experience-category
+        class="flex-1 laptop:min-w-[15rem]"
+        iconSrc="assets/icons/curly_brackets.svg"
+        iconSrcAltTxt="Image of curly brackets"
+        title="Programming Languages"
+        description="Syntax understanding, code architecture, lifecycle, async operations, states and security aspects with multiple months of development
+        time in projects."
+        [items]="experiences?.programmingLanguages"></pw-experience-category>
+      <pw-experience-category
+        class="flex-1 laptop:min-w-[15rem]"
+        iconSrc="assets/icons/books.svg"
+        iconSrcAltTxt="Image of books"
+        title="Frameworks & Systems"
+        description="Any system that requires a significant amount of time to understand to get the most out of optimization and in order to apply best practices."
+        [items]="experiences?.frameworks"></pw-experience-category>
+      <pw-experience-category
+        class="flex-1 laptop:min-w-[15rem]"
+        iconSrc="assets/icons/tools.svg"
+        iconSrcAltTxt="Image of tools"
+        title="Tools & Platforms"
+        description="Commonly used tools for organizing or developing projects."
+        [items]="experiences?.tools"></pw-experience-category>
+    </div>
+  </div>
 </section>

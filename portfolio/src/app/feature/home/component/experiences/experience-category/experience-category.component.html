@@ -1,0 +1,23 @@
+<section
+  class="flex flex-col justify-start items-start gap-y-2 my-4 py-8 px-6 rounded border-2 border-dashed border-secondary-active-blue h-full">
+  <div class="flex flex-col justify-center items-center w-full gap-4">
+    <img class="w-10 h-10" src="{{ iconSrc }}" alt="{{ iconSrcAltTxt }}" />
+    <h3 class="font-bold text-center">{{ title }}</h3>
+  </div>
+
+  <p class="text-center w-full">{{ description }}</p>
+  <div class="flex flex-wrap justify-center gap-y-4 gap-x-6 mt-4">
+    <div
+      *ngFor="let item of items"
+      class="relative flex p-2 rounded flex-col items-center justify-center w-20 h-20 gap-y-2 bg-secondary-active-blue bg-opacity-40 group">
+      <img
+        src="{{ item.iconSrc }}"
+        alt="Icon of {{ item.label }}"
+        class="w-12 h-12 opacity-100 transition-opacity duration-300 filter-none group-hover:grayscale group-hover:opacity-10" />
+      <div
+        class="opacity-0 transition-opacity duration-300 group-hover:opacity-100 absolute inset-0 flex items-center justify-center">
+        <p class="text-white font-medium text-center text-base">{{ item.label }}</p>
+      </div>
+    </div>
+  </div>
+</section>

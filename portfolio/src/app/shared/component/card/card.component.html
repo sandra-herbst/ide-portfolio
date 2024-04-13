@@ -18,8 +18,9 @@
     <p class="pt-2 tablet:pt-4 text-gray-50 line-clamp-5 tablet:line-clamp-3">
       {{ description }}
     </p>
-    <div class="hidden mt-auto tablet:flex flex-wrap gap-x-1 gap-y-1 pt-2 tablet:pt-4 items-start justify-start">
-      <pw-tag *ngFor="let tag of tags" label="{{ tag.name }}" [isImportant]="tag.isImportant"></pw-tag>
+    <div class="hidden tablet:flex flex-wrap gap-x-1 gap-y-1 pt-2 tablet:pt-4 items-start justify-start">
+      <pw-tag *ngFor="let tag of tags | slice: 0 : 5" label="{{ tag.name }}" [isImportant]="tag.isImportant"></pw-tag>
+      <div *ngIf="tags && tags.length > 5" class="text-gray-50">..</div>
     </div>
   </div>
 </article>

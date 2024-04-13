@@ -17,7 +17,7 @@ export class AboutComponent implements OnInit {
   }
 
   copyToClipboard(): void {
-    navigator.clipboard.writeText(this.about?.contactEmail!).then(() => {
+    navigator.clipboard.writeText(this.about?.email!).then(() => {
       this.hasCopied = true;
       setTimeout(() => {
         this.hasCopied = false;
