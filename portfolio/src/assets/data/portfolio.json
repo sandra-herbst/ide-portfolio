@@ -860,7 +860,7 @@
       "title": "BLIF:Explorer",
       "subtitle": "Cross-Platform App",
       "shortDescription": "Pupils can record location-based data to track environmental changes.",
-      "longDescription": "The BLIF:Explorer app helps students better understand the consequences of regional climate change or biodiversity loss by combining satellite imagery and field work. The app allows young people to view pre-processed satellite images in the field and collect location-based information for further analysis. Pupils can record their own data in the form of text, photos and audio.",
+      "longDescription": "The BLIF:Explorer app helps students to understand the consequences of regional climate change or biodiversity loss by combining satellite imagery and field work. The app allows young people to view pre-processed satellite images in the field and collect location-based information for further analysis. Pupils can record their own data in the form of text, photos and audio.",
       "implementations": [
         "Incorporation of an external API for project related data, such as location, user submissions, polygon coordinates and tasks.",
         "Usage and implementation of a framework related to satellite imagery based on geographical coordinates.",
