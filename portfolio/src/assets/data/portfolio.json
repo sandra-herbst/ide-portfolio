@@ -147,6 +147,15 @@
     ],
     "workExperiences": [
       {
+        "id": "1",
+        "jobTitle": "Backend Software Engineer",
+        "subTitle": "Full Time",
+        "startDate": "2024-07-01",
+        "company": "Oskar Frech",
+        "description": "The specifications for this position is TBA.",
+        "tags": []
+      },
+      {
         "id": "0",
         "jobTitle": "Software Engineer",
         "subTitle": "Intern & Working Student",
