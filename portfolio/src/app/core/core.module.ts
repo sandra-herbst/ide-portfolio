@@ -3,7 +3,7 @@ import { CommonModule } from "@angular/common";
 import { PageNotFoundComponent } from "./component/page-not-found/page-not-found.component";
 import { PortfolioService } from "./service/portfolio.service";
 import { LogService } from "./service/log.service";
-import { HttpClientModule } from "@angular/common/http";
+import { provideHttpClient, withInterceptorsFromDi } from "@angular/common/http";
 import { HeaderComponent } from "./component/header/header.component";
 import { NavigationService } from "./service/navigation.service";
 import { TextButtonComponent } from "../shared/component/text-button/text-button.component";
@@ -11,9 +11,9 @@ import { PageTitleComponent } from "../shared/component/page-title/page-title.co
 
 @NgModule({
   declarations: [PageNotFoundComponent, HeaderComponent],
-  imports: [CommonModule, HttpClientModule, TextButtonComponent, PageTitleComponent],
-  providers: [LogService, PortfolioService, NavigationService],
   exports: [HeaderComponent],
+  imports: [CommonModule, TextButtonComponent, PageTitleComponent],
+  providers: [LogService, PortfolioService, NavigationService, provideHttpClient(withInterceptorsFromDi())],
 })
 export class CoreModule {
   /**
